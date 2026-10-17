@@ -26,3 +26,9 @@
 目录扩展取用游民星空（两辑武器图鉴）与游侠网（33 类装备图鉴）的名称、分类事实，逐项保留网页定位、原名和采用规则；发现错名或数值错行时不直接转录。18 件新增传说面板取自 Mobalytics 的对应 Nightreign 武器页，所有数值和来源条件保存在独立输入中，未复制武器图片、网页全文或介绍文案。新增目录与面板输入见 `docs/research/weapon-catalog-index-20261017.json`、`docs/research/weapon-legendary-expansion-20261017.json`，对应来源链接见 `data/sources.json`。
 
 手动倒计时使用既有 QuickRef 时间轴和 3DM 转载的社区测试记录作参考。末次缩圈结束的 14:00 / 14:30 冲突保留在 `data/circle_timing.json`，界面标为预计时间；3DM 原文来源注明为 Steam、作者琪。这里只整理时间事实和来源链接，不复制攻略正文。
+
+## 武器面板补全预览（2026-10-17）
+
+新增研究输入 `docs/research/weapon-panel-audit-20261017.json` 只保留事实字段、出处、修订与差异，不包含网站图片、攻略正文或界面代码。Mobalytics 页面提供387件面板；NightreignArmamentHelper 的基础武器参数用于数值核对；JDennisUF/nightreign_info 明示转录RPS表，因此按一条来源链记录，不计成两个独立来源；BWIKI以固定修订记录，Game8的少量争议字段来自检索摘录；蝎纹鸢形盾页面另已直接读取，逐来源注明读取范围。
+
+参数摘录固定于 nextfinish/NightreignArmamentHelper 的 `eab1dbdcdabf0f5a99a13e6051e2738b03c15879`；上游MIT许可证全文保存在 `docs/research/armamenthelper-LICENSE.txt`，并附入离线资源 `dist/DATA-LICENSE.txt`。未执行上游程序，也未包含其游戏内存读取功能。网站素材的既有许可边界不因本次核对改变。

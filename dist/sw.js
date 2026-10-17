@@ -1,6 +1,6 @@
 const PREVIEW=['127.0.0.1:4318','localhost:4318'].includes(self.location.host);
 const CACHE_PREFIX=PREVIEW?'duye-weapons-preview-':'nightreign-offline-';
-const CACHE=CACHE_PREFIX+'v0.5.0';
+const CACHE=CACHE_PREFIX+'v0.5.0-panels-r2-final';
 const ASSETS=["./", "./index.html", "./style.css", "./app.js", "./catalog.js", "./weapons.js", "./weapons.css", "./circle-timer.js", "./circle-timer.css", "./data.js", "./manifest.webmanifest", "./DATA-LICENSE.txt", "./assets/great-hollow.webp", "./assets/icon.svg", "./assets/rain-knight.png", "./assets/大空洞地表水晶原图.jpg", "./assets/nightlords/adel.webp", "./assets/nightlords/caligo.webp", "./assets/nightlords/fulghor.webp", "./assets/nightlords/gladius.webp", "./assets/nightlords/gnoster.webp", "./assets/nightlords/harmonia.avif", "./assets/nightlords/heolstor.webp", "./assets/nightlords/libra.webp", "./assets/nightlords/maris.webp", "./assets/nightlords/straghess.avif", "./assets/types/fire.png", "./assets/types/holy.png", "./assets/types/lightning.png", "./assets/types/magic.png", "./assets/types/pierce.png", "./assets/types/slash.png", "./assets/types/standard.png", "./assets/types/strike.png"];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith(CACHE_PREFIX)&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

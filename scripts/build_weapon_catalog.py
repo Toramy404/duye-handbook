@@ -1,6 +1,7 @@
 """Convert preserved research into traceable preview records without inferred stats."""
 import json, argparse
 from expand_weapon_catalog import expand
+from complete_weapon_panels import complete
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 PREFIX='weapon-research:'
@@ -12,7 +13,7 @@ def build():
     m=read('docs/research/melee-12-source-observations.json'); t=read('docs/research/weapon-tools.json')
     weapons=[]; variants=[]; observations=[]; links=[]
     raw_sources={s['id']:s for s in m['sources']}; raw_sources.update(t['sources'])
-    sources=[s for s in read('data/sources.json') if not s['id'].startswith((PREFIX,'weapon-index:','weapon-expansion:'))]
+    sources=[s for s in read('data/sources.json') if not s['id'].startswith((PREFIX,'weapon-index:','weapon-expansion:','weapon-panel:'))]
     for sid,s in raw_sources.items():
         sources.append({**s,'id':PREFIX+sid,'title':s.get('title',s.get('publisher',sid)+' · '+sid),'version':None,'note':s.get('limits',s.get('limitations_zh','研究来源记录，未完成游戏内验证。')),'research_source_id':sid})
     for r in m['samples']+t['items']:
@@ -51,7 +52,7 @@ def build():
         variants.append(dict(id=vid,weapon_id=wid,observation_id=obsids[0],source_id=PREFIX+o['source_id'],verification_status='source_reported',rarity_label=rarity,level_required=o['level_required'],rarity_stats_binding_confirmed=False,attack=attack,critical=critical,guard=guard,scaling=scaling,attack_types=types,spell_power=spell_power,status=innate,skill=field(skill,skill_reason,'not_applicable' if skill is None and group=='catalyst' else None),spells=spells,conditions=conditions,null_reasons=reasons))
         weapons.append(dict(id=wid,name=zh,name_en=en,name_zh_status=status,aliases=ALIASES.get(slug,[]),category=r['category']['zh'],category_en=cat,group=group,description=desc,verification_status='source_reported',variant_ids=[vid],observation_ids=obsids,research_sample_id=sample,known_gaps=gaps,source_refs=[dict(source_id=PREFIX+sid,locator='研究样本 '+sample) for sid in sorted(refs)]))
         if effect: links.append(dict(id=wid+':legendary-effect',weapon_id=wid,effect_id=effect,collection='legendary_weapon_effects',verification_status='source_reported'))
-    return expand(ROOT,dict(weapons=weapons,weapon_variants=variants,weapon_source_observations=observations,weapon_effect_links=links,sources=sources))
+    return complete(ROOT,expand(ROOT,dict(weapons=weapons,weapon_variants=variants,weapon_source_observations=observations,weapon_effect_links=links,sources=sources)))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--check',action='store_true');args=p.parse_args()
     for name,data in build().items():

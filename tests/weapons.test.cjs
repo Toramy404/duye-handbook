@@ -15,14 +15,15 @@ const T=ctx.window.test,D=ctx.window.NR_DATA,W=T.weaponUI;let checks=0;
 function check(name,truth){assert.ok(truth,name);checks++}
 function equal(a,b,name){assert.deepEqual(JSON.parse(JSON.stringify(a)),JSON.parse(JSON.stringify(b)),name);checks++}
 function action(a,v){T.handleAction({target:{closest(){return{dataset:{action:a,value:v}}}}})}
+const legacy=w=>D.weapon_variants.find(v=>v.id===w.variant_ids[0]);
 const originalData=JSON.stringify(D),get=id=>D.weapons.find(r=>r.id==='weapon:'+id),variant=id=>W.variant(get(id));
 equal([D.weapons.length,new Set(D.weapons.map(r=>r.category_en)).size,D.weapon_effect_links.length,D.legendary_weapon_effects.length],[387,33,25,25],'coverage and unchanged old effect count');
 equal(D.weapons.filter(r=>r.name_zh_status.includes('provisional')).length,11,'candidate translations retained');
 check('unique IDs',new Set(D.weapons.map(r=>r.id)).size===387);
 const src=new Set(D.sources.map(s=>s.id));check('source IDs unique',src.size===D.sources.length);
 for(const w of D.weapons.filter(w=>w.research_sample_id)){
- const v=W.variant(w),isMelee=w.group==='melee',original=isMelee?M.samples.find(r=>r.sample_id===w.research_sample_id):R.items.find(r=>r.id===w.research_sample_id),raw=isMelee?original.source_observations:[original.source_observation],first=raw[0];
- equal(w.observation_ids.map(id=>D.weapon_source_observations.find(o=>o.id===id).raw),raw,w.name+' source observations lossless');
+ const v=legacy(w),isMelee=w.group==='melee',original=isMelee?M.samples.find(r=>r.sample_id===w.research_sample_id):R.items.find(r=>r.id===w.research_sample_id),raw=isMelee?original.source_observations:[original.source_observation],first=raw[0];
+ equal(w.observation_ids.filter(id=>!id.endsWith(':panel-observation-20261017')).map(id=>D.weapon_source_observations.find(o=>o.id===id).raw),raw,w.name+' source observations lossless');
  check(w.name+' source links resolve',w.source_refs.every(r=>src.has(r.source_id))&&src.has(v.source_id));
  check(w.name+' no overstated verification',w.verification_status==='source_reported'&&v.verification_status==='source_reported');
  equal(v.conditions,isMelee?first.numeric_conditions:original.conditions,w.name+' conditions unchanged');
@@ -37,7 +38,7 @@ for(const w of D.weapons.filter(w=>w.research_sample_id)){
 const expectedLinks={'axe-of-godfrey':'legendary:23','dark-moon-greatsword':'legendary:02','marikas-hammer':'legendary:15','bastards-stars':'legendary:17','bolt-of-gransax':'legendary:19','grafted-dragon':'legendary:22','carian-regal-scepter':'legendary:24'};
 for(const [slug,id] of Object.entries(expectedLinks)){equal(D.weapon_effect_links.find(l=>l.weapon_id==='weapon:'+slug).effect_id,id,'explicit link '+slug);check('old linked record '+id,D.legendary_weapon_effects.some(r=>r.id===id))}
 check('old legendary favorite resolves',T.resolveRecords(T.state.favorites,true)[0][1].id==='legendary:01');
-check('unknown differs from explicit zero',variant('battle-axe').guard.value===null&&variant('hand-ballista').guard.value.boost===0);
+check('unknown differs from explicit zero',legacy(get('battle-axe')).guard.value===null&&variant('hand-ballista').guard.value.boost===0);
 check('FP0 not lost',W.detail(get('hand-ballista')).includes('FP 原页显示：<span class="mono">0</span>'));
 check('unknown innate is not no innate',W.detail(get('astrologers-staff')).includes('待核：来源未给出固有异常'));
 check('random shield skill not no skill',W.detail(get('brass-shield')).includes('未给具体战技'));
@@ -57,9 +58,9 @@ T.state.global='月光大剑';check('global search includes weapon',T.search().i
 T.state.view='weapons';ctx.window.NR_APP_BACK();equal(T.state.view,'home','weapon list parent home');equal(ctx.window.NR_APP_BACK(),'exit','home exit');
 
 const expansion=read('docs/research/weapon-legendary-expansion-20261017.json');
-equal(D.weapons.filter(w=>w.variant_ids.length).length,42,'42 panels; identities are not invented numeric panels');
+equal(D.weapons.filter(w=>w.variant_ids.length).length,387,'all 387 identities have explicit source panels');
 for(const raw of expansion.items){
- const w=get(raw.slug),v=W.variant(w);
+ const w=get(raw.slug),v=legacy(w);
  equal(Object.fromEntries(Object.entries(v.attack).map(([k,f])=>[k,f.value])),raw.attack,w.name+' new attack matches source');
  equal(v.guard.value,raw.guard,w.name+' new guard matches source');
  equal(v.scaling.grades,raw.scaling,w.name+' new scaling matches source');
@@ -74,7 +75,7 @@ for(const w of D.weapons){
  check(w.name+' name before type',card.indexOf('<h3>')<card.indexOf('weapon-card-meta'));
  check(w.name+' render no missing values',!html.includes('undefined')&&!html.includes('NaN'));
 }
-for(const id of ['battle-axe','hand-ballista','lion-greatbow']){
+for(const id of ['hand-ballista','lion-greatbow']){
  const body=W.detail(get(id)).split('<details class="weapon-reference">')[0];
  check(id+' no empty defense or status block',!body.includes('<h3>防御</h3>')&&!body.includes('<h3>固有异常</h3>'));
 }
@@ -82,13 +83,60 @@ check('known status kept',W.detail(get('antspur-rapier')).split('<details class=
 check('shield guard kept',W.detail(get('brass-shield')).split('<details class="weapon-reference">')[0].includes('<h3>防御</h3>'));
 check('all legendary effects linked once',new Set(D.weapon_effect_links.map(l=>l.effect_id)).size===25);
 const knight=D.weapons.find(w=>w.name==='骑士大剑');
-check('wrongly labeled table not imported',knight.variant_ids.length===0&&variant('golden-order-greatsword').attack.holy.value===102);
+check('wrongly labeled table not imported',W.variant(knight).attack.holy.value===0&&W.variant(knight).attack.physical.value===107&&variant('golden-order-greatsword').attack.holy.value===102);
 Object.assign(T.state,{view:'weapons',query:'',weaponGroup:'all',weaponCategory:'all',weaponRarity:'legendary',limit:36});
-equal(W.select(T.state).length,25,'legendary filter includes all 25');
+equal(W.select(T.state).length,26,'legendary filter uses rarity, including Eclipse Shotel');
 T.state.weaponRarity='all';equal((W.page(T.state).match(/<article class="weapon-card/g)||[]).length,36,'large catalog paginates initial 36');
 action('more-results');equal((W.page(T.state).match(/<article class="weapon-card/g)||[]).length,72,'next page appends 36');
 T.rememberView();T.navigate('home');T.navigate('weapons');equal(T.state.limit,72,'return preserves loaded count');
 action('reset-weapons');equal(T.state.limit,36,'clear resets loaded count');
+
+
+const audit=read('docs/research/weapon-panel-audit-20261017.json');
+const byEnglish=name=>D.weapons.find(w=>w.name_en===name),active=name=>W.variant(byEnglish(name));
+equal(D.weapon_variants.filter(v=>!v.id.endsWith(':panel-20261017')).length,42,'historical 42 panels retained');
+equal(new Set(D.weapons.map(w=>w.game_parameter_id)).size,387,'base parameter identity is unique for every weapon');
+for(const item of audit.items){
+ const w=D.weapons.find(w=>w.id===item.weapon_id),v=W.variant(w);
+ check(w.name+' active panel reference',w.display_variant_id===v.id&&w.variant_ids.includes(v.id));
+ equal(D.weapon_source_observations.find(o=>o.id===v.observation_id).raw,item.primary,w.name+' original current-page values preserved');
+ for(const family of ['attack','guard','scaling'])for(const [key,raw] of Object.entries(item.primary[family])){
+  const field=family+'.'+key,res=item.resolutions.find(r=>r.field===field),actual=family==='attack'?v.attack[key].value:family==='guard'?v.guard.value[key]:v.scaling.grades[key];
+  equal(actual,v.pending_fields.includes(field)?null:res?res.value:raw,w.name+' '+field+' follows explicit decision');
+ }
+ check(w.name+' not game-verified',v.verification_status==='source_reported'&&v.rarity_stats_binding_confirmed===false&&Object.values(v.conditions).every(x=>x===null));
+ check(w.name+' independent parameter mapping',item.comparators.some(c=>c.source_id==='weapon-panel:armamenthelper'&&c.locator.includes(String(w.game_parameter_id))));
+ check(w.name+' all comparison links resolve',item.comparisons.every(c=>src.has(c.source_id)));
+ for(const decision of item.resolutions){
+  check(w.name+' correction has supporting facts',decision.source_ids.length>=2&&decision.source_ids.every(id=>item.comparators.some(c=>c.source_id===id&&c.fields[decision.field]===decision.value)));
+ }
+}
+equal(active('Rotten Battle Hammer').guard.value.magic,36,'reject 366 typo with explicit corroboration');
+equal([active('Staff of the Avatar').attack.physical.value,active('Staff of the Avatar').attack.holy.value,active('Staff of the Avatar').guard.value.boost],[96,64,48],'Avatar values from recorded corrections');
+equal(active('Greathorn Hammer').attack.physical.value,111,'Greathorn conflicting panel corrected');
+equal(active('Cleanrot Spear').attack.holy.value,44,'Cleanrot holy attack corrected');
+equal(active('Miséricorde').scaling.grades.dexterity,'S','two independent tables support Misericorde scaling correction');
+equal(active("Executor's Blade").rarity_label,'common','starting blade is not the summoned legendary skill blade');
+equal(active('Eclipse Shotel').rarity_label,'legendary','Eclipse quality independent from old blessing library');
+check('Eclipse does not invent a blessing',!D.weapon_effect_links.some(l=>l.weapon_id===byEnglish('Eclipse Shotel').id));
+for(const name of ['Nightrider Flail','Fallingstar Beast Jaw','Erdtree Seal']){
+ const w=byEnglish(name),v=W.variant(w),body=W.detail(w).split('<details class="weapon-reference">')[0];
+ check(name+' pending damage visible, not silently picked',v.pending_fields.some(k=>k.startsWith('attack.'))&&body.includes('待核'));
+}
+check('conflict retains both actual values',W.detail(byEnglish('Fallingstar Beast Jaw')).includes('Mobalytics 76')&&W.detail(byEnglish('Fallingstar Beast Jaw')).includes('参数快照 67'));
+check('real melee guard now shown',W.detail(get('battle-axe')).split('<details class="weapon-reference">')[0].includes('<h3>防御</h3>')&&variant('battle-axe').guard.value.boost===36);
+equal(active('Scorpion Kite Shield').level_required,3,'shield level no longer globally one');
+equal(active('Scorpion Kite Shield').rarity_label,null,'shield quality not inferred from required level');
+Object.assign(T.state,{weaponGroup:'all',weaponCategory:'all',weaponRarity:'unknown',query:''});
+equal(W.select(T.state).length,43,'43 suspect shield qualities remain searchable separately');
+check('no conversion of numeric coefficients to letter grade',active('Hand Ballista').scaling.state==='not_listed'&&Object.keys(active('Hand Ballista').scaling.grades).length===0);
+check('spell power conditions remain separate',byEnglish("Astrologer's Staff").panel_audit.differences.some(d=>d.field==='spell_power'&&d.resolution==='conditions_unknown')&&active("Astrologer's Staff").spell_power.value===133);
+Object.assign(T.state,{weaponGroup:'all',weaponCategory:'all',weaponRarity:'legendary',query:''});
+check('legendary filter excludes starting blade',!W.select(T.state).includes(byEnglish("Executor's Blade"))&&W.select(T.state).includes(byEnglish('Eclipse Shotel')));
+Object.assign(T.state,{weaponRarity:'all',query:'Wing of Astel'});equal(W.select(T.state).map(w=>w.name_en),['Wing of Astel'],'new English identities searchable');
+T.state.query='艾丝缇薄翼';equal(W.select(T.state).map(w=>w.name_en),['Wing of Astel'],'parameter Chinese alias searchable without replacing stable ID');
+T.state.query='';
+check('correction explanations render as text',D.corrections.every(c=>typeof c.evidence==='string'));
 
 equal(JSON.stringify(D),originalData,'all UI operations preserve data');
 const sw=fs.readFileSync(path.join(root,'dist/sw.js'),'utf8');check('worker uses the selected environment prefix',sw.includes('key.startsWith(CACHE_PREFIX)'));

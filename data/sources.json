@@ -1344,5 +1344,4011 @@
     "accessed": "2026-10-17",
     "version": null,
     "note": "逐页采集来源面板，未绑定游戏补丁、角色及强化条件。"
+  },
+  {
+    "id": "weapon-panel:armamenthelper",
+    "title": "NightreignArmamentHelper · 游戏参数快照",
+    "url": "https://github.com/nextfinish/NightreignArmamentHelper/blob/eab1dbdcdabf0f5a99a13e6051e2738b03c15879/resources/armaments.json",
+    "version": "eab1dbdcdabf0f5a99a13e6051e2738b03c15879",
+    "accessed": "2026-10-17",
+    "sha256": "2ef0734f55c87211dad03c6a9f227a58086dd917665857b55ee32d312c8c6c58",
+    "note": "MIT；精确匹配基础武器ID，读取攻击、防御与等级字段。未运行计算器；属性补正系数不换算成字母，参数版本不等于当前游戏版本。"
+  },
+  {
+    "id": "weapon-panel:rps-transcription",
+    "title": "RPS 武器表 · JDennisUF 转录快照",
+    "url": "https://github.com/JDennisUF/nightreign_info/blob/de93fa75756d230869410fdf76453772121cceab/data/weapons.json",
+    "version": "de93fa75756d230869410fdf76453772121cceab",
+    "accessed": "2026-10-17",
+    "sha256": "4c60bfed67287c576ff9bb4eaa91ef6190226b885769df06cf42fc59415738cd",
+    "note": "README说明转录自 Rock Paper Shotgun；只算一条来源链。原表未直接读到，采用有固定提交的转录。法术缩放条件不明，不与另一来源混算。"
+  },
+  {
+    "id": "weapon-panel:quickref-roadmap",
+    "title": "QuickRef · 候选开发方向",
+    "url": "https://github.com/xxiixi/NightreignQuickRef/tree/3e23450094c18125ae5665927ed240b18189a040/src/data/zh-CN",
+    "version": "3e23450094c18125ae5665927ed240b18189a040",
+    "accessed": "2026-10-17",
+    "note": "本轮仅用于候选计划检查，未用于武器基础面板。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:battle-axe",
+    "title": "Mobalytics · Battle Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/battle-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6b9b3a408f7c7029a0d274a085eb01ab7d1893be3fdca5fdd308889c4ddf2789",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:banished-knights-halberd",
+    "title": "Mobalytics · Banished Knight's Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/banished-knights-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f3c45c4caa1e730215a4c124d6fd63ef5d0e21033a68c067b13a3b83de14bfc5",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:bandits-curved-sword",
+    "title": "Mobalytics · Bandit's Curved Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bandits-curved-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "22ebd0b3dec1b060434bcb45ca12ad56040cc63efa4d307f29fff56d0184ac5f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:antspur-rapier",
+    "title": "Mobalytics · Antspur Rapier",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/antspur-rapier",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "583ca92c63d5c7650481d989dcf4066beb3cfd82bcbbc8905a61a02dc71d2164",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:uchigatana",
+    "title": "Mobalytics · Uchigatana",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/uchigatana",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6ceec3bd81ad191735d9d2fad14e215ef5ef32c8e84b62e1fde781f21125022c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:629",
+    "title": "BWIKI · 打刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%89%93%E5%88%80&oldid=1983",
+    "version": "revision 1983",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:33:17Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:hookclaws",
+    "title": "Mobalytics · Hookclaws",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/hookclaws",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ae0fb197f4bef564268d9038a547f271bb588672d97e0670d04113e6cfa4f84d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:axe-of-godfrey",
+    "title": "Mobalytics · Axe of Godfrey",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/axe-of-godfrey",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0f1b197d42f8fe94ed1b01fdd669d39294fbfb4f28d840e5ce9197e4a4dd1226",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:dark-moon-greatsword",
+    "title": "Mobalytics · Dark Moon Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/dark-moon-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c98de34eb00b8262b989b633d6ce374492812588a74e151a9eb7f14a7f10acac",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:636",
+    "title": "BWIKI · 暗月大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%9A%97%E6%9C%88%E5%A4%A7%E5%89%91&oldid=1990",
+    "version": "revision 1990",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:54:56Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:marikas-hammer",
+    "title": "Mobalytics · Marika's Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/marikas-hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d7f05a215cb2ea249edfeba7f8bca8850ab1e7c8e715e656e5e70b4b0e11aac3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:bastards-stars",
+    "title": "Mobalytics · Bastard's Stars",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bastards-stars",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a7e23cd251bf0ab242e7e7b4aedf27ef63f46082f9f473b63cdcf4c400d856a6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:bolt-of-gransax",
+    "title": "Mobalytics · Bolt of Gransax",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bolt-of-gransax",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ac0153e1eec0e588a98b1fefdae038d22ad8946922d31b23d358f228c4855618",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:grafted-dragon",
+    "title": "Mobalytics · Grafted Dragon",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/grafted-dragon",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "aa815be2b16c9df49f8a37d654a8e5aafdbc01a36f96743d763ce3cb597f4c2f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:ironeyes-bow",
+    "title": "Mobalytics · Ironeye's Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ironeyes-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "aab9a1fdb3e4cf2c866d89b18670277d394145511402128eb3e2b7441a2d67d0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:black-bow",
+    "title": "Mobalytics · Black Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/black-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6599b39fdb0eb1c338e2ed363c2e1f32c8bb199ac3213619086a7da59548d55b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:pulley-crossbow",
+    "title": "Mobalytics · Pulley Crossbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/pulley-crossbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "258f4be68a0bde7aa884e3b7309a7eb549ca63424e373e4faf8c642c3f5771ec",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:hand-ballista",
+    "title": "Mobalytics · Hand Ballista",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/hand-ballista",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "7d28a834263d97097863f2fb4d390236ffd11e05da8736f7bc26eb8dde6ff770",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:jar-cannon",
+    "title": "Mobalytics · Jar Cannon",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/jar-cannon",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bdaecbfc32080da396ec5476c73a5613938e7536aa55aac9421cce078bd7d5b3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:astrologers-staff",
+    "title": "Mobalytics · Astrologer's Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/astrologers-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6404c8254f5c4b8d2f26e962c98904f7865aea931189d518df77d25085ccc193",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:carian-regal-scepter",
+    "title": "Mobalytics · Carian Regal Scepter",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/carian-regal-scepter",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b035d919e9f212f3ba8ea7937963bac79d2399af8cb24824defb923ba6e08b27",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:clawmark-seal",
+    "title": "Mobalytics · Clawmark Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/clawmark-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a70a2b3cc969930910128a71041664ce28107164685a7c9dfa8273a03792f706",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:dragon-communion-seal",
+    "title": "Mobalytics · Dragon Communion Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/dragon-communion-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2350183026f2bd466dd532618ecc94a68d46e9143d4c53f4147ec551056f5b32",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:buckler",
+    "title": "Mobalytics · Buckler",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/buckler",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f7289254a509e6aa1cacb9b8c6f2eefe0d116fda302b2a1c9735ada636d280fb",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:brass-shield",
+    "title": "Mobalytics · Brass Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/brass-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f66a60bc1c6d0cc664e41ea6e79ffeda5fdeec5b1b5b06265d97dc41c5d7b205",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:ants-skull-plate",
+    "title": "Mobalytics · Ant's Skull Plate",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/ants-skull-plate",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e48d194ced007a6048f5613fad742780a4b6b224a1d8af27f02447ab75f423bb",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-79943c05ec24",
+    "title": "Mobalytics · Duchess' Dagger",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/duchess-dagger",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "dc8d761a9db78fbaeaff7d055ece6c07bb5c4b3cbb009ef5398fcc3bd747d9a7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:604",
+    "title": "BWIKI · 女爵的短剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%A5%B3%E7%88%B5%E7%9A%84%E7%9F%AD%E5%89%91&oldid=1938",
+    "version": "revision 1938",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T22:43:34Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-75c42d665a94",
+    "title": "Mobalytics · Dagger",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/dagger",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "950094b2796eb3c65be24fc554c37997558db46533ac335785d1f2dcb38a2c5a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:581",
+    "title": "BWIKI · 匕首",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%8C%95%E9%A6%96&oldid=1942",
+    "version": "revision 1942",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T22:50:44Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-69c254fc40a7",
+    "title": "Mobalytics · Parrying Dagger",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/parrying-dagger",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "55fdb43a88425c3a9c9c8aaf10f79cd706e8a94c37ba3c1568d85142c5905d31",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:582",
+    "title": "BWIKI · 格挡匕首",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%A0%BC%E6%8C%A1%E5%8C%95%E9%A6%96&oldid=1943",
+    "version": "revision 1943",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T22:55:08Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-172669e50e1e",
+    "title": "Mobalytics · Great Knife",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/great-knife",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "72e36d08015f2bd70e8d2b789ca468818c48fdb7902c2ed2e44cf9f191501628",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:580",
+    "title": "BWIKI · 单刃小刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%8D%95%E5%88%83%E5%B0%8F%E5%88%80&oldid=1941",
+    "version": "revision 1941",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T22:46:05Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-30c7f8f44a6d",
+    "title": "Mobalytics · Miséricorde",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/misericorde",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2a9b90f1176433665b435850f60c1291b79d6ce62052a63293d152e41b1efa5e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:583",
+    "title": "BWIKI · 慈悲短剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%85%88%E6%82%B2%E7%9F%AD%E5%89%91&oldid=1957",
+    "version": "revision 1957",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T23:17:07Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3a8de46261a6",
+    "title": "Mobalytics · Bloodstained Dagger",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bloodstained-dagger",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "654731dd8cc6204dbf1438fa66894fe378bfbfa04beaa5316f164eb090673bcd",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:587",
+    "title": "BWIKI · 染血短刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%9F%93%E8%A1%80%E7%9F%AD%E5%88%80&oldid=1968",
+    "version": "revision 1968",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T03:58:26Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-9ac488f72ce3",
+    "title": "Mobalytics · Erdsteel Dagger",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/erdsteel-dagger",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2d6d076db8f6db67bacb1678c897c9634c48c777afc225c6e94cc5a2ca0116e9",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:585",
+    "title": "BWIKI · 黄铜短刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%BB%84%E9%93%9C%E7%9F%AD%E5%88%80&oldid=1965",
+    "version": "revision 1965",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T03:53:24Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a7ab2cd85760",
+    "title": "Mobalytics · Wakizashi",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/wakizashi",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ce098b7168d1f16243b4916a7788ca7c9778b0bf2864ed797bfbf826996fe000",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:584",
+    "title": "BWIKI · 胁差",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E8%83%81%E5%B7%AE&oldid=1956",
+    "version": "revision 1956",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T23:16:41Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f3ddcc831963",
+    "title": "Mobalytics · Celebrant's Sickle",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/celebrants-sickle",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3aa4209efcf5a843bbce063a286aab150aa8eddd9b51b6d9cbfdad2eb391ef50",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:588",
+    "title": "BWIKI · 庆典小镰刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%BA%86%E5%85%B8%E5%B0%8F%E9%95%B0%E5%88%80&oldid=1969",
+    "version": "revision 1969",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:00:48Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b20575896235",
+    "title": "Mobalytics · Ivory Sickle",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ivory-sickle",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "cce1417618e1e30dbc669d29061db3c51ccd11509c06ec9fc8896898c9083aba",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:589",
+    "title": "BWIKI · 象牙小镰刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E8%B1%A1%E7%89%99%E5%B0%8F%E9%95%B0%E5%88%80&oldid=1970",
+    "version": "revision 1970",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:02:54Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-239d751be0ad",
+    "title": "Mobalytics · Crystal Knife",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/crystal-knife",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "472f10729d2da295d47396482c55e86069ab825845509bf1ca611154fec32eff",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:586",
+    "title": "BWIKI · 结晶小刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%BB%93%E6%99%B6%E5%B0%8F%E5%88%80&oldid=1967",
+    "version": "revision 1967",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T03:56:08Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6c4d5232125d",
+    "title": "Mobalytics · Scorpion's Stinger",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/scorpions-stinger",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b0818941b74bdf34352e3a3c07e12f338c8af0bf67cb7d790122296c80105b9e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:595",
+    "title": "BWIKI · 蝎尾针",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E8%9D%8E%E5%B0%BE%E9%92%88&oldid=1963",
+    "version": "revision 1963",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T23:27:24Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0ba4fff3b33b",
+    "title": "Mobalytics · Cinquedea",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/cinquedea",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "309795840d0baffc6f1fe8732424197ffb321496b343803d085bf1151eacf44c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:594",
+    "title": "BWIKI · 五指剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E4%BA%94%E6%8C%87%E5%89%91&oldid=1972",
+    "version": "revision 1972",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:08:23Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5d2470fa2b65",
+    "title": "Mobalytics · Glintstone Kris",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/glintstone-kris",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "732c152c767df24b9d4ceeac4f2e54161839318f321f7dab6bf7c5f72c2291b7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:591",
+    "title": "BWIKI · 辉石克力士",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E8%BE%89%E7%9F%B3%E5%85%8B%E5%8A%9B%E5%A3%AB&oldid=1971",
+    "version": "revision 1971",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:05:45Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7cdfde19921f",
+    "title": "Mobalytics · Reduvia",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/reduvia",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3ab40df50c90093a88a74750ec81da753c0fe9e00ca05ed46f8bf4449395682f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:592",
+    "title": "BWIKI · 逆刺",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%80%86%E5%88%BA&oldid=1958",
+    "version": "revision 1958",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T23:17:47Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d2f2cad243a6",
+    "title": "Mobalytics · Blade of Calling",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/blade-of-calling",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c1200ced384345016f5ae95fc45353cc6d7efdf921132f04100fc6b3f6b881e3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:593",
+    "title": "BWIKI · 使命短刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E4%BD%BF%E5%91%BD%E7%9F%AD%E5%88%80&oldid=1962",
+    "version": "revision 1962",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T23:24:53Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0c174fa47907",
+    "title": "Mobalytics · Black Knife",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/black-knife",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "fc8889645971faaeecf294ac5e68c499d36acde9ebffb711943ee3acd2aa9b22",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:590",
+    "title": "BWIKI · 黑刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%BB%91%E5%88%80&oldid=1960",
+    "version": "revision 1960",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T23:20:59Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f40730b2d2bb",
+    "title": "Mobalytics · Short Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/short-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "61fa6017a25fa29d424296f24b07ef28511e2fdc3c6616fe73d5bddd256b327c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:599",
+    "title": "BWIKI · 短剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%9F%AD%E5%89%91&oldid=2001",
+    "version": "revision 2001",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:08:29Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0de8448d733c",
+    "title": "Mobalytics · Longsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/longsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "dfdf85bedda944ba9092104e7b6e88e5ab24df7b31f34657d7b38df0837e49be",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:597",
+    "title": "BWIKI · 长剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%95%BF%E5%89%91&oldid=1999",
+    "version": "revision 1999",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:02:21Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b0cffed1952c",
+    "title": "Mobalytics · Broadsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/broadsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0146b8e5375fd202b5222c69570e54f9dc78342212acb3c95a621bb92d82c467",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:596",
+    "title": "BWIKI · 阔剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%98%94%E5%89%91&oldid=1998",
+    "version": "revision 1998",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:00:32Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-22e188d47921",
+    "title": "Mobalytics · Weathered Straight Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/weathered-straight-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e17f039d29ad8a66a14822aa6730f1ab35b8ecd156669c57e5a45298e53e60b7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:600",
+    "title": "BWIKI · 老旧直剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E8%80%81%E6%97%A7%E7%9B%B4%E5%89%91&oldid=2002",
+    "version": "revision 2002",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:11:33Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ef8ae79f3ca2",
+    "title": "Mobalytics · Noble's Slender Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/nobles-slender-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bda07b1baaacac4ff5c09a99b27a1b39c43b73fb4cffb7f78e1b55c889453da3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:598",
+    "title": "BWIKI · 权贵细身剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%9D%83%E8%B4%B5%E7%BB%86%E8%BA%AB%E5%89%91&oldid=2000",
+    "version": "revision 2000",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:06:18Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3aa0d058e559",
+    "title": "Mobalytics · Lordsworn's Straight Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/lordsworns-straight-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1d9b831941d6cb23e51a282eeea281abf3a401b99c6b04a92001d7862e27f851",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5a1cd63ea930",
+    "title": "Mobalytics · Cane Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/cane-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b3e983dee4c553ecaa8a1d72ef7a1019661099f22a35f6acd241d8f0e9828913",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ff1a53263ded",
+    "title": "Mobalytics · Warhawk's Talon",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/warhawks-talon",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3e0ad28bf6d91c5f443b39c3067b6f2f956f7802568ba3a81013f469368e40ab",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-de71e24d5bc6",
+    "title": "Mobalytics · Lazuli Glintstone Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/lazuli-glintstone-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a78d51ec3f5fcd8646813622549697ffcbe534019e7d234ad8822a0ad7902417",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:623",
+    "title": "BWIKI · 拉兹利辉石剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%8B%89%E5%85%B9%E5%88%A9%E8%BE%89%E7%9F%B3%E5%89%91&oldid=1966",
+    "version": "revision 1966",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T03:54:36Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b12cff6b57e8",
+    "title": "Mobalytics · Carian Knight's Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/carian-knights-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8016e5d9ce009075a919378c8afa5da4c780d3f7b2d25c38ad45b8199323216e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-25eccc021ecd",
+    "title": "Mobalytics · Crystal Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/crystal-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "47a4e6b4ceac0df4d2ad71bdd8036d63e30395f60bc122863a7183c45fe27650",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:622",
+    "title": "BWIKI · 结晶剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%BB%93%E6%99%B6%E5%89%91&oldid=1964",
+    "version": "revision 1964",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T03:48:03Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-25f1d4e3078f",
+    "title": "Mobalytics · Rotten Crystal Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rotten-crystal-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1054ef8e9f4a57d591eda79cc903c2434db83562292ae5efa07a2ec5006628e3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-60ca746f2b0a",
+    "title": "Mobalytics · Miquellan Knight's Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/miquellan-knights-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b7f2dbf8778848eecaa245baa37af3125aead22999c73e3a127fd2b354afca19",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e40e78898a4b",
+    "title": "Mobalytics · Ornamental Straight Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ornamental-straight-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c215ea5d23d2eec0d783775d589f78d666ff47b82c1b6a75a8300ab37fe2360f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-10f22758cb09",
+    "title": "Mobalytics · Golden Epitaph",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/golden-epitaph",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1e9898809d3bcd19a1d3e9ef3a345f37d397f5117647e5941600771bb03659f6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:644",
+    "title": "BWIKI · 黄金墓碑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%BB%84%E9%87%91%E5%A2%93%E7%A2%91&oldid=2004",
+    "version": "revision 2004",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:17:36Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3883937cace6",
+    "title": "Mobalytics · Sword of St. Trina",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/sword-of-st-trina",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "fc5e3613dd51df2cf5a8daa0acfc6f9fbec79b9bb657b1c4fc0ad3e1ad9464a2",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-07ad84deb990",
+    "title": "Mobalytics · Regalia of Eochaid",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/regalia-of-eochaid",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "89da327ac516f130c7933fd945d690507a1641873c5698025bc57cc330e9b9f4",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:643",
+    "title": "BWIKI · 欧赫宝剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%AC%A7%E8%B5%AB%E5%AE%9D%E5%89%91&oldid=2003",
+    "version": "revision 2003",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:14:09Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-22fc3d046632",
+    "title": "Mobalytics · Coded Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/coded-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5bbf809db878e385ad5eae19c23cb4d1c7aa870398e1ebe4b286ed8411cda132",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:sword-of-night-and-flame",
+    "title": "Mobalytics · Sword of Night and Flame",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/sword-of-night-and-flame",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6ae3595949ece932b42756397f46a8b431feb92ffc54a3ba567ae6863e3a8d25",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:634",
+    "title": "BWIKI · 夜与火之剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%A4%9C%E4%B8%8E%E7%81%AB%E4%B9%8B%E5%89%91&oldid=1988",
+    "version": "revision 1988",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:46:09Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-185bdfee1966",
+    "title": "Mobalytics · Wylder's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/wylders-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "74f52192e7fef2140a28f325f40913f842477b99b746f70ea173c135538c7f72",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:578",
+    "title": "BWIKI · 追踪者的大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E8%BF%BD%E8%B8%AA%E8%80%85%E7%9A%84%E5%A4%A7%E5%89%91&oldid=1940",
+    "version": "revision 1940",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-28T22:45:30Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-15ceb31f057e",
+    "title": "Mobalytics · Bastard Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bastard-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e8df7b0ccae5366e5b04fc9e1027b7c59bce256ee16b7b79d79c1f8a58b30555",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:642",
+    "title": "BWIKI · 混种大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%B7%B7%E7%A7%8D%E5%A4%A7%E5%89%91&oldid=1996",
+    "version": "revision 1996",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T20:57:27Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d0b3b4ed5bde",
+    "title": "Mobalytics · Iron Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/iron-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "7e1bda66b5a56fa9c61e00c07e4f949bb26c3d07bc38e3a6ebceaf962a32b5e8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c5b3d5f0cb3c",
+    "title": "Mobalytics · Lordsworn's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/lordsworns-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3ecbd411ebb3ed36f71afa76a995cf1d096fb18764f7e5956198ce4c027d9d3d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-37384ccd49ee",
+    "title": "Mobalytics · Claymore",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/claymore",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d98290ec3c00d674b257d5f4f8b2975a677535dded98fbfd9e1d475b3d7d18df",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-77eb53c31ffc",
+    "title": "Mobalytics · Knight's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/knights-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1ff6d675f0c47ffec0a0cbb9f6830824d887a8ff38362ec8b5d915db1ad0c030",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4513c720e050",
+    "title": "Mobalytics · Banished Knight's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/banished-knights-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4947ffa80679afc8ffb35a40a9469896a8a759f3d60a6852819fd4f0254f0582",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f0f3393b28b1",
+    "title": "Mobalytics · Forked Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/forked-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bce8ea02a3440c826998f47f0d103d015a73800b26e48666e4e8c0c377ef38ba",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b63f9a3330f2",
+    "title": "Mobalytics · Flamberge",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/flamberge",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "447540bb1754cd261619e508c66dee419554bb96d383063b7431b9d6681ff869",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-55940d94b108",
+    "title": "Mobalytics · Inseparable Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/inseparable-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "58abbd9c4edd6b6ba7c63ebf27c3b256fa0ce4de72172702c80060b25d488a1e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2c78154f837b",
+    "title": "Mobalytics · Gargoyle's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1aa67868b20ec4749e76a2c69c7f80acf09767bc1f954f0466221409a20d10ff",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-dfa55e9858e1",
+    "title": "Mobalytics · Gargoyle's Blackblade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-blackblade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "40c80128180cbf97746e9ca7ce2e788cbd268a9feeee88163da6e0e5770860ba",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:645",
+    "title": "BWIKI · 石像鬼黑剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%9F%B3%E5%83%8F%E9%AC%BC%E9%BB%91%E5%89%91&oldid=2005",
+    "version": "revision 2005",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:20:29Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c13ba3b50619",
+    "title": "Mobalytics · Sword of Milos",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/sword-of-milos",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c2cf37a06e673d06f67a1f07513e4c056676e859cc3d6c1f8e5177626627e847",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b73d14711bba",
+    "title": "Mobalytics · Ordovis's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ordoviss-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d646db96dd5dfd1b2642bae3d2c63bae3da8974f39bf2820eb74206251567ce1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:647",
+    "title": "BWIKI · 奥陶琵斯的大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%A5%A5%E9%99%B6%E7%90%B5%E6%96%AF%E7%9A%84%E5%A4%A7%E5%89%91&oldid=2007",
+    "version": "revision 2007",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:27:09Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b2422ffe3506",
+    "title": "Mobalytics · Alabaster Lord's Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/alabaster-lords-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "fde20ad8f5d451752b144c92af88ae579006c2d1873cac475fe7ed312bd2cf9b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-40f916cf4aac",
+    "title": "Mobalytics · Death's Poker",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/deaths-poker",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "650bf70adb129147bd567af7e7c50c81e7fbcb3f639ea229c0962669d8a3200d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:646",
+    "title": "BWIKI · 死亡钩棒",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%AD%BB%E4%BA%A1%E9%92%A9%E6%A3%92&oldid=2006",
+    "version": "revision 2006",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:23:37Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5d66fbaeea0c",
+    "title": "Mobalytics · Helphen's Steeple",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/helphens-steeple",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c156db5e987bccce135dbdb21b0ab9ebb478bd3d74bfc1f84cf36e592c9c6b33",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:marais-executioners-sword",
+    "title": "Mobalytics · Marais Executioner's Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/marais-executioners-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "76b86390a601ad48886b79d2b326efdcb88417a3654be640b5eea5e3406224c5",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:628",
+    "title": "BWIKI · 玛雷家行刑剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%8E%9B%E9%9B%B7%E5%AE%B6%E8%A1%8C%E5%88%91%E5%89%91&oldid=1980",
+    "version": "revision 1980",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:40:50Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:blasphemous-blade",
+    "title": "Mobalytics · Blasphemous Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/blasphemous-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d7a6f9cda788ff24b814a172a32ed5b98ce054967144a5bf481f82bc226443ba",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:637",
+    "title": "BWIKI · 亵渎圣剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E4%BA%B5%E6%B8%8E%E5%9C%A3%E5%89%91&oldid=1991",
+    "version": "revision 1991",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:58:02Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:golden-order-greatsword",
+    "title": "Mobalytics · Golden Order Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/golden-order-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9a8dcfc24bc5d41b3e2c812ff2c9ac82bcdf1d0600c43ced5477f6d573ebbc39",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:638",
+    "title": "BWIKI · 黄金律法大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%BB%84%E9%87%91%E5%BE%8B%E6%B3%95%E5%A4%A7%E5%89%91&oldid=1992",
+    "version": "revision 1992",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T19:01:24Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:sacred-relic-sword",
+    "title": "Mobalytics · Sacred Relic Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/sacred-relic-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "57abcf6a61af47ef1ed6a854efc487be13e30c58c303e0d3f78b2ab6ae11100e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:635",
+    "title": "BWIKI · 神躯化剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%A5%9E%E8%BA%AF%E5%8C%96%E5%89%91&oldid=1989",
+    "version": "revision 1989",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:50:50Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0574d9f4a0e1",
+    "title": "Mobalytics · Zweihander",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/zweihander",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d05422b0e6ac39ff8d24af0422f757539c81728ce5eb10a453795cfe517d306b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ae7f0a6a153a",
+    "title": "Mobalytics · Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0e7f9fc53589bac3da167316748e939c334da38c2fe2e71495a723e15eb2074d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d2233fccc7b3",
+    "title": "Mobalytics · Watchdog's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/watchdogs-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "02413d1791ea4ce413427bb5daed29471393daf9b7634eb0d3add30517cf7792",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5b1742451aa9",
+    "title": "Mobalytics · Troll's Golden Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/trolls-golden-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "74413e17bf59696fbc56a7c1d963e0652703bc4a8aabecb37c5b99f537633836",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b261a0789d4c",
+    "title": "Mobalytics · Troll Knight's Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/troll-knights-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "18262fc75a0596efe33988af2f5cb46e92c8066e445d25af84b50df439a78b85",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4b247b1567d7",
+    "title": "Mobalytics · Royal Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/royal-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "30e5ab97bfdff8b153a8c7ca923ecb019fe5ba9faa5a13156b228bea6029af77",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:648",
+    "title": "BWIKI · 王室巨剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%8E%8B%E5%AE%A4%E5%B7%A8%E5%89%91&oldid=2009",
+    "version": "revision 2009",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-30T21:33:11Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4b5a00288180",
+    "title": "Mobalytics · Godslayer's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/godslayers-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "96e6d9cf2700f9c5005042d6f5507d33c62a17dde39f8e54acfeff8dd09d13dc",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:grafted-blade-greatsword",
+    "title": "Mobalytics · Grafted Blade Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/grafted-blade-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e9130423863474b71dfad4dd318618b2dcafe64e0ecf77c04543508f2254da4d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:627",
+    "title": "BWIKI · 剑骸大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%89%91%E9%AA%B8%E5%A4%A7%E5%89%91&oldid=1979",
+    "version": "revision 1979",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:36:50Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:ruins-greatsword",
+    "title": "Mobalytics · Ruins Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ruins-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6b17856e66788c28ef300e7caaa362803999284c445a13d3f672bb602d610fc1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:641",
+    "title": "BWIKI · 遗迹大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%81%97%E8%BF%B9%E5%A4%A7%E5%89%91&oldid=1995",
+    "version": "revision 1995",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T19:11:26Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:starscourge-greatsword",
+    "title": "Mobalytics · Starscourge Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/starscourge-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "92e073f9549f1bfbe32cb5a9c392b5d32ac0c468118da1ed02178e54428fc5b1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:640",
+    "title": "BWIKI · 碎星大剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%A2%8E%E6%98%9F%E5%A4%A7%E5%89%91&oldid=1994",
+    "version": "revision 1994",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T19:08:13Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:malikeths-black-blade",
+    "title": "Mobalytics · Maliketh's Black Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/malikeths-black-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "462f139fb6f6e2b2e529fd76de2400966d5e2081d8a3025455ce8fe48756bbd8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:639",
+    "title": "BWIKI · 玛利喀斯的黑剑",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%8E%9B%E5%88%A9%E5%96%80%E6%96%AF%E7%9A%84%E9%BB%91%E5%89%91&oldid=1993",
+    "version": "revision 1993",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T19:04:42Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f8c25a748b79",
+    "title": "Mobalytics · Rapier",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rapier",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ac11c04d501b5bf643b6daaf2b053b2813cbd6b0fee4c50625fc86737c07661e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-846efa2a712e",
+    "title": "Mobalytics · Estoc",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/estoc",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "eec3ece1c809b12a0195ffcbd0da85d0e7afe58fa6eff6a5baa28a0e17e1e53b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-64dd8634d612",
+    "title": "Mobalytics · Noble's Estoc",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/nobles-estoc",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "37b79e6cf03dce4664179b5166d316a4ce659bc8c520b4ba2ea3aa15f880a3a6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8b988406dfda",
+    "title": "Mobalytics · Cleanrot Knight's Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/cleanrot-knights-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b8231fc60cf37badbbf1084c37b0abf03dc615eb7cc0cd4702d779a1d686493e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ef1f96f1eebd",
+    "title": "Mobalytics · Rogier's Rapier",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rogiers-rapier",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2ae3dd8f1b8bb423e191c96d885422e6231f24f3abee12012fba521c888d7d8b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e895f3fc3ca9",
+    "title": "Mobalytics · Frozen Needle",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/frozen-needle",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1d2fb59300e0566f6c3dc60a47fc528e7df5a4abc8e44b550533c9244185776c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d10189b5ba7e",
+    "title": "Mobalytics · Great Épée",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/great-epee",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "303935dcce39134431cf68a8301adf81d89a4f949c1187dfbcc5b83cd41b0edc",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5405c87ba26a",
+    "title": "Mobalytics · Godskin Stitcher",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/godskin-stitcher",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2905bc50c5db0d83f604d705e7502121842387ca70cc508e07f5023e316cd089",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-62d56a1cde68",
+    "title": "Mobalytics · Bloody Helice",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bloody-helice",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3e384f60fecf3fc462e01e6caa727983574defab9eb702ce0084596f8bb0ef5f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:dragon-kings-cragblade",
+    "title": "Mobalytics · Dragon King's Cragblade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/dragon-kings-cragblade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "baf0caf30a6413a80d310faaf25732f117452c1398bed2c91c7501a6d27f359f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-dab86022f998",
+    "title": "Mobalytics · Scimitar",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/scimitar",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0692bc81571c734a1a0facc04b2ed61ad76e5a84bbfce2d86ad066ca89fa2671",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e87af1526c14",
+    "title": "Mobalytics · Falchion",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/falchion",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a602b59694e3cf4c979ca81b9bc547fcff2a728adc725ffdc1e8665f45e99413",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-29511e49633f",
+    "title": "Mobalytics · Shotel",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/shotel",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "77764bb8de9962215b0fa8f9e0f8f7fe9224e619dec456f0acc905fbd25c8df2",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c168b7dc3b5a",
+    "title": "Mobalytics · Shamshir",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/shamshir",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a315a1074814878fbd4a8bc008076371cec8805e95b71b790a07bdc0ad52dcde",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4237cb594927",
+    "title": "Mobalytics · Grossmesser",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/grossmesser",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b79b951a075d0cb30f3019404da12070aa5f9d40205d862646775a355b2dd002",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0a54bd82df6d",
+    "title": "Mobalytics · Scavenger's Curved Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/scavengers-curved-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d829c25c6affeabcd5eb86df1809ab05c20aef7b990ef88e3b10ecaf84dfea07",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4ffb31120802",
+    "title": "Mobalytics · Mantis Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/mantis-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "98e51516f77d850dcecb7294941cfcb4b6af36b76449ab180e5b1d8662466605",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-90b95321fff3",
+    "title": "Mobalytics · Beastman's Curved Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/beastmans-curved-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5bc70460fed243f0563c4963099d1be7a6906548f5325c91c5c1380aeb3e9f2e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-773dd2d4acb5",
+    "title": "Mobalytics · Serpent-God's Curved Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/serpent-gods-curved-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6bac63f27a16f16af0303c8df2f8c2d2d318ed558bf037eede45692284578901",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-1d9563b44a99",
+    "title": "Mobalytics · Flowing Curved Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/flowing-curved-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e3cfd970e8f96650cff7e384cae973c9208eb6ba2644760150f308f7556ea4ee",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-59893932e9d0",
+    "title": "Mobalytics · Magma Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/magma-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "acb1ebdf09aef59c8f3b93ab7440a82df33691c1ec251962569a69c9cd9bd491",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-151e6130005a",
+    "title": "Mobalytics · Nox Flowing Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/nox-flowing-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6e6ccb24d0d42524dd912b638cfe13625ed21abdbc0f049ef2ab6bcdc791fcf7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b5a12e98219e",
+    "title": "Mobalytics · Wing of Astel",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/wing-of-astel",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c72dccb6fbd27dabdbac16319a4f95c75edecac74bc68e50045d1882572e7b15",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-1dbd7046f540",
+    "title": "Mobalytics · Eclipse Shotel",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/eclipse-shotel",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6fd6a826ca7006794635ae81f1a082059d8667c9f10ff3c3d808132bd1c111fd",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f15e45a522fa",
+    "title": "Mobalytics · Dismounter",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/dismounter",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1f27f346cc0d41fe214ca31fa7717d01740daaf578f3631eb346607ffee5ca7e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f156d99ef092",
+    "title": "Mobalytics · Omen Cleaver",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/omen-cleaver",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f4ca9ac2b0eb28e69235548a4e16963ef9b4a2dc38032599467373436dc18496",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a6e62ceb9666",
+    "title": "Mobalytics · Monk's Flameblade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/monks-flameblade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "cdbd437a0bf1bad2e205d0d4662dbe80edf8bf3248e39b30de2636567f3a00cc",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c10d43922d1b",
+    "title": "Mobalytics · Beastman's Cleaver",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/beastmans-cleaver",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b8eaad314ff1e3e66e29fef6c91141cd288df685821446e8ab0a3cbbe5938874",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4737e5314b63",
+    "title": "Mobalytics · Bloodhound's Fang",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bloodhounds-fang",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6ec068c58b490d397d215fdc72148bf56f9d96bbfd0e454e298039ccb6763e5c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-658ca2b3ca3b",
+    "title": "Mobalytics · Onyx Lord's Greatsword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/onyx-lords-greatsword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "176b04dc6512459c6f5e669c55c926f905c6188a3510ecbbce1fe6f92a05ecc2",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-37a29e992713",
+    "title": "Mobalytics · Zamor Curved Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/zamor-curved-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8dd93ccb21f71c32e9a06d6dffb8709cbb9fdfd36671297f0a97dff548d087fb",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8a45244bfba0",
+    "title": "Mobalytics · Magma Wyrm's Scalesword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/magma-wyrms-scalesword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "068c3d8b9e3b43bd525b44f607627b0c043fbccc4e8ccb6496551375fa305930",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:morgotts-cursed-sword",
+    "title": "Mobalytics · Morgott's Cursed Sword",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/morgotts-cursed-sword",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "813034edceabd4e6bc581bc10d2ad5b42b556b28c1ea09ab6b0581780e9a80ed",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0339199579c3",
+    "title": "Mobalytics · Executor's Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/executors-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d9fff62ace4960111a953bab29637b9579d03c63de8d247ae3101d67c02a7340",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:626",
+    "title": "BWIKI · 执行者的刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%89%A7%E8%A1%8C%E8%80%85%E7%9A%84%E5%88%80&oldid=1978",
+    "version": "revision 1978",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:32:10Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:game8:525282",
+    "title": "Game8 · Executor's Blade",
+    "url": "https://game8.co/games/Elden-Ring-Nightreign/archives/525282",
+    "version": null,
+    "accessed": "2026-10-17",
+    "note": "检索返回的基础面板字段摘录；直接open未成功，未宣称完整网页读回。只用于所列争议字段，未复制介绍或图片。"
+  },
+  {
+    "id": "weapon-panel:bwiki:weapon-index",
+    "title": "BWIKI · 武器总览",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E6%AD%A6%E5%99%A8%E6%80%BB%E8%A7%88&oldid=2015",
+    "version": "revision 2015",
+    "accessed": "2026-10-17",
+    "note": "执行者的刀位于刀分类的白色组，文字色#f0f0f0；与Game8普通品质表对照。未将颜色用于推算等级或数值。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4b1566b4b66d",
+    "title": "Mobalytics · Nagakiba",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/nagakiba",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "28c8d226345f44f3b3c45d229f8ae2106d0ad5e09491bc75cdd5a23f04fd0374",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:630",
+    "title": "BWIKI · 长牙",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%95%BF%E7%89%99&oldid=1984",
+    "version": "revision 1984",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:35:31Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-67ff8306bfd1",
+    "title": "Mobalytics · Serpentbone Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/serpentbone-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "cb3b3b22c2570f1f2a4e3a0bb56ab52137ecdec5e439f70dd5413ef5807625c8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ff7b68430721",
+    "title": "Mobalytics · Meteoric Ore Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/meteoric-ore-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "7bd1cefa90f1e1b867082cd7410fab615d42253b0f9fb97ffff661b4dc881e33",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-38eba10c2200",
+    "title": "Mobalytics · Moonveil",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/moonveil",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "52565251b27ed3f718b64476464cd17d265883b67810a20733b0191df8ade79f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:631",
+    "title": "BWIKI · 名刀月隐",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%90%8D%E5%88%80%E6%9C%88%E9%9A%90&oldid=1985",
+    "version": "revision 1985",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:38:20Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-9dd76a2562d3",
+    "title": "Mobalytics · Rivers of Blood",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rivers-of-blood",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "178fc7e1aa406307ba8b9a8f1158ef1cd738a20733c1b7f1c87a5253904f923b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:624",
+    "title": "BWIKI · 尸山血海",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E5%B0%B8%E5%B1%B1%E8%A1%80%E6%B5%B7&oldid=1975",
+    "version": "revision 1975",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:15:08Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b991a092416f",
+    "title": "Mobalytics · Dragonscale Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/dragonscale-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e29f81bc8721ab97cfba80ca1c16d2c800d42fe307536393461acae210f855d0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:632",
+    "title": "BWIKI · 龙鳞刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E9%BE%99%E9%B3%9E%E5%88%80&oldid=1986",
+    "version": "revision 1986",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T18:42:23Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:hand-of-malenia",
+    "title": "Mobalytics · Hand of Malenia",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/hand-of-malenia",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "12e4d5ff22921770ceb62e40ecd72a0b161759d01ca06f2a6077a6879d3b47f7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:bwiki:625",
+    "title": "BWIKI · 玛莲妮亚的义手刀",
+    "url": "https://wiki.biligame.com/nightreign/index.php?title=%E7%8E%9B%E8%8E%B2%E5%A6%AE%E4%BA%9A%E7%9A%84%E4%B9%89%E6%89%8B%E5%88%80&oldid=1977",
+    "version": "revision 1977",
+    "accessed": "2026-10-17",
+    "updated": "2026-01-29T04:19:40Z",
+    "note": "MediaWiki API读取固定修订，只摘录面板字段。破折号保留原意，不自动变成0；随机战技文字不扩展成完整战技池。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f483bdd8b050",
+    "title": "Mobalytics · Twinblade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/twinblade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "885b9192b42b9aaca90c4576cf3649095c95257248bbe861cc8d95a5f5cc07f8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8e960e9ec59b",
+    "title": "Mobalytics · Twinned Knight Swords",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/twinned-knight-swords",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "66fc1f7bc0e67d738f6abd279082cfdcfd1fbc84b13dfcea1011728f86567e68",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-54563cbed719",
+    "title": "Mobalytics · Godskin Peeler",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/godskin-peeler",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3f820af74f88e6abaae046402c49718f81ae961390da834de765970bf3cf8446",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b3fa3fc758be",
+    "title": "Mobalytics · Gargoyle's Twinblade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-twinblade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5fa9ce7f16d24da84d6ffd8be5f607e6eb22f0e09cc0f93b360ec1295e170383",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c89b7d1ef352",
+    "title": "Mobalytics · Gargoyle's Black Blades",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-black-blades",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8165aa828ccb00019b355650bd38d1bd689ef675ca55ec1286cdb10eb955a0b6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fe5cdfdc43d1",
+    "title": "Mobalytics · Eleonora's Poleblade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/eleonoras-poleblade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "fbc7597f5d5bc8db8ca8f855c1bd0bb1d8521a49f37e738989b3b67a3f16eabd",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a5590af5f1db",
+    "title": "Mobalytics · Hand Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/hand-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "473b2c65d2e9fe0f251b55c674998e9e192cace78510bc8d1cf17d1a2748c5cd",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fb3f2765e6af",
+    "title": "Mobalytics · Forked Hatchet",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/forked-hatchet",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "201be9f6b6494b9a75f5b1b794956511370ca86a4d0b639c2107de6ba5369df6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f28c8261d6ee",
+    "title": "Mobalytics · Jawbone Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/jawbone-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3c0c301e0f0d8cef1c21ccdaaec73af9df132740d861e39a2606ab7a091d3a26",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-cfcc10fb0c9b",
+    "title": "Mobalytics · Warped Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/warped-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e20dbb87eb01242af9fa63a7da9d8deb670fc8f394945e4b22713df7e9afd1fa",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-06a322b647d1",
+    "title": "Mobalytics · Iron Cleaver",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/iron-cleaver",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ed169779b973b80d24dc35c353cb87b54f04dfafc478028ba21069a06feba2e8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a6a9c75cd727",
+    "title": "Mobalytics · Highland Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/highland-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8636ce9486a00d096fcf53f5173640fb0ee9b98d70bedee34c44580391f43ec3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-cbdb8fbfd384",
+    "title": "Mobalytics · Celebrant's Cleaver",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/celebrants-cleaver",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6f11cce9560f66c3a65e4bed486e810687e42c82cbe9666000ba09be7ec8e6f6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8ef02d688b79",
+    "title": "Mobalytics · Ripple Blade",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ripple-blade",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f6949381094671cb63c79cab0d017ca24431c4087714c8eba7e024a6d9c4d8d7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b17f6000dd19",
+    "title": "Mobalytics · Icerind Hatchet",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/icerind-hatchet",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2464ad3b006628b4cd989a95e3c31e6c5baac0581ce9906dede6fd71fdfbb02e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-1bc4dbe24455",
+    "title": "Mobalytics · Sacrificial Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/sacrificial-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d8eed833608cc9f9df93505c4e57ef0975639e2f2172feba40d71cfc2386a551",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-38e52f6a0cb7",
+    "title": "Mobalytics · Stormhawk Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/stormhawk-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "08548294e5799c017c299faa356899abeb1f89435a510556cc2ff97304ca356f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-61f871bc9aa4",
+    "title": "Mobalytics · Rosus' Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rosus-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "34681669192f0face4e743a44307cbafc6b02b3910005e27604d023ecae609e6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-47c6304d932f",
+    "title": "Mobalytics · Greataxe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/greataxe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "65edcaf7c33d5291d165126da2b45065c3ed92ee9aa4b97c619ad73450862c39",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ef5c38d270f9",
+    "title": "Mobalytics · Crescent Moon Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/crescent-moon-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f7c8888c1fb7f8d5f807c92740d9e9103729387df9af2f4e4e6838b98f27de79",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-dae13a982d30",
+    "title": "Mobalytics · Longhaft Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/longhaft-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bfe0d408a01b320fbe5e1e4c45b38ebf3e8fd1d1c8243a9a8ca7337006ffa808",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d51155578a15",
+    "title": "Mobalytics · Executioner's Greataxe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/executioners-greataxe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a4ca15c84c176aebdc46f00cbd1a0f0bdde82e4065e1b96e99168f901c1fc0a7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-65cd57357550",
+    "title": "Mobalytics · Great Omenkiller Cleaver",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/great-omenkiller-cleaver",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "079f88733fb440eb0cddac35430b0228cda7a559235a146f1a70bd6387a360db",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8dade9cab593",
+    "title": "Mobalytics · Rusted Anchor",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rusted-anchor",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bd4fae09e3d31b5867e292a1d04ee54ade7a09853c081afc5680384c07e50c2c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8851035d1857",
+    "title": "Mobalytics · Gargoyle's Great Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-great-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8ca24dad10bc817f524557eca7925774c98ca28be2a289d63514106c189b82ae",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-aec780a0edd6",
+    "title": "Mobalytics · Gargoyle's Black Axe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-black-axe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d515c948c832e534443b97851ab13e64cb0862448ccd8ba547afe2d051d71897",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-677d915b5889",
+    "title": "Mobalytics · Butchering Knife",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/butchering-knife",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "46aa85893c6c82ffcc07e085aeca81e72387a361969d7d8a92648d88d10b3aac",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:winged-greathorn",
+    "title": "Mobalytics · Winged Greathorn",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/winged-greathorn",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d0bdfe905db7ff415497a821568e12cf0fe95440b7957c03a835d2aba25650db",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:axe-of-godrick",
+    "title": "Mobalytics · Axe of Godrick",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/axe-of-godrick",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c9314a9c7ec108eeb1999b96917f7f4c64e4c46d1604602db687ea196a70d9e2",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7b7dcceebd3c",
+    "title": "Mobalytics · Club",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/club",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "87b462bbb3da3ba7b90df80bf9bc09fc323aa1d94fd7cabab3b9623e41954250",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-39ceccd5028c",
+    "title": "Mobalytics · Curved Club",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/curved-club",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f2b398d9be7fc1c6d3c237a64bfa42f5b5885f76342244d52afca6975ea048af",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-22925d6af31a",
+    "title": "Mobalytics · Stone Club",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/stone-club",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a15e04e5bc73f718f3dd803fb371fd73cfc0c8d650096f928eed7965bf10bb30",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-931ea8d4e2fa",
+    "title": "Mobalytics · Mace",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/mace",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2f99bd37e1d20bda458c648aaf0824f2c47d420dd788a48244fce06808616870",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e3070616466e",
+    "title": "Mobalytics · Spiked Club",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/spiked-club",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c446c6d6e3a4da08df6f1e79523fc32a8a2b70bd36ebe9251fd2ce454c031edb",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8834bfaeeb38",
+    "title": "Mobalytics · Morning Star",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/morning-star",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1c5a115163fa1f2d8e5bfedca2210924d057aecedb6db6e792d52168d766226b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-91b1311f5ea0",
+    "title": "Mobalytics · Warpick",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/warpick",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "14d36671e6b5af38d3826b1e1b652cdf7ea1e462b456dd1321a3ac34c985d406",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-56269895efba",
+    "title": "Mobalytics · Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "43da3560c43db3e0e8f247aba8225a0931badb7ca198bf40fd4fedd922e43c90",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-07b3e619cd15",
+    "title": "Mobalytics · Monk's Flamemace",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/monks-flamemace",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "97ed2e2aa0819cf298b41431790cd7d72962170fe2096144b0dfe4fccfae09b7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-1ce28fe1c051",
+    "title": "Mobalytics · Varré's Bouquet",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/varres-bouquet",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1ac08577fe5f8984e2d8e0b62aebb2ca348b2d308b25a00d1757b249bda5a3a4",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a44353b7124f",
+    "title": "Mobalytics · Envoy's Horn",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/envoys-horn",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "93e477e285fcee6647661ae889352bd729595cf7381e29609089873bf2d1fc93",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0542a6833a80",
+    "title": "Mobalytics · Nox Flowing Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/nox-flowing-hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d7ef9840b5867b6e040da785b4b336759a1e7bd5f9e313d495c75324f16feeef",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-cb03ebde78cc",
+    "title": "Mobalytics · Ringed Finger",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ringed-finger",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b9cbd923ff37de492f9a24606308af0e5598939a9b96816a3581581860f33b38",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ec08f760b1b0",
+    "title": "Mobalytics · Scepter of the All-Knowing",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/scepter-of-the-all-knowing",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "99c022a0ad6207c3620fb63facf2ae7a71570aebf6c824015c1e81397a77aa52",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-964c13a3aeed",
+    "title": "Mobalytics · Flail",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/flail",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2026b28d2ea43e10f44c4b780582aac76842c538da009459fe8735115fb83bfa",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6a4cc5d55048",
+    "title": "Mobalytics · Nightrider Flail",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/nightrider-flail",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0cd6f08143547ea7e7a1dac1cfa1186d99001247fca7fb1c839e8f9e84915210",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2c9f934a83ec",
+    "title": "Mobalytics · Chainlink Flail",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/chainlink-flail",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b6a6506a2a3cd6c5a6c9ac2eb8fd5b601906c581d7cffd1ce105870bc93e65f4",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e631a98e42c0",
+    "title": "Mobalytics · Family Heads",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/family-heads",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c1140e87242d2dbe662161cf3e8412a02476c80622787eaeadac7490e4bb8e34",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-dde0ba00178e",
+    "title": "Mobalytics · Large Club",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/large-club",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e7de4610b9b67b0de1cd9061310e04a3770705e1eb898de7289a7c196206c65f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fda82108699d",
+    "title": "Mobalytics · Curved Great Club",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/curved-great-club",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "499bde5298eebb38b808d549d237b51158bed52bdf0bdb7f2d1048df48990a81",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-92434ac3d3c7",
+    "title": "Mobalytics · Great Mace",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/great-mace",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e0a68618ca6abe636506385f598907e70d8b4f26159cb7e91bc528ef092a7131",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-25e6ea7578d1",
+    "title": "Mobalytics · Pickaxe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/pickaxe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a35f464788973a14f1332113be8ad51ca3b6e8853ea83a492cf189085a50ca8b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3b87722f74b5",
+    "title": "Mobalytics · Brick Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/brick-hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d5926f26f2388cdfe9ab7312c09a2a7ef172bd1239d9ff3ebc9eeabaecba6a5c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-162b8ef8858a",
+    "title": "Mobalytics · Battle Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/battle-hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "be7516f86dc3f8ad539256ff5958ff77e4b529ca47d6cf6bccfe7ef1a81ce529",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4e9740bdfcc8",
+    "title": "Mobalytics · Rotten Battle Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rotten-battle-hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4e3ff6636f76b3b04ed3f4bbbb159740d06e525727314bcaddb4f14fcf78d4a4",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:game8:525023",
+    "title": "Game8 · Rotten Battle Hammer",
+    "url": "https://game8.co/games/Elden-Ring-Nightreign/archives/525023",
+    "version": null,
+    "accessed": "2026-10-17",
+    "note": "检索返回的基础面板字段摘录；直接open未成功，未宣称完整网页读回。只用于所列争议字段，未复制介绍或图片。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-bc42102887bb",
+    "title": "Mobalytics · Celebrant's Skull",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/celebrants-skull",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5c9a13d3e52f07a05a7f7d80d3be344c2bf875263bfa06d91fa33b14f1f47b71",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d7261cc5e737",
+    "title": "Mobalytics · Great Stars",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/great-stars",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5e6fb7b4d727918f2e96c99a340f39360cb02346ba64cd139dcdf5d0928523f4",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-75d45916055e",
+    "title": "Mobalytics · Greathorn Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/greathorn-hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "34519430493db87f25a5560c3fe8733d3cf1e4fe87a6bc19efc638a20fd08746",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:game8:525020",
+    "title": "Game8 · Greathorn Hammer",
+    "url": "https://game8.co/games/Elden-Ring-Nightreign/archives/525020",
+    "version": null,
+    "accessed": "2026-10-17",
+    "note": "检索返回的基础面板字段摘录；直接open未成功，未宣称完整网页读回。只用于所列争议字段，未复制介绍或图片。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f43d7489b3fb",
+    "title": "Mobalytics · Envoy's Long Horn",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/envoys-long-horn",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2fe93b231544ad09d3fbe02eb75c0c5ac74dec34e324f5274a1b0543b48baf1c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2d079138f865",
+    "title": "Mobalytics · Cranial Vessel Candlestand",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/cranial-vessel-candlestand",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "cb8e74c09dbe5aa02e27d8ffc1f73eb54d7a929154123ca7e77eb9979bfab112",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-297939557bf7",
+    "title": "Mobalytics · Beastclaw Greathammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/beastclaw-greathammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "dcda6fd58c797dec71ba28a6531c29a227f790ed77d701d1668a21ce700cca7a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:devourers-scepter",
+    "title": "Mobalytics · Devourer's Scepter",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/devourers-scepter",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "66dafbab19c167f25b6b81a56f425bc0889705564f7d416ece4c8d3b2d416630",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fad820228aca",
+    "title": "Mobalytics · Raider's Greataxe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/raiders-greataxe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e805cc3d442fea3b911a4fbdbf6fdbff7df96c38e25ce46f051a82e73d512d7c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-35926d40758c",
+    "title": "Mobalytics · Duelist Greataxe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/duelist-greataxe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "18d3bed3af39deb5df56002f7e78092649f85f12094284bd30f8550f0be09312",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fb3932db7ffa",
+    "title": "Mobalytics · Rotten Greataxe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rotten-greataxe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "047d0a62042c0be67a45e9eb06d17d591da6ac4ebea4749f5ef6c49029e130c3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-55151ea559d8",
+    "title": "Mobalytics · Golem's Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/golems-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d2159b054296629c82f059c31600b17c92651bc7276ae550b5c0b12b8fce5d74",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7dea181e7ab7",
+    "title": "Mobalytics · Giant-Crusher",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/giant-crusher",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "cecdc3ca0d7137b485c30824d8328637410fe4baa2e426ec30599923bee8c859",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-94150c99abae",
+    "title": "Mobalytics · Great Club",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/great-club",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6d2d4aa5c0bc9ec6c19fcb84795bcb020ef44a45a394292a03674f79e21ace55",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e40b8c21f61c",
+    "title": "Mobalytics · Troll's Hammer",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/trolls-hammer",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "fd8fc9499f2e7dc48596ffedaf1aefbf059b43cf47081d17f5498c1846daca10",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2a0d6e2278a2",
+    "title": "Mobalytics · Prelate's Inferno Crozier",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/prelates-inferno-crozier",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8155213b868674047bbfe6ae6a9a07fd731d9d16949d70b51218526009e11241",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-81baafed7c5b",
+    "title": "Mobalytics · Dragon Greatclaw",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/dragon-greatclaw",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b130c3e5c2a4315a0d51461d5972508247be02ff83eadb3eb2d9777ba4a36f5c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6e6a59b14716",
+    "title": "Mobalytics · Watchdog's Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/watchdogs-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5d0142894fa6f1983a940af23f8640d23d7cc45dc13430c03c71b011fb841e00",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a9da538d4838",
+    "title": "Mobalytics · Staff of the Avatar",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/staff-of-the-avatar",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e52e85c3e20d97b033b473e75a4c82306cc4d14d37dd260d51634c4b84a53800",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:game8:524933",
+    "title": "Game8 · Staff of the Avatar",
+    "url": "https://game8.co/games/Elden-Ring-Nightreign/archives/524933",
+    "version": null,
+    "accessed": "2026-10-17",
+    "note": "检索返回的基础面板字段摘录；直接open未成功，未宣称完整网页读回。只用于所列争议字段，未复制介绍或图片。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-38e5aff5d53a",
+    "title": "Mobalytics · Rotten Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rotten-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "cf0367cffdf7c7c867d4830bfc6c27a941da823190cd00d9b3dd0c5f83a20bd6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4913d096d869",
+    "title": "Mobalytics · Envoy's Greathorn",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/envoys-greathorn",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "19d9d65fa413264c1340dd662542542aa150e2c907e113d6a4c8815c3a73b5b6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-92c7fc637c14",
+    "title": "Mobalytics · Ghiza's Wheel",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ghizas-wheel",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "79c0f14bdbc1c47c824bc06bf87009ae282a73f947e758df137114a6990c9611",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f024b035de38",
+    "title": "Mobalytics · Fallingstar Beast Jaw",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/fallingstar-beast-jaw",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "928d5223df46f13c5bbb4fa0f7a210d3437b10fc31370dfadd40c93f62da8b1c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-52bee26988a4",
+    "title": "Mobalytics · Short Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/short-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d92b1c28a87124f6ad80f7c2c32d6467d9cdd19e193ac43b9543ffda2e5df239",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-64e70b15bf82",
+    "title": "Mobalytics · Iron Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/iron-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3d8a924fcfe6d43e5a7bd265e76e5422db604838d8f8135a2d790c66ba0f2fea",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-014abfd734e9",
+    "title": "Mobalytics · Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9a1856b4e4027c42cdb577748d4e45c7877193e51db6ee4b4ee358168fff6739",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fcee9248dff2",
+    "title": "Mobalytics · Partisan",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/partisan",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e95c9e13a6c280957c135e093af3298b5fe7d024a72e3952d78eec2a8bb6e456",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-55fa22f9a9bc",
+    "title": "Mobalytics · Pike",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/pike",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ac96d64daed4c3192106edb7779a82d0696fdc39276db7f20330510069f10553",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2edd20131fe5",
+    "title": "Mobalytics · Spiked Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/spiked-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "36e1020c78177daed47b13ab437591266b2084aae72ea914943e11fad94da6a5",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-cbb966e4d76a",
+    "title": "Mobalytics · Cross-Naginata",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/cross-naginata",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "debfb4511a4ada29bf4b3566861d1128e5a6cb199fe138ee65737fbdf7695638",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-829c432de26c",
+    "title": "Mobalytics · Clayman's Harpoon",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/claymans-harpoon",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "13b3ff98e29158ac0125110f9e1f65c7901254391c0b60d428ca997e6bf99611",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5129335df9a7",
+    "title": "Mobalytics · Shortbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/shortbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e35d6f6abe70692a60b2fa38b4a09618fb19477b6eb4f9ab95f0a81e2de51253",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fdf62e2abbf8",
+    "title": "Mobalytics · Misbegotten Shortbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/misbegotten-shortbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8c8dce888f69c16959c5032e9f72c8bc3f80276adc1efce3e933d1a21f6a0202",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4aa09096c7d5",
+    "title": "Mobalytics · Longbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/longbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1e2a00b93456e49c1347606dc7b09b6fef61358ceefa025d7fa08674fa7fdf2f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-784eaa931e52",
+    "title": "Mobalytics · Composite Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/composite-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6da9ff006cf253dca9eb69a110ebf58dad571c92a3da21abf5912276ad94d552",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-584990c20c86",
+    "title": "Mobalytics · Red Branch Shortbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/red-branch-shortbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ffa3aa1538e5dfbb1369a4bb454a647213ede0ed7af7014f6e0be08d387cfc75",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-85d8c258b664",
+    "title": "Mobalytics · Harp Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/harp-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e3550483277e2b5513f0947f23192fbd731b053a5933fd7b3d3efa0176736f7a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-90fae6137c7a",
+    "title": "Mobalytics · Albinauric Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/albinauric-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ba0c9a2faf934e63554a771f35bdb938bdd3bad86e2b3624412a30c5ccf549fb",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ba0338e2f4af",
+    "title": "Mobalytics · Horn Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/horn-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6e85facb266446fce9c141f24c04f315cb3173086637f3699612324ee63f29d8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3ff084ad118e",
+    "title": "Mobalytics · Pulley Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/pulley-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "00ff74ce0382b36f887b988ff65a65c3ec98a416fa901d7d7e3ebbb673ddd83a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-882f712aeb99",
+    "title": "Mobalytics · Serpent Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/serpent-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b8b0fe448c2f8712864a777eeec41e23c5da2a56237afba83f36ec86683e6296",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0e1204764e1d",
+    "title": "Mobalytics · Erdtree Bow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/erdtree-bow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ac622c987e5896104670106974b97f9b3451136268fd24aadd03a7b6efcbaf5c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6db2f842098c",
+    "title": "Mobalytics · Greatbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/greatbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "80d6bde092a4ccbec3bfeff5facd7f688b67eb5b033cec790301286dec276904",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d1ab5c935f9f",
+    "title": "Mobalytics · Golem Greatbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/golem-greatbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "de3034022edc9b152644df46326ec0ef27356b9dc93ae34f1a6be1b9aec6e8f3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fb0c3e5766c5",
+    "title": "Mobalytics · Erdtree Greatbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/erdtree-greatbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c69eb5d0c492671d59c82de274da8a5b7a71be389b48b899f2692af4f383ceb9",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:lion-greatbow",
+    "title": "Mobalytics · Lion Greatbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/lion-greatbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a73646635d943268dad74ad341765d1dec929983d033e7f52fa8bdbdf0da2514",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-36f2aff0ef73",
+    "title": "Mobalytics · Soldier's Crossbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/soldiers-crossbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d9e3bc3533c7fcc648948f07b70e4dd03977486baa44d1c68797c9f172d3567c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7e411b59b837",
+    "title": "Mobalytics · Light Crossbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/light-crossbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d0a59f7982166b6807a8f362c39f220e408e19b4f438db4510b8b99067a5def1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2b02b4c46166",
+    "title": "Mobalytics · Heavy Crossbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/heavy-crossbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5121078aebe412814756aebd6231d158a7e76bc93aea89cc22a11331bc7237df",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-406c17e2dd10",
+    "title": "Mobalytics · Arbalest",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/arbalest",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "174fb9bd80526103471416655cefd1e7204be4fd2e131608a9cff25a0cd3e168",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0a929b831033",
+    "title": "Mobalytics · Crepus's Black-Key Crossbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/crepuss-black-key-crossbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6fba1ad13ca5c6f06d1917deda5660008a299956c2b567063f74bbf9ea9735ed",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-619b55833103",
+    "title": "Mobalytics · Full Moon Crossbow",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/full-moon-crossbow",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "06557b368eaeda5f34388025ee509a00cde7f8ec1f05307fbaea5383460da3e1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-538dd619d61a",
+    "title": "Mobalytics · Torch",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/torch",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4c9b61fe67c0bc6f357d3674e233bb5990f68bb1a115829ebf1874dc7a5016fa",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-eb31fdb98950",
+    "title": "Mobalytics · Beast-Repellent Torch",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/beast-repellent-torch",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "174ac3896df3a5bc1de6784d377d4eb6473888476440f10c1fcf0f5167c079c8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-90dcce01669f",
+    "title": "Mobalytics · Steel-Wire Torch",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/steel-wire-torch",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "66379c441fbcc1efcec1afdefd7726b3f69ff3b6290f5ddc5847d55b48eff0c0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3c5a1566ba26",
+    "title": "Mobalytics · Sentry's Torch",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/sentrys-torch",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "435cb971f505da44c2c690c42640aeeaa5035383ae54abf1fe18418a893144b9",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-61e910e78943",
+    "title": "Mobalytics · Ghostflame Torch",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ghostflame-torch",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9bb068f18044e471535afed5ab01bd4c0cb3be35f20d0e0cce9f49c41fbe72d7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-bf58142bf296",
+    "title": "Mobalytics · St. Trina's Torch",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/st-trinas-torch",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "7945a8871d8548d8fb47a6adc08ba7962cbd87d6328e405f4bc2161a2bee4121",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-eed1aae74fbc",
+    "title": "Mobalytics · Wylder's Small Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/wylders-small-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3493c6047a890090425206f8322672d333fa195cf3a0a7b1566d558efaa646a1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-42bf4f2fbb48",
+    "title": "Mobalytics · Rickety Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/rickety-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1197772b69a9c175e5a51daed923d5bf3a022300202af62d31d7ec80e2c82637",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fceb1ddaaebe",
+    "title": "Mobalytics · Riveted Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/riveted-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8972e07b91f60e88c6a890596f307767564a197a5124fc08c288f1c8ea32ffc9",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e4eb151da98a",
+    "title": "Mobalytics · Blue-White Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/blue-white-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0d62b2be1199c55448c184740f1331d06de4a58c4219835ba588c2464dbe360d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-88028fa1c1bc",
+    "title": "Mobalytics · Scripture Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/scripture-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "dd42a0db94059fa98318427321768e06c3c971a8144d858c9db5a573ed6f2210",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6c39ce168286",
+    "title": "Mobalytics · Red Thorn Roundshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/red-thorn-roundshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "41fe43ecbf86d3ff8193adae47584ab7b1e4c68835570ccd292309058a5f5e9f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-114d6be3679a",
+    "title": "Mobalytics · Pillory Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/pillory-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9457062cb0fbb387ebbe4c951d9ce3482406653f33a731cf595c483869ee0d3b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7076f339b775",
+    "title": "Mobalytics · Iron Roundshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/iron-roundshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4f9c44ff95ccafd86da7dfb20a470afd06bf334c84de7c64873ad5ee62a30209",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-55f0712aaa1d",
+    "title": "Mobalytics · Gilded Iron Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/gilded-iron-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5a60da457a56bb921ad25c8f0665f3f0b66879774b74fbba8e9d9c884a831e49",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-40c14c16dec5",
+    "title": "Mobalytics · Man-Serpent's Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/man-serpents-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "630e6875a782bb6ecc1d9a8c2871186a396f2768ddc6e7d3620df52c473750cc",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8d25a09811f6",
+    "title": "Mobalytics · Ice Crest Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/ice-crest-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "7686400392d02bd80c289c7257f980ef7669148821261f8e8e12a1735cae2d80",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b42aa3557ade",
+    "title": "Mobalytics · Rift Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/rift-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "394e8cf2442bed9765815588f4e7eb0132d5941694da50a6e3476b6e1287788b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b5cb7362625b",
+    "title": "Mobalytics · Perfumer's Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/perfumers-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "dd12b8cd473fe955f003d72019c92130d78a2c8941b4f5d67676f79ec033cf21",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-dfcd1a4a1468",
+    "title": "Mobalytics · Shield of the Guilty",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/shield-of-the-guilty",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f326abf3dc7b48d7376e59c7f9042523a02809a1af2ffacc58702a75bd2081e0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-287fa6986861",
+    "title": "Mobalytics · Spiralhorn Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/spiralhorn-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3531dc6cff93e846dbd09bc600bdba6db1731010b0e8d6547aae6d4ca336c59f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-39819a951ed8",
+    "title": "Mobalytics · Smoldering Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/smoldering-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "068e8b527f20c4136fd255cdee6e431f21148be2795d7ee18e5627e844ef19ff",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7130c1e8c27b",
+    "title": "Mobalytics · Coil Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/coil-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "38be2ecf764968fa7c26fef86683a3785bdd7bd51df4490a84cd8946a97793d0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-31bce96e2ff0",
+    "title": "Mobalytics · Hawk Crest Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/hawk-crest-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "10949ba3ff14502b24ba7840fb15de9630e5240cec4d878fc970190fdb744418",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a8f97b493b4e",
+    "title": "Mobalytics · Horse Crest Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/horse-crest-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5a00f5b63798dda7f2401fc1e197ea087800e370a979e0d0b553018ca93a366c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-72778ccf9668",
+    "title": "Mobalytics · Candletree Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/candletree-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "313b909f43d8c1d4464d38ea13835ec41c5b1d220d0af53a585537003430611f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fc69abada37c",
+    "title": "Mobalytics · Flame Crest Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/flame-crest-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3ddc7f0534b3ffff7e82fbae45f5f1bb4637dbee24c52cef8aa2955b658e6024",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0a315bab35d5",
+    "title": "Mobalytics · Marred Wooden Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/marred-wooden-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a9c9d18e995691cb3d5fe7a9e65d8b3e8ab1100dd858fe8263a2a6fe6aa528e3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d780a60fe3fc",
+    "title": "Mobalytics · Round Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/round-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "27daf2a60b076e623cb3a3f6bbb7a95e046a3d82b4f6593223df2804f37e54ce",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7d9656799c7c",
+    "title": "Mobalytics · Marred Leather Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/marred-leather-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8b3b3b65ad65519ac4065613bfdb66f5222fa9e8cf6a874844f4519383dd3602",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b00b43210c42",
+    "title": "Mobalytics · Heater Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/heater-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a6179f31afb24448745210f269c85b3ab22692084074292318e469d63c6e0e35",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c716c93f0e74",
+    "title": "Mobalytics · Blue Crest Heater Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/blue-crest-heater-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2e3eb05522c991662e7392f9f9b61187d2d2d2b9fc04e2aa06641d36d6bf0e7c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-00fc5327ba67",
+    "title": "Mobalytics · Red Crest Heater Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/red-crest-heater-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8c0a4ab4b2bd6a6d5490b8fd196adae2636245aa2c5bdc4b0edf9b295ee50ebe",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ce634cd13f07",
+    "title": "Mobalytics · Beast Crest Heater Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/beast-crest-heater-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9a56d8dae42d3d0b2191d5c0778d1c338d16b7d3c09dc33ff7b55e0d51467cb1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c5b172950e22",
+    "title": "Mobalytics · Inverted Hawk Heater Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/inverted-hawk-heater-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b180da4045323cf3aca5d005e760466550f1b224a2e5633bb3746d80d54ddc03",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-213861d9a56f",
+    "title": "Mobalytics · Eclipse Crest Heater Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/eclipse-crest-heater-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "331cf0e7b1563d2eeadf8e60358e5fe647c41593684037edb3cc4c13edaa8e81",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d1268437a077",
+    "title": "Mobalytics · Sun Realm Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/sun-realm-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "589410bb219eba7657b72d266f4ea4f37fda7e89acfb0f0bb51069ae0d5407f0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-31450d54b7f7",
+    "title": "Mobalytics · Large Leather Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/large-leather-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "11f9030bc7532580a9b079dd52c08a154a94eb69cc866230d15b71b636781b15",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-74e86b396b6c",
+    "title": "Mobalytics · Black Leather Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/black-leather-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9d54994d403027270d613a060b8f1dd315cc32eda44d8af9bec994bffb2295b7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e41e4009c36a",
+    "title": "Mobalytics · Kite Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/kite-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b61d9e65760c8a8510a6cf9f10e10f3e264fe3535a771cfac4de6d70a7088ab1",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e73b6f5596e4",
+    "title": "Mobalytics · Blue-Gold Kite Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/blue-gold-kite-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "74acad24da3a39ea0e1cf5b6534907e69b0697b0eb67dd4c7dbcc6dac210a021",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-02b9c320feba",
+    "title": "Mobalytics · Scorpion Kite Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/scorpion-kite-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6a233ed8f99190956a2f2baf415a35bfac55077ea040118bd42ce01741ccf1fe",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:game8:525227",
+    "title": "Game8 · Scorpion Kite Shield",
+    "url": "https://game8.co/games/Elden-Ring-Nightreign/archives/525227",
+    "version": null,
+    "accessed": "2026-10-17",
+    "note": "直接读取Basic Information：品质Uncommon，最低Level 3；仅摘录事实字段。页面更新于2025-06-13，未宣称当前游戏实测。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-75766249aabb",
+    "title": "Mobalytics · Twinbird Kite Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/twinbird-kite-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "681129d9f65fa283ca4bfae1a3513e7613227ccb81fc883322a21e7b1d5cb130",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-076a6e28673a",
+    "title": "Mobalytics · Banished Knight's Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/banished-knights-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3d0f57b3af4ccfa937114ee3d7a6f2e059fd1aa0c98e8ec39b0eead37a864357",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3021f126aa7c",
+    "title": "Mobalytics · Albinauric Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/albinauric-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bd5a7ad9e482683c2fe9952feaa18819b403a93703fe3e9c11d53b75f233d621",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fa57ad979565",
+    "title": "Mobalytics · Beastman's Jar-Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/beastmans-jar-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e640bac1b1ec711217dc9aecb9b3395f03c169d831624b318da81ab15a7c351f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-bb975fa6e49e",
+    "title": "Mobalytics · Carian Knight's Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/carian-knights-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "93d3a1623dbb48037bb2c135d28ea52830b2446ea4f5510efd764323514d3c9f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e1933955612b",
+    "title": "Mobalytics · Silver Mirrorshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/silver-mirrorshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1ee6c8e2879d263126eb23bd21362fa03ee00e6053b6871beb3ab69c4f925d45",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8733d00ed434",
+    "title": "Mobalytics · Great Turtle Shell",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/great-turtle-shell",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9a5050412053f3d1cf971746ac2d53de4c15191888735a2f2b034efad3d0ea6b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e6f64daaf5f8",
+    "title": "Mobalytics · Guardian's Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/guardians-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ec953fab060e45d058bba918a6f7eea1170cde4f2e799ba60df0e0b46d0241ac",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-1d8b192ae1e0",
+    "title": "Mobalytics · Wooden Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/wooden-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "cdc4a6ed1c65efa5bdf30875e7ea86eb9b943faba90b6f6a5de8a14096c50563",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fab9087653e7",
+    "title": "Mobalytics · Lordsworn's Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/lordsworns-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "660606bf090f7b6a0b663906994f38aa7b4ea818c60b98c7bac8a581ff0af1ea",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-98d840e4dbe0",
+    "title": "Mobalytics · Manor Towershield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/manor-towershield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a8911c61625aa51c6a6d790d8694e34a94320286e8931c25c4738debe427db0c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ec768d85a08a",
+    "title": "Mobalytics · Crossed-Tree Towershield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/crossed-tree-towershield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "409674fc67cd71d1bf7396c72d3006be713242412649952527e8ae2b4393c3a3",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-f2de98321cc0",
+    "title": "Mobalytics · Inverted Hawk Towershield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/inverted-hawk-towershield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1572b3a6f7c59d2ab778089195a15b32f0d0b8e3323dc80e19d1fb8227f1f16b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-277854f96198",
+    "title": "Mobalytics · Dragon Towershield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/dragon-towershield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1cfef3c62aff7aaf24e9bb94d5e97a388b66abcb0fe1f00095ae787c1460404b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e410765edbf4",
+    "title": "Mobalytics · Briar Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/briar-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f73269144af35db951b184fa645ba9350c649182e8b73e6874640d90a2c5008b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e8aa069fce84",
+    "title": "Mobalytics · Spiked Palisade Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/spiked-palisade-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "014e7cc65ad309b76e418b4f55f2a96cbc8992e79c09e734468f1deffc8a1792",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2901ec48608f",
+    "title": "Mobalytics · Icon Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/icon-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d4571b0b08df0b688e891e205e18b5836b98a630e7aff9f18be99d196e48c376",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d1aa39e4a6d9",
+    "title": "Mobalytics · Golden Beast Crest Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/golden-beast-crest-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6d4124c8e9070e46ca1c7eccc0d19ba9ddb623bc405591253eae6bac03081dfc",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3c255ee06c7c",
+    "title": "Mobalytics · Distinguished Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/distinguished-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "59bd4405c3e58734369327b724642c8a91d522a1a5a06be5090f918c3431b52e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0cad7e062e84",
+    "title": "Mobalytics · Gilded Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/gilded-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0a7e8ed57f83226ea961cbc2abebb9c7bd4087bfa98cf85b044e84806c7b2dc6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-984951c3c5f0",
+    "title": "Mobalytics · Cuckoo Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/cuckoo-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0acf24316642ff9f4c59b73a355c29e53e7728e4f7afe3c8ee4d393a6db2d28d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4e46b2929e15",
+    "title": "Mobalytics · Redmane Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/redmane-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e508b82a372daa208cd4b385a6a1abf5f91e26e1ca91abcec4a304fb96b986fb",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a8e2e29bf67b",
+    "title": "Mobalytics · Golden Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/golden-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c854285039d27a75171e482e55506512fea53d4e88f726d09001113a4f8e9ac2",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4a8cc7257784",
+    "title": "Mobalytics · Haligtree Crest Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/haligtree-crest-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2acbfd51f5b47753b88f2bef922ae7c95da05c56edfa8cad617a36c6f0cd072a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-9a0655dd2164",
+    "title": "Mobalytics · Eclipse Crest Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/eclipse-crest-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "06079514fa45b0461a218fda6ae140a51edd768d8dc543c5db514f2dc718b02a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b65310e09bd8",
+    "title": "Mobalytics · Crucible Hornshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/crucible-hornshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4fa0bcd8082ffd779707156130825480510c67bd68b7278695e91cfddc7a993e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b3f56259ea8f",
+    "title": "Mobalytics · Dragonclaw Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/dragonclaw-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "0625040b5b4baf9560c095735cb16fbdd669cf4206d627209aaa6d43d3656eaa",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8e30a08f00a0",
+    "title": "Mobalytics · Fingerprint Stone Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/fingerprint-stone-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "99424d9463f4b16993e14082fd0604b5cf733a2f1203432b9688820b1ec44d0f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2a8cb0552b83",
+    "title": "Mobalytics · Erdtree Greatshield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/erdtree-greatshield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1d7d07b95a8bea0e4c0c7c52209ff989ba923310c96b96a9edb1a1e4fb928e0e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-14f8631d0fe0",
+    "title": "Mobalytics · Jellyfish Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/jellyfish-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "44ddbc24c6b742142e5a3c21b160e8a8b831ab52d2167a7e4723612832247faa",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5f534411f5fe",
+    "title": "Mobalytics · Visage Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/visage-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "de7552b777e36dd5f350d460c79009c2e5cb7ab41138b49909b34d4e74355cf6",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0f2377814104",
+    "title": "Mobalytics · One-Eyed Shield",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/shields/one-eyed-shield",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d4d4a19fab51fe8a6bc91e947b784daaac071f9acfcd1b2f6f2d8c834499e194",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-69a080cbf9f1",
+    "title": "Mobalytics · Recluse's Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/recluses-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "521195eef18be2d7ad011b35ed77ad74920c7c2e3d5b441b51301657f4ccefdb",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e207c859c693",
+    "title": "Mobalytics · Glintstone Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/glintstone-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "76860dc141ae301ac68777d3b85deff4f30cc1ccaf351d065c66eeac7f65544a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-efc10f180d7c",
+    "title": "Mobalytics · Academy Glintstone Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/academy-glintstone-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1bc0468d77701e6e07ac597709b7ac60ef9ca4b504acbe103f7a88f5bc88ce43",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4fedf5cea81d",
+    "title": "Mobalytics · Digger's Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/diggers-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f08d41846baab8f7328862b82572fe0387fb68980f17abc226dc466eba373d97",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-39b149320a81",
+    "title": "Mobalytics · Demi-Human Queen's Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/demi-human-queens-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bf63513da39f7de2ee338f416925f1607344a3129fde123c306136eb8a19ec7c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a4c0eb0fbbf6",
+    "title": "Mobalytics · Carian Glintstone Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/carian-glintstone-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "7679421cea43db25a207c42a742095aff6d57283d58cb9e81bf8952d5e6d8b1c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8951f69240fe",
+    "title": "Mobalytics · Carian Glintblade Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/carian-glintblade-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "75ed7e808fc50ffa5836e7fb12816bdfafab77a548f80947e9f4d5db2497c73a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a4fda2e273db",
+    "title": "Mobalytics · Albinauric Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/albinauric-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "586bf5a96633d0db1a3659cdcd6f1d31b4dc115e6deb15775170b4ccfec9ab56",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-958cc042f724",
+    "title": "Mobalytics · Staff of Loss",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/staff-of-loss",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1055fd57d88a480991b15cc0326d1ca681be917bf5e7a2fb620f327623891335",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a4e7a6dd24e9",
+    "title": "Mobalytics · Gelmir Glintstone Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/gelmir-glintstone-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d28c375a2397523e54304c715e06cdf45660e923baf19ff5bdc6790d2f5731a0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-291b126c02b8",
+    "title": "Mobalytics · Crystal Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/crystal-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d2880a6804251fa2969b1e83bed5a67038eac8b60bc023ae5e0d691d61b1cd41",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8a82ca05eaea",
+    "title": "Mobalytics · Rotten Crystal Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/rotten-crystal-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "eb33515b5f4edde55dd7836d70f19c07f6bb2b4b642d72a2f5d2404dd561bb67",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8f51ab743501",
+    "title": "Mobalytics · Staff of the Guilty",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/staff-of-the-guilty",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8f27b17f08491c51a86fc046efa20dc517bc098629fdee6ab53227e001274431",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-eef949e0768a",
+    "title": "Mobalytics · Azur's Glintstone Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/azurs-glintstone-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "429820fa1a9dcc37ff456fa977f2b6e594a96a9902ce62e429f2aff4a33b3a77",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4c0f5e9b7016",
+    "title": "Mobalytics · Lusat's Glintstone Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/lusats-glintstone-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5147136bdc76e62764fa04dec67119cdcb25747cb7483032f1607326adea2194",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c2c33fc7cd29",
+    "title": "Mobalytics · Meteorite Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/meteorite-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d5a59b30cec8e228d1ff73e348b4ec232ec12d02d3b9cc5a1eea2bfb3a238d4e",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fd69d82391ee",
+    "title": "Mobalytics · Prince of Death's Staff",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/prince-of-deaths-staff",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "785658510dc2fef0e4a839119a5ca5bf2703e67d6c56c8757e1385a8054e9b53",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-32bf3236d488",
+    "title": "Mobalytics · Finger Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/finger-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "662fe1fbbd711bc869a91e51ecf0c62aaab3f1e70657efda3e992a949347350a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-fc9cd487996b",
+    "title": "Mobalytics · Gravel Stone Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/gravel-stone-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "89984c5c44ccf005f2adf1009afd6797661b2654889dc7bc4490d7b0dea30498",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8dfc300977e5",
+    "title": "Mobalytics · Giant's Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/giants-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "942767ba23a96468fa4955ad00fff8e2fa81a1737ad8ea70fddfa140ae27c784",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e2c242adb4de",
+    "title": "Mobalytics · Godslayer's Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/godslayers-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "728c93842f438bc76cbee78a703c2669ea6fbb21e6bbeefe629ba7b03d47fc8a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a41689a09b9e",
+    "title": "Mobalytics · Erdtree Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/erdtree-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "9096e305bf16a6a54b6c485831f0f9846d05cd42e5c55ec828a1322c90b5bc26",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-454dec7e9daa",
+    "title": "Mobalytics · Golden Order Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/golden-order-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5d14fd10c493c73162bed4a2fa53f09b0f08f1e8d39a0d0eac0b23de3d4f057f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6540357c4290",
+    "title": "Mobalytics · Frenzied Flame Seal",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/catalysts/frenzied-flame-seal",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "3ec6a27dd632895f7393941b5367f61aa6e709f94f1e24746e89eceedaadddea",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7723bf8d17cb",
+    "title": "Mobalytics · Bloodhound Claws",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/bloodhound-claws",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1a8d39ee5eba6cc421443d389a2a66d17d9a308f88400fbd61783e201f512b5c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-41268da76055",
+    "title": "Mobalytics · Raptor Talons",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/raptor-talons",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1acb832cb976900b5eca9ecfc3dc3149b1d0d3e0c70c3ba52e38f15c107b8722",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3af30dd476a7",
+    "title": "Mobalytics · Venomous Fang",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/venomous-fang",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "49b04a3046ad5f9368f9654e25575ade2dd4c40ddd53fadd0bf46362a8fd31b5",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-550e7b88c145",
+    "title": "Mobalytics · Caestus",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/caestus",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "d53b7a9387cf11b7abc0b6c9d45ff74ae28fca289e9bc60bb6ea20ea7d07ae9c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-15cae08a7a47",
+    "title": "Mobalytics · Clinging Bone",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/clinging-bone",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "99e103ce4fb3d97643b05ebf41f390b80273f00e283f48377e16b00f5655ff66",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-830cd322a93e",
+    "title": "Mobalytics · Cipher Pata",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/cipher-pata",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "518cde12b6723f4481d1d40771e12e1bca751ccab6dc51e94f7c6a59ef5db708",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-80c68a6eccf3",
+    "title": "Mobalytics · Iron Ball",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/iron-ball",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bb1c11aee7074d32c9fbcac310797bf4cda12aebc431bafa7292274266803791",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3e84c26f1bcb",
+    "title": "Mobalytics · Katar",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/katar",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "54d9ea3f2511f3269abf895bb247eba21cab4180f1b2d8ca2166d8b6225339ef",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8e214b0e78f7",
+    "title": "Mobalytics · Revenant's Cursed Claws",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/revenants-cursed-claw",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "32c0362264e8836f5ccc5067625a25cc2cd8e9e543dfe87afd8d73f8ae6cd03c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-424815a0af26",
+    "title": "Mobalytics · Spiked Caestus",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/spiked-caestus",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b3677d03a872ad584e1a03b3e073d381bd7e452642b1945d7f0e4ad04c627d22",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6fa3d9ab6abd",
+    "title": "Mobalytics · Star Fist",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/star-fist",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8ff60705d29978345896e599aa4f597af3c45966aa9aec52fedaacbf6f2a93a0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7690b0e556bf",
+    "title": "Mobalytics · Veteran's Prosthesis",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/veterans-prosthesis",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6d66f33300b54487274e8080917812fd35135a45a796401964bb083f8639e736",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-d9ceda25c9b7",
+    "title": "Mobalytics · Lance",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/lance",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "231753b382af25a1a0cd7cb53a24d633bd5e3d3ee26dc1695eb72c9c2048fac5",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:mohgwyns-sacred-spear",
+    "title": "Mobalytics · Mohgwyn's Sacred Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/mohgwyns-sacred-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4a0ec2a8836658d87504a9d4a6b331eddccee487d892a11a2f9bfd1a9ea25aea",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-de2770d8e118",
+    "title": "Mobalytics · Serpent-Hunter",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/serpent-hunter",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "79a6c04583d96210b65b17b41d11bf4bfb9360062920d8da0d83159df231ae5f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-18dcce5aaf98",
+    "title": "Mobalytics · Siluria's Tree",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/silurias-tree",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6d14ca3ff7c8dfbaf857154b7849db1dc79e88e9295ea703d66274ef101941dc",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c5c275c4dfb6",
+    "title": "Mobalytics · Treespear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/treespear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "541b1f5730bc24b5b0b56983ff3c759c9c742bf54bea57fd4d89b6d17bb1d182",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-36a778724b62",
+    "title": "Mobalytics · Vyke's War Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/vykes-war-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ebb728cf4445d4e059da6b0d22d0f7f6551a51a3ae77d851c6033d53de310c41",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4b678756f6bb",
+    "title": "Mobalytics · Commander's Standard",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/commanders-standard",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2613b11ae9b1d98a7ced09e5c10e6ab30cdffc67ae38f44b2cf4c328605b9f9c",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8b51e6522fdf",
+    "title": "Mobalytics · Dragon Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/dragon-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "68c474cefd4776dab3ff1c2b55970901275490d8c7d3a0e4831f29a6c271cd78",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-eeb318354a4c",
+    "title": "Mobalytics · Gargoyle's Black Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-black-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "67ca037398ffa57bce2449753d8786ebdf1c8d4e750dd2fb434b452f06c2ed82",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8639d7c6eee5",
+    "title": "Mobalytics · Gargoyle's Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/gargoyles-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "91ae57f22370e00dc52100e2839b737c23ac03c8b197fd5503c0f70f2c560348",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6917d88bf715",
+    "title": "Mobalytics · Glaive",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/glaive",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "116cff5c2de9886d5b93ba4072dfbfc5af874e7af7d5c10a69691cc776f29073",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2913c08af481",
+    "title": "Mobalytics · Golden Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/golden-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "953c0c0f17de10ea382fc06e27e83e7699464081df75bfe0acfd8a51235cc68b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-2d9f49fece6c",
+    "title": "Mobalytics · Guardian's Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/guardians-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1815a060709d5309bf1218aa6f3ea0765487f02969c00506b2fa2eeef547ca09",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-ecd2adace208",
+    "title": "Mobalytics · Guardian's Swordspear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/guardians-swordspear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "1b5cfdbb4d486b85e960f7c6b11a2a0fe31b6c000c4a486a46b0199aa5b17248",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-4282ceed61c7",
+    "title": "Mobalytics · Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "88002b6fadc56986d6a62493d37134da8779670da76718dfd874f86cc73f6c85",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-93c0a48c27e3",
+    "title": "Mobalytics · Loretta's War Sickle",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/lorettas-war-sickle",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b51bca991081244d6fd9cf32b32afac7a9a07fb56bbab7fb5b80cb0230a18962",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-89cdd515e4b4",
+    "title": "Mobalytics · Lucerne",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/lucerne",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5c3bffd1e625d0a094968ae426bba8a42303e21205cd63848c220e159be17bde",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-a6a09057503e",
+    "title": "Mobalytics · Nightrider Glaive",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/nightrider-glaive",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "c3b7ff39e476f013aa714b720f40275249dd52d0e1ea0a0cd1d84f15e4f4d23d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b12e57f376aa",
+    "title": "Mobalytics · Pest's Glaive",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/pests-glaive",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "39ce9dba98d98f89933a19a0da64e922fa694e15670a1333ac26e8c3e0eb59e7",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-3051f12440d7",
+    "title": "Mobalytics · Ripple Crescent Halberd",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/ripple-crescent-halberd",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "52bffca82afc66d9779a83720a4f42cc14adc9ec3228e6b0b0dbd48e086d4ac8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-b4c05e41ccae",
+    "title": "Mobalytics · Vulgar Militia Saw",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/vulgar-militia-saw",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "94aeb64a0ae68e359c58e7836cba6fc067638c26da158f7ada14cb6f5047934b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-8b3d7cf39490",
+    "title": "Mobalytics · Vulgar Militia Shotel",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/vulgar-militia-shotel",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "5c7996230199d00e3ffa797213ebf2a3cef36e6ab150c49ecdf6e271c0660e64",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-c7a003903636",
+    "title": "Mobalytics · Grave Scythe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/grave-scythe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "e7a2a52462489bc08c5309c46802ec1575e210cabc2cccd6661db1f599bda756",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-00a30b6ff9b1",
+    "title": "Mobalytics · Halo Scythe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/halo-scythe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "f10ced9ffd3a6b1a583b467a8f4cd99043ef5acf2338dc3cebd7c018b00e2f9b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-222e29587d11",
+    "title": "Mobalytics · Scythe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/scythe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "43feb730cd2c0eb797ac7580eee6b0bf45632476939c81762cd27c2f021288ca",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-52908d22b337",
+    "title": "Mobalytics · Winged Scythe",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/winged-scythe",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "6aba03a50e044d3667f7e0cd15ee7df40f47513345e8e0599909af72ee20f42f",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-7e5fcb3d8f25",
+    "title": "Mobalytics · Celebrant's Rib-Rake",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/celebrants-rib-rake",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "8a9d9410f24f580b84438f37db27721e18c970754afaf5251cf579d36de00929",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-65f9a1b3de31",
+    "title": "Mobalytics · Cleanrot Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/cleanrot-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "a57c9d113fd839535b54e3b120daddfcec69bbab4cb4f34a7d2784b289e7c308",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:game8:525127",
+    "title": "Game8 · Cleanrot Spear",
+    "url": "https://game8.co/games/Elden-Ring-Nightreign/archives/525127",
+    "version": null,
+    "accessed": "2026-10-17",
+    "note": "检索返回的基础面板字段摘录；直接open未成功，未宣称完整网页读回。只用于所列争议字段，未复制介绍或图片。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-5bf863e4044d",
+    "title": "Mobalytics · Crystal Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/crystal-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "7e7de592acd6a93c812af4a5d31b4cc1ae863c9d1039c2a68c0d2d7b5fcd3de9",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0c85d7e3af09",
+    "title": "Mobalytics · Death Ritual Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/death-ritual-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4abf267754f8220b3be980a2070bb4adeb30d2a7dcf88de1eb7eeee67d6948e8",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0bbad0d421cf",
+    "title": "Mobalytics · Inquisitor's Girandole",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/inquisitors-girandole",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "4382ad6e65458c0a9a3c08e2115bd36348fbd8197fe4ca85417bb3ce85789f50",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-260d9b0d56cb",
+    "title": "Mobalytics · Rotten Crystal Spear",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/rotten-crystal-spear",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "90c0f6f2fb5b17f479b30a468f6c288422bf96eb4ad0b301586ffcfa207b0b33",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e32b442916db",
+    "title": "Mobalytics · Torchpole",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/torchpole",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "2f97c6a91a8c05ce10c6d83025c65b289037b84a203aab9352170c7f1e9d5a9d",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:giants-red-braid",
+    "title": "Mobalytics · Giant's Red Braid",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/giants-red-braid",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "aaaae4ebc426ab84024fb4517d380498f8c342c3c75c57efbeb63dfd2b61973b",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-99651824609c",
+    "title": "Mobalytics · Hoslow's Petal Whip",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/hoslows-petal-whip",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "ebbb8fab6f0a07bdb1aadc27c088653651581540c8b4d9a02b3cb1c70cc24945",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-911afed277d9",
+    "title": "Mobalytics · Magma Whip Candlestick",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/magma-whip-candlestick",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b17c3842d627595e3d579b37071f015bf0e336c1422521117cbf6a6364281ac5",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-0aab2c1f6e2f",
+    "title": "Mobalytics · Thorned Whip",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/thorned-whip",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "bbebe6f8e994df20bda7d89e6da3599d2eb1a0e6c91cd06c1abb14833713bb8a",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-6cdc29ada214",
+    "title": "Mobalytics · Urumi",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/urumi",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "b64dc5daf46b02a5334f3ae8e4843b0b45deccf35a11d1adb6171db38b351e65",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:mobalytics:index-e7597f5b8d25",
+    "title": "Mobalytics · Whip",
+    "url": "https://mobalytics.gg/elden-ring-nightreign/wiki/weapons/whip",
+    "accessed": "2026-10-17",
+    "version": null,
+    "sha256": "69710f286556d37d701566725d812534a2d29ebae1e0defbd44a0ebe3034dee0",
+    "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
   }
 ]
