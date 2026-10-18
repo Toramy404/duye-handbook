@@ -40,15 +40,16 @@ function create(D,H){
  }
  function stats(title,entries){return entries.length?'<section class="weapon-detail-section"><h3>'+title+'</h3><dl class="weapon-stats">'+entries.map(([label,val])=>'<div><dt>'+esc(label)+'</dt><dd>'+val+'</dd></div>').join('')+'</dl></section>':''}
  function auditHTML(r){
-  var a=r.panel_audit,groups=new Map(),labels={level_required:'需求等级',rarity:'品质',critical:'致命一击',spell_power:'法术威力',skill_assignment:'战技分配'},prefix={attack:'攻击',guard:'防御',scaling:'补正'};
+  var a=r.panel_audit,groups=new Map(),labels={'guard.boost':'防御强度',level_required:'需求等级',rarity:'品质',critical:'致命一击',spell_power:'法术威力',skill_assignment:'战技分配'},prefix={attack:'攻击',guard:'防御',scaling:'补正'};
   a.differences.forEach(d=>{if(!groups.has(d.field))groups.set(d.field,[]);groups.get(d.field).push(d)});
   function value(v){return esc(rarities[v]||({source_example:'列出战技示例',random_pool:'随机战技'}[v])||v)}
   function source(id){return id.includes('armamenthelper')?'参数快照':id.includes('rps-transcription')?'RPS 转录':(sourceNames.get(id)||id).split(' · ')[0]}
   var h='<section class="weapon-audit"><h3>交叉核对</h3><p>'+esc(a.date)+' · '+a.compared_fields+' 类字段参与对照，'+a.matched_comparisons+' 次取值一致。相同不代表游戏实测；版本与计算条件仍需核验。</p>';
   if(groups.size)h+='<ul>'+Array.from(groups).map(([field,rows])=>{
    var bits=field.split('.'),label=labels[field]||(names[bits[1]]||bits[1])+(prefix[bits[0]]||''),d=rows[0];
-   var refs=rows.map(x=>source(x.source_id)+' '+value(x.reference));
-   var ending=d.resolution==='adopted'?'本次展示 '+value(d.adopted_value)+'。':d.resolution==='conditions_unknown'?'计算条件未对齐，保留页面示例，不合并、不作排名。':d.resolution==='assignment_note'?'示例不代表固定战技。':'正文标为待核。';
+   var decision=(a.decisions||[]).find(x=>x.field===field);
+   var refs=rows.map(x=>source(x.source_id)+' '+value(x.reference)+(x.note?'（'+esc(x.note)+'）':''));
+   var ending=decision?'本次展示 '+value(decision.value)+'。'+esc(decision.reason):d.resolution==='conditions_unknown'?'计算条件未对齐，保留页面示例，不合并、不作排名。':d.resolution==='assignment_note'?'示例不代表固定战技。':'正文标为待核。';
    return '<li><strong>'+esc(label)+'</strong>：Mobalytics '+value(d.primary)+'；'+refs.join('；')+'。'+ending+'</li>';
   }).join('')+'</ul>';
   if(a.notes&&a.notes.length)h+=a.notes.map(n=>'<p>'+esc(n)+'</p>').join('');

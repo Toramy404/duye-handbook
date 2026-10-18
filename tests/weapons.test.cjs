@@ -93,6 +93,15 @@ action('reset-weapons');equal(T.state.limit,36,'clear resets loaded count');
 
 
 const audit=read('docs/research/weapon-panel-audit-20261017.json');
+const followup=read('docs/research/weapon-panel-followup-20261018.json');
+equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'docs/research/weapon-panel-audit-20261017.json'))).digest('hex'),followup.base_audit_sha256,'first audit remains unchanged');
+for(const extra of followup.items){
+ const row=audit.items.find(x=>x.weapon_id===extra.weapon_id);
+ equal(row.game_id,extra.game_id,'follow-up identity uses exact parameter ID');
+ for(const key of ['comparators','comparisons','resolutions'])row[key].push(...extra[key]);
+ if('quality_needs_review' in extra)row.quality_needs_review=extra.quality_needs_review;
+}
+
 const byEnglish=name=>D.weapons.find(w=>w.name_en===name),active=name=>W.variant(byEnglish(name));
 equal(D.weapon_variants.filter(v=>!v.id.endsWith(':panel-20261017')).length,42,'historical 42 panels retained');
 equal(new Set(D.weapons.map(w=>w.game_parameter_id)).size,387,'base parameter identity is unique for every weapon');
@@ -119,16 +128,32 @@ equal(active('Miséricorde').scaling.grades.dexterity,'S','two independent table
 equal(active("Executor's Blade").rarity_label,'common','starting blade is not the summoned legendary skill blade');
 equal(active('Eclipse Shotel').rarity_label,'legendary','Eclipse quality independent from old blessing library');
 check('Eclipse does not invent a blessing',!D.weapon_effect_links.some(l=>l.weapon_id===byEnglish('Eclipse Shotel').id));
-for(const name of ['Nightrider Flail','Fallingstar Beast Jaw','Erdtree Seal']){
- const w=byEnglish(name),v=W.variant(w),body=W.detail(w).split('<details class="weapon-reference">')[0];
- check(name+' pending damage visible, not silently picked',v.pending_fields.some(k=>k.startsWith('attack.'))&&body.includes('待核'));
+equal(active('Nightrider Flail').attack.physical.value,82,'Flail base physical corroborated by parameter and GameWith');
+equal(active('Fallingstar Beast Jaw').attack.magic.value,67,'Jaw base magic corroborated by parameter and GameWith');
+equal(active('Erdtree Seal').attack.holy.value,15,'Seal holy 15 is not lost as zero');
+equal(active('Sacred Relic Sword').critical.value,110,'critical independently corroborated by two new detail pages');
+equal(active('Nightrider Flail').pending_fields,['guard.boost'],'unresolved guard field remains explicit');
+equal(active('Nightrider Flail').guard.value.boost,null,'21 vs 32 guard is not guessed');
+check('pending guard visibly rendered',W.detail(byEnglish('Nightrider Flail')).split('<details class="weapon-reference">')[0].includes('待核'));
+check('training example is not merged into base damage',byEnglish('Nightrider Flail').panel_audit.differences.some(d=>d.field==='attack.physical'&&d.reference===73&&d.resolution==='conditions_unknown'&&d.adopted_value===null));
+equal(followup.items.reduce((n,x)=>n+x.resolutions.filter(r=>r.field!=='rarity').length,0),23,'23 of 24 original numeric fields resolved');
+equal(D.weapons.filter(w=>W.variant(w).pending_fields.some(k=>k!=='rarity')).map(w=>w.name_en),['Nightrider Flail'],'only Flail numeric pending in this audit scope');
+const reviewedShields=followup.items.filter(x=>x.quality_was_pending);
+equal(reviewedShields.length,43,'all 43 original unknown shield qualities reviewed');
+equal(reviewedShields.reduce((counts,x)=>{const r=x.resolutions.find(r=>r.field==='rarity');counts[r.value]=(counts[r.value]||0)+1;return counts},{}),{rare:20,uncommon:23},'direct classifications give 20 purple and 23 blue shields');
+for(const item of reviewedShields){
+ const w=D.weapons.find(w=>w.id===item.weapon_id),decision=item.resolutions.find(r=>r.field==='rarity');
+ equal(W.variant(w).rarity_label,decision.value,w.name+' uses explicit two-site rarity');
+ check(w.name+' rarity adoption does not claim numeric binding',!W.variant(w).rarity_stats_binding_confirmed&&w.panel_audit.notes.some(s=>s.includes('基础品质')));
 }
+check('adoption rationale remains at end of details',W.detail(byEnglish('Ivory Sickle')).split('<details class="weapon-reference">')[1].includes('GameWith与Game8'));
+
 check('conflict retains both actual values',W.detail(byEnglish('Fallingstar Beast Jaw')).includes('Mobalytics 76')&&W.detail(byEnglish('Fallingstar Beast Jaw')).includes('参数快照 67'));
 check('real melee guard now shown',W.detail(get('battle-axe')).split('<details class="weapon-reference">')[0].includes('<h3>防御</h3>')&&variant('battle-axe').guard.value.boost===36);
 equal(active('Scorpion Kite Shield').level_required,3,'shield level no longer globally one');
-equal(active('Scorpion Kite Shield').rarity_label,null,'shield quality not inferred from required level');
+equal(active('Scorpion Kite Shield').rarity_label,'uncommon','shield quality uses direct classifications, not level inference');
 Object.assign(T.state,{weaponGroup:'all',weaponCategory:'all',weaponRarity:'unknown',query:''});
-equal(W.select(T.state).length,43,'43 suspect shield qualities remain searchable separately');
+equal(W.select(T.state).length,0,'all originally suspect shield qualities now have explicit corroboration');
 check('no conversion of numeric coefficients to letter grade',active('Hand Ballista').scaling.state==='not_listed'&&Object.keys(active('Hand Ballista').scaling.grades).length===0);
 check('spell power conditions remain separate',byEnglish("Astrologer's Staff").panel_audit.differences.some(d=>d.field==='spell_power'&&d.resolution==='conditions_unknown')&&active("Astrologer's Staff").spell_power.value===133);
 Object.assign(T.state,{weaponGroup:'all',weaponCategory:'all',weaponRarity:'legendary',query:''});

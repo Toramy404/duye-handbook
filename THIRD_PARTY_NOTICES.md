@@ -32,3 +32,7 @@
 新增研究输入 `docs/research/weapon-panel-audit-20261017.json` 只保留事实字段、出处、修订与差异，不包含网站图片、攻略正文或界面代码。Mobalytics 页面提供387件面板；NightreignArmamentHelper 的基础武器参数用于数值核对；JDennisUF/nightreign_info 明示转录RPS表，因此按一条来源链记录，不计成两个独立来源；BWIKI以固定修订记录，Game8的少量争议字段来自检索摘录；蝎纹鸢形盾页面另已直接读取，逐来源注明读取范围。
 
 参数摘录固定于 nextfinish/NightreignArmamentHelper 的 `eab1dbdcdabf0f5a99a13e6051e2738b03c15879`；上游MIT许可证全文保存在 `docs/research/armamenthelper-LICENSE.txt`，并附入离线资源 `dist/DATA-LICENSE.txt`。未执行上游程序，也未包含其游戏内存读取功能。网站素材的既有许可边界不因本次核对改变。
+
+## 待核字段接续（2026-10-18）
+
+`weapon-panel-followup-20261018.json`仅摘录GameWith和Game8日文攻略的本轮目标品质、字母补正及指定数值事实，保留URL、取得日期、页面快照哈希和条件；不分发网页全文、图片或攻略文案。Game8中英文不计为两个独立发布者，GameWith列表与详情也不重复计数。两站不同条件示例保留原值，来源解释由本项目重新整理。

@@ -6653,8 +6653,8 @@
     "observation_id": "weapon:brass-shield:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:brass-shield",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -6746,9 +6746,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -6758,6 +6756,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -6770,8 +6778,8 @@
     "observation_id": "weapon:ants-skull-plate:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:ants-skull-plate",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -6872,9 +6880,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -6884,6 +6890,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -7964,7 +7980,7 @@
       "state": "grades_displayed",
       "grades": {
         "strength": "E",
-        "dexterity": null,
+        "dexterity": "A",
         "intelligence": "D"
       },
       "unlisted_attribute_grades": null
@@ -8011,10 +8027,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "A",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -10510,8 +10535,8 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null,
-        "dexterity": null,
+        "strength": "C",
+        "dexterity": "C",
         "intelligence": "C"
       },
       "unlisted_attribute_grades": null
@@ -10563,11 +10588,29 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity",
-      "scaling.strength"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "scaling.strength",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -10962,7 +11005,7 @@
       "state": "grades_displayed",
       "grades": {
         "strength": "B",
-        "dexterity": null
+        "dexterity": "C"
       },
       "unlisted_attribute_grades": null
     },
@@ -11008,10 +11051,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -12633,7 +12685,7 @@
       "state": "grades_displayed",
       "grades": {
         "strength": "B",
-        "dexterity": null,
+        "dexterity": "C",
         "intelligence": "C"
       },
       "unlisted_attribute_grades": null
@@ -12685,10 +12737,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -13187,15 +13248,15 @@
       "reason": null
     },
     "critical": {
-      "value": null,
-      "state": "conflict",
-      "reason": "来源数值不同，见详情末尾并列记录；未据此生成确定值。"
+      "value": 110,
+      "state": "known",
+      "reason": null
     },
     "scaling": {
       "state": "grades_displayed",
       "grades": {
         "strength": "B",
-        "dexterity": null,
+        "dexterity": "C",
         "faith": "C"
       },
       "unlisted_attribute_grades": null
@@ -13242,11 +13303,29 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "critical",
-      "scaling.dexterity"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "critical",
+        "value": 110,
+        "source_ids": [
+          "weapon-panel:gamewith:followup-500530",
+          "weapon-panel:game8jp:followup-693293"
+        ],
+        "reason": "GameWith与Game8日文详情均列致命110，支持Mobalytics的110；BWIKI的100保留为异议，当前采用110。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -23816,9 +23895,9 @@
     "rarity_stats_binding_confirmed": false,
     "attack": {
       "physical": {
-        "value": null,
-        "state": "conflict",
-        "reason": "来源数值不同，见详情末尾并列记录；未据此生成确定值。"
+        "value": 82,
+        "state": "known",
+        "reason": null
       },
       "magic": {
         "value": 0,
@@ -23861,8 +23940,8 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null,
-        "dexterity": null
+        "strength": "C",
+        "dexterity": "B"
       },
       "unlisted_attribute_grades": null
     },
@@ -23913,12 +23992,40 @@
       "affinity_roll": null
     },
     "pending_fields": [
-      "attack.physical",
-      "guard.boost",
-      "scaling.dexterity",
-      "scaling.strength"
+      "guard.boost"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "B",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "scaling.strength",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "attack.physical",
+        "value": 82,
+        "source_ids": [
+          "weapon-panel:armamenthelper",
+          "weapon-panel:gamewith:followup-500429"
+        ],
+        "reason": "GameWith基本性能与既有参数快照逐字段一致，采用其82。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+        "reviewed_at": "2026-10-18"
+      }
+    ],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -25451,7 +25558,7 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null,
+        "strength": "A",
         "dexterity": "E",
         "faith": "D"
       },
@@ -25498,10 +25605,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.strength"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.strength",
+        "value": "A",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -25783,7 +25899,7 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null
+        "strength": "S"
       },
       "unlisted_attribute_grades": null
     },
@@ -25828,10 +25944,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.strength"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.strength",
+        "value": "S",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -27313,9 +27438,9 @@
         "reason": null
       },
       "magic": {
-        "value": null,
-        "state": "conflict",
-        "reason": "来源数值不同，见详情末尾并列记录；未据此生成确定值。"
+        "value": 67,
+        "state": "known",
+        "reason": null
       },
       "fire": {
         "value": 0,
@@ -27399,10 +27524,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "attack.magic"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "attack.magic",
+        "value": 67,
+        "source_ids": [
+          "weapon-panel:armamenthelper",
+          "weapon-panel:gamewith:followup-500398"
+        ],
+        "reason": "GameWith基本性能与既有参数快照逐字段一致，采用其67。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -28351,7 +28485,7 @@
       "state": "grades_displayed",
       "grades": {
         "strength": "E",
-        "dexterity": null
+        "dexterity": "S"
       },
       "unlisted_attribute_grades": null
     },
@@ -28396,10 +28530,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "S",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -30953,8 +31096,8 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null,
-        "dexterity": null,
+        "strength": "C",
+        "dexterity": "C",
         "faith": "D"
       },
       "unlisted_attribute_grades": null
@@ -31000,11 +31143,29 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity",
-      "scaling.strength"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "scaling.strength",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -32000,8 +32161,8 @@
     "observation_id": "weapon:index-7076f339b775:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-7076f339b775",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32093,9 +32254,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32105,6 +32264,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32117,8 +32286,8 @@
     "observation_id": "weapon:index-55f0712aaa1d:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-55f0712aaa1d",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32214,9 +32383,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32226,6 +32393,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32238,8 +32415,8 @@
     "observation_id": "weapon:index-40c14c16dec5:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-40c14c16dec5",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32331,9 +32508,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32343,6 +32518,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32355,8 +32540,8 @@
     "observation_id": "weapon:index-8d25a09811f6:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-8d25a09811f6",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32448,9 +32633,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32460,6 +32643,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32472,8 +32665,8 @@
     "observation_id": "weapon:index-b42aa3557ade:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-b42aa3557ade",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32565,9 +32758,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32577,6 +32768,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32589,8 +32790,8 @@
     "observation_id": "weapon:index-b5cb7362625b:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-b5cb7362625b",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32686,9 +32887,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32698,6 +32897,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32710,8 +32919,8 @@
     "observation_id": "weapon:index-dfcd1a4a1468:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-dfcd1a4a1468",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32812,9 +33021,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32824,6 +33031,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32836,8 +33053,8 @@
     "observation_id": "weapon:index-287fa6986861:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-287fa6986861",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -32938,9 +33155,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -32950,6 +33165,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -32962,8 +33187,8 @@
     "observation_id": "weapon:index-39819a951ed8:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-39819a951ed8",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -33059,9 +33284,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -33071,6 +33294,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -33083,8 +33316,8 @@
     "observation_id": "weapon:index-7130c1e8c27b:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-7130c1e8c27b",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -33185,9 +33418,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -33197,6 +33428,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -34620,8 +34861,8 @@
     "observation_id": "weapon:index-d1268437a077:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-d1268437a077",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -34717,9 +34958,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -34729,6 +34968,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -34741,8 +34990,8 @@
     "observation_id": "weapon:index-31450d54b7f7:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-31450d54b7f7",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -34838,9 +35087,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -34850,6 +35097,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -34862,8 +35119,8 @@
     "observation_id": "weapon:index-74e86b396b6c:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-74e86b396b6c",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -34955,9 +35212,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -34967,6 +35222,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -34979,8 +35244,8 @@
     "observation_id": "weapon:index-e41e4009c36a:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-e41e4009c36a",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35072,9 +35337,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35084,6 +35347,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35096,8 +35369,8 @@
     "observation_id": "weapon:index-e73b6f5596e4:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-e73b6f5596e4",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35193,9 +35466,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35205,6 +35476,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35217,8 +35498,8 @@
     "observation_id": "weapon:index-02b9c320feba:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-02b9c320feba",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35314,9 +35595,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35327,6 +35606,16 @@
           "weapon-panel:game8:525227"
         ],
         "reason": "独立攻略摘录与参数或表格对照；保留被修正来源值。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35339,8 +35628,8 @@
     "observation_id": "weapon:index-75766249aabb:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-75766249aabb",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35432,9 +35721,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35444,6 +35731,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35456,8 +35753,8 @@
     "observation_id": "weapon:index-076a6e28673a:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-076a6e28673a",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35549,9 +35846,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35561,6 +35856,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35573,8 +35878,8 @@
     "observation_id": "weapon:index-3021f126aa7c:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-3021f126aa7c",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35670,9 +35975,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35682,6 +35985,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35694,8 +36007,8 @@
     "observation_id": "weapon:index-fa57ad979565:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-fa57ad979565",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35745,7 +36058,7 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null,
+        "strength": "A",
         "dexterity": "D"
       },
       "unlisted_attribute_grades": null
@@ -35787,10 +36100,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity",
-      "scaling.strength"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35800,6 +36110,26 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "scaling.strength",
+        "value": "A",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35812,8 +36142,8 @@
     "observation_id": "weapon:index-bb975fa6e49e:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-bb975fa6e49e",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -35906,9 +36236,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -35918,6 +36246,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -35930,8 +36268,8 @@
     "observation_id": "weapon:index-e1933955612b:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-e1933955612b",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -36024,9 +36362,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -36036,6 +36372,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -36048,8 +36394,8 @@
     "observation_id": "weapon:index-8733d00ed434:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-8733d00ed434",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -36145,9 +36491,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -36157,6 +36501,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -36866,8 +37220,8 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null,
-        "dexterity": null
+        "strength": "A",
+        "dexterity": "D"
       },
       "unlisted_attribute_grades": null
     },
@@ -36912,11 +37266,29 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity",
-      "scaling.strength"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "D",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "scaling.strength",
+        "value": "A",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -36927,8 +37299,8 @@
     "observation_id": "weapon:index-e410765edbf4:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-e410765edbf4",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37029,9 +37401,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37041,6 +37411,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37053,8 +37433,8 @@
     "observation_id": "weapon:index-e8aa069fce84:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-e8aa069fce84",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37155,9 +37535,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37167,6 +37545,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37179,8 +37567,8 @@
     "observation_id": "weapon:index-2901ec48608f:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-2901ec48608f",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37272,9 +37660,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37284,6 +37670,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37296,8 +37692,8 @@
     "observation_id": "weapon:index-d1aa39e4a6d9:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-d1aa39e4a6d9",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37389,9 +37785,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37401,6 +37795,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37413,8 +37817,8 @@
     "observation_id": "weapon:index-3c255ee06c7c:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-3c255ee06c7c",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37506,9 +37910,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37518,6 +37920,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37530,8 +37942,8 @@
     "observation_id": "weapon:index-0cad7e062e84:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-0cad7e062e84",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37623,9 +38035,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37635,6 +38045,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37647,8 +38067,8 @@
     "observation_id": "weapon:index-984951c3c5f0:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-984951c3c5f0",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37740,9 +38160,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37752,6 +38170,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37764,8 +38192,8 @@
     "observation_id": "weapon:index-4e46b2929e15:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-4e46b2929e15",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37857,9 +38285,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37869,6 +38295,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37881,8 +38317,8 @@
     "observation_id": "weapon:index-a8e2e29bf67b:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-a8e2e29bf67b",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -37974,9 +38410,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -37986,6 +38420,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -37998,8 +38442,8 @@
     "observation_id": "weapon:index-4a8cc7257784:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-4a8cc7257784",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38091,9 +38535,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38103,6 +38545,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38115,8 +38567,8 @@
     "observation_id": "weapon:index-9a0655dd2164:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-9a0655dd2164",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "uncommon",
+    "rarity_state": "source_reported",
     "level_required": 3,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38208,9 +38660,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38220,6 +38670,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "uncommon",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38232,8 +38692,8 @@
     "observation_id": "weapon:index-b65310e09bd8:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-b65310e09bd8",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38329,9 +38789,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38341,6 +38799,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38353,8 +38821,8 @@
     "observation_id": "weapon:index-b3f56259ea8f:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-b3f56259ea8f",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38450,9 +38918,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38462,6 +38928,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38474,8 +38950,8 @@
     "observation_id": "weapon:index-8e30a08f00a0:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-8e30a08f00a0",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38576,9 +39052,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38588,6 +39062,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38600,8 +39084,8 @@
     "observation_id": "weapon:index-2a8cb0552b83:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-2a8cb0552b83",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38698,9 +39182,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38710,6 +39192,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38722,8 +39214,8 @@
     "observation_id": "weapon:index-14f8631d0fe0:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-14f8631d0fe0",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38819,9 +39311,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38831,6 +39321,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38843,8 +39343,8 @@
     "observation_id": "weapon:index-5f534411f5fe:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-5f534411f5fe",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -38940,9 +39440,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -38952,6 +39450,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -38964,8 +39472,8 @@
     "observation_id": "weapon:index-0f2377814104:panel-observation-20261017",
     "source_id": "weapon-panel:mobalytics:index-0f2377814104",
     "verification_status": "source_reported",
-    "rarity_label": null,
-    "rarity_state": "needs_verification",
+    "rarity_label": "rare",
+    "rarity_state": "source_reported",
     "level_required": 7,
     "rarity_stats_binding_confirmed": false,
     "attack": {
@@ -39061,9 +39569,7 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "rarity"
-    ],
+    "pending_fields": [],
     "corrections": [
       {
         "field": "level_required",
@@ -39073,6 +39579,16 @@
           "weapon-panel:rps-transcription"
         ],
         "reason": "参数requiredLevel与RPS转录等级一致；不据等级推算品质。"
+      },
+      {
+        "field": "rarity",
+        "value": "rare",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+        "reviewed_at": "2026-10-18"
       }
     ],
     "null_reasons": {
@@ -41389,9 +41905,9 @@
         "reason": null
       },
       "holy": {
-        "value": null,
-        "state": "conflict",
-        "reason": "来源数值不同，见详情末尾并列记录；未据此生成确定值。"
+        "value": 15,
+        "state": "known",
+        "reason": null
       }
     },
     "guard": {
@@ -41459,10 +41975,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "attack.holy"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "attack.holy",
+        "value": 15,
+        "source_ids": [
+          "weapon-panel:armamenthelper",
+          "weapon-panel:gamewith:followup-500220"
+        ],
+        "reason": "GameWith基本性能与既有参数快照逐字段一致，采用其15。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -41861,7 +42386,7 @@
       "state": "grades_displayed",
       "grades": {
         "strength": "D",
-        "dexterity": null
+        "dexterity": "A"
       },
       "unlisted_attribute_grades": null
     },
@@ -41912,10 +42437,19 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "A",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }
@@ -46153,8 +46687,8 @@
     "scaling": {
       "state": "grades_displayed",
       "grades": {
-        "strength": null,
-        "dexterity": null,
+        "strength": "C",
+        "dexterity": "B",
         "intelligence": "C"
       },
       "unlisted_attribute_grades": null
@@ -46200,11 +46734,29 @@
       "buffs": null,
       "affinity_roll": null
     },
-    "pending_fields": [
-      "scaling.dexterity",
-      "scaling.strength"
+    "pending_fields": [],
+    "corrections": [
+      {
+        "field": "scaling.dexterity",
+        "value": "B",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      },
+      {
+        "field": "scaling.strength",
+        "value": "C",
+        "source_ids": [
+          "weapon-panel:gamewith:followup-all",
+          "weapon-panel:game8jp:followup-all"
+        ],
+        "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+        "reviewed_at": "2026-10-18"
+      }
     ],
-    "corrections": [],
     "null_reasons": {
       "conditions": "补丁、强化、角色、持握与品质绑定未核实。"
     }

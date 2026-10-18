@@ -1,8 +1,31 @@
 """Apply explicit weapon panel evidence; keep every historical observation immutable."""
 from copy import deepcopy
 import json
+import hashlib
 
 PREFIX = 'weapon-panel:'
+
+
+def load_audit(root):
+    """Layer reviewed facts over the immutable first audit, never over raw observations."""
+    path = root / 'docs/research/weapon-panel-audit-20261017.json'
+    followup = json.loads((root / 'docs/research/weapon-panel-followup-20261018.json').read_text('utf-8'))
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == followup['base_audit_sha256'], 'Follow-up baseline changed'
+    audit = json.loads(path.read_text('utf-8'))
+    by_id = {row['weapon_id']: row for row in audit['items']}
+    audit['sources'].extend(followup['sources'])
+    for extra in followup['items']:
+        row = by_id[extra['weapon_id']]
+        assert row['game_id'] == extra['game_id'], 'Weapon identity changed'
+        old_fields = {r['field'] for r in row['resolutions']}
+        assert not old_fields.intersection(r['field'] for r in extra['resolutions']), 'Duplicate resolution'
+        for key in ('comparators', 'comparisons', 'resolutions'):
+            row[key].extend(extra[key])
+        row['reviewed_at'] = extra['reviewed_at']
+        row['review_notes'] = extra['notes'] + [r['reason'] for r in extra['unresolved']]
+        if 'quality_needs_review' in extra:
+            row['quality_needs_review'] = extra['quality_needs_review']
+    return audit
 
 
 def field(value, reason=None, state=None):
@@ -11,7 +34,7 @@ def field(value, reason=None, state=None):
 
 
 def complete(root, data):
-    audit = json.loads((root / 'docs/research/weapon-panel-audit-20261017.json').read_text('utf-8'))
+    audit = load_audit(root)
     by_id = {w['id']: w for w in data['weapons']}
     assert set(by_id) == {r['weapon_id'] for r in audit['items']}
     data['sources'].extend(audit['sources'])
@@ -80,15 +103,15 @@ def complete(root, data):
         refs = [dict(source_id=sid, locator='Attack & Guard Stats / Scaling and More / Ashes of War')]
         refs.extend(dict(source_id=c['source_id'], locator=c['locator']) for c in row['comparators'])
         w['source_refs'] = refs + w['source_refs']
-        w['panel_audit'] = dict(date=audit['accessed'],
-            notes=['同站盾牌页面均标普通，且本条等级与参数表冲突；品质标签暂不采用，原页面品质“普通”保留。不按需求等级推算品质。'] if row['quality_needs_review'] else [],
+        w['panel_audit'] = dict(date=row.get('reviewed_at', audit['accessed']),
+            notes=(['同站盾牌页面均标普通，且本条等级与参数表冲突；品质标签暂不采用，原页面品质“普通”保留。不按需求等级推算品质。'] if row['quality_needs_review'] else []) + row.get('review_notes', []),
+            decisions=row['resolutions'],
             matched_comparisons=sum(c['state']=='match' for c in row['comparisons']),
             compared_fields=len({c['field'] for c in row['comparisons'] if c['state']!='conditions_unknown'}),
-            differences=[dict(c, resolution='adopted' if c['field'] in resolved else
-                             'assignment_note' if c['field']=='skill_assignment' else
-                             'conditions_unknown' if c['state']=='conditions_unknown' else 'pending',
-                             adopted_value=resolved[c['field']]['value'] if c['field'] in resolved else None)
-                         for c in row['comparisons'] if c['state']!='match'])
+            differences=[dict(c, resolution='conditions_unknown' if c['state']=='conditions_unknown' else 'adopted' if c['field'] in resolved else
+                             'assignment_note' if c['field']=='skill_assignment' else 'pending',
+                             adopted_value=resolved[c['field']]['value'] if c['field'] in resolved and c['state']!='conditions_unknown' else None)
+                         for c in row['comparisons'] if c['state']!='match' or c['field'] in resolved or c['field'] in pending])
         if resolved:
             data['corrections'].append(dict(id=PREFIX+w['id'], name=w['name']+' · 面板来源纠错',
                 before={key:next(c['primary'] for c in row['comparisons'] if c['field']==key) for key in resolved},

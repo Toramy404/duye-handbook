@@ -1,0 +1,3789 @@
+{
+  "schema_version": 1,
+  "accessed": "2026-10-18",
+  "game_version": null,
+  "base_audit": "weapon-panel-audit-20261017.json",
+  "base_audit_sha256": "cefeaeb6248ea5684109e08f59df3a47fe5a099e53042cfb1980d0f6af7d1079",
+  "scope": "仅接续16件武器的24个待核数值字段及43件盾牌品质；共58件唯一装备（兽人壶盾同时属于两组）。基础品质不是全部掉落品质范围。",
+  "method": "以参数多语言名称绑定日文条目；只提取目标字段。GameWith与Game8为不同发布者，未证实其采集完全独立；同站列表/详情不重复计为独立来源。保留旧观察，所有采用值仍为source_reported。",
+  "statistics": {
+    "target_items": 58,
+    "numeric_target_items": 16,
+    "numeric_target_fields": 24,
+    "numeric_resolved": 23,
+    "numeric_unresolved": 1,
+    "shield_rarity_resolved": 43,
+    "shield_rarity_counts": {
+      "rare": 20,
+      "uncommon": 23
+    }
+  },
+  "sources": [
+    {
+      "id": "weapon-panel:gamewith:followup-all",
+      "title": "GameWith · 武器分类与补正",
+      "url": "https://gamewith.jp/eldenring/485171",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "92d6b1301039f4d4e17620b764166f94fea5016cca9b1480608de107e2c545ba",
+      "note": "仅转录本轮目标的明确品质与字母补正；品质直接读取名称行的颜色分类，并核对蓝/紫分类页，不按等级推算。网页更新日不是游戏版本。"
+    },
+    {
+      "id": "weapon-panel:game8jp:followup-all",
+      "title": "Game8 日文 · 武器分类与补正",
+      "url": "https://game8.jp/eldenring-nightreign/690180",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "f199f4ce6538e302d073ad684d398c49b4016748f4e913ea6cfc7d25948bfb2c",
+      "note": "仅转录本轮目标的明确品质与字母补正；读取每行的レア度分类，不采用此表的攻击数字。详情页自报训练场追踪者Lv1，未与参数基值混算。与Game8英文站视为同一发布者。"
+    },
+    {
+      "id": "weapon-panel:gamewith:followup-500530",
+      "title": "GameWith · Sacred Relic Sword",
+      "url": "https://gamewith.jp/eldenring/500530",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "b5d8f231f6959139c8f785c9e27a28c5bbaab2430082eef6999b28c00253dd21",
+      "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+    },
+    {
+      "id": "weapon-panel:gamewith:followup-500429",
+      "title": "GameWith · Nightrider Flail",
+      "url": "https://gamewith.jp/eldenring/500429",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "8dd54884e12f1b0285bc3eb1947c2af6fa5f6dcdabfc3e3654e3b959fdcfaddc",
+      "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+    },
+    {
+      "id": "weapon-panel:gamewith:followup-500398",
+      "title": "GameWith · Fallingstar Beast Jaw",
+      "url": "https://gamewith.jp/eldenring/500398",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "4d668a1409f80c0b9c18087e903ff2c045141c299a77fcc5b9bd1b335003baa3",
+      "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+    },
+    {
+      "id": "weapon-panel:gamewith:followup-500220",
+      "title": "GameWith · Erdtree Seal",
+      "url": "https://gamewith.jp/eldenring/500220",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "7ee3df6058f7e83835b2e6272af054bc20e8b47e0805694276869350c643f66b",
+      "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+    },
+    {
+      "id": "weapon-panel:game8jp:followup-693293",
+      "title": "Game8 日文 · Sacred Relic Sword",
+      "url": "https://game8.jp/eldenring-nightreign/693293",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "97103dacce90864b134328d1cc101548678d90b0a401f7e2432ac262b5ff809b",
+      "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
+    },
+    {
+      "id": "weapon-panel:game8jp:followup-693242",
+      "title": "Game8 日文 · Nightrider Flail",
+      "url": "https://game8.jp/eldenring-nightreign/693242",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "bcbccf3b9468de6afcf2afe1d55954fa46a862f742969838b9ef097eafe29521",
+      "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
+    },
+    {
+      "id": "weapon-panel:game8jp:followup-692958",
+      "title": "Game8 日文 · Fallingstar Beast Jaw",
+      "url": "https://game8.jp/eldenring-nightreign/692958",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "3b823b1a3105f4021bc3c5ea4ffc27c9c5ed0176c2935510ef2ed4fb9a9a61f7",
+      "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
+    },
+    {
+      "id": "weapon-panel:game8jp:followup-693164",
+      "title": "Game8 日文 · Erdtree Seal",
+      "url": "https://game8.jp/eldenring-nightreign/693164",
+      "accessed": "2026-10-18",
+      "version": null,
+      "sha256": "ff61092efeef5169f50018f4b88f0bc15a040c07246d81f55e027fc2eebca6a1",
+      "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
+    }
+  ],
+  "items": [
+    {
+      "weapon_id": "weapon:brass-shield",
+      "game_id": 31130000,
+      "name_zh": "黄铜盾",
+      "name_en": "Brass Shield",
+      "name_jp": "真鍮の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "真鍮の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500276",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "真鍮の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693070",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:ants-skull-plate",
+      "game_id": 32220000,
+      "name_zh": "蚂蚁头盾",
+      "name_en": "Ant's Skull Plate",
+      "name_jp": "蟻の頭甲",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "蟻の頭甲；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500249",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "蟻の頭甲；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693104",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-b20575896235",
+      "game_id": 1130000,
+      "name_zh": "象牙小镰刀",
+      "name_en": "Ivory Sickle",
+      "name_jp": "象牙の手鎌",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "象牙の手鎌；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500577",
+          "fields": {
+            "scaling.dexterity": "A"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "象牙の手鎌；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/692859",
+          "fields": {
+            "scaling.dexterity": "A"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "A",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-3883937cace6",
+      "game_id": 2190000,
+      "name_zh": "托莉娜剑",
+      "name_en": "Sword of St. Trina",
+      "name_jp": "トリーナの剣",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity",
+        "scaling.strength"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "トリーナの剣；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500554",
+          "fields": {
+            "scaling.dexterity": "C",
+            "scaling.strength": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "トリーナの剣；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693046",
+          "fields": {
+            "scaling.dexterity": "C",
+            "scaling.strength": "C"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "scaling.strength",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-185bdfee1966",
+      "game_id": 3750000,
+      "name_zh": "追踪者的大剑",
+      "name_en": "Wylder's Greatsword",
+      "name_jp": "追跡者の大剣",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "追跡者の大剣；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500217",
+          "fields": {
+            "scaling.dexterity": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "追跡者の大剣；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693109",
+          "fields": {
+            "scaling.dexterity": "C"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-40f916cf4aac",
+      "game_id": 3200000,
+      "name_zh": "死亡钩棒",
+      "name_en": "Death's Poker",
+      "name_jp": "死かき棒",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "死かき棒；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500536",
+          "fields": {
+            "scaling.dexterity": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "死かき棒；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693124",
+          "fields": {
+            "scaling.dexterity": "C"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:sacred-relic-sword",
+      "game_id": 3100000,
+      "name_zh": "神躯化剑",
+      "name_en": "Sacred Relic Sword",
+      "name_jp": "神の遺剣",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "critical",
+        "scaling.dexterity"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "神の遺剣；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500530",
+          "fields": {
+            "scaling.dexterity": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "神の遺剣；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693293",
+          "fields": {
+            "scaling.dexterity": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:gamewith:followup-500530",
+          "locator": "基本性能 / 攻撃性能 / ガードカット率",
+          "fields": {
+            "critical": 110
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-693293",
+          "locator": "性能；训练场追踪者Lv1",
+          "fields": {
+            "critical": 110
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "critical",
+          "primary": 110,
+          "reference": 110,
+          "source_id": "weapon-panel:gamewith:followup-500530",
+          "state": "match"
+        },
+        {
+          "field": "critical",
+          "primary": 110,
+          "reference": 110,
+          "source_id": "weapon-panel:game8jp:followup-693293",
+          "state": "match"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "critical",
+          "value": 110,
+          "source_ids": [
+            "weapon-panel:gamewith:followup-500530",
+            "weapon-panel:game8jp:followup-693293"
+          ],
+          "reason": "GameWith与Game8日文详情均列致命110，支持Mobalytics的110；BWIKI的100保留为异议，当前采用110。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-6a4cc5d55048",
+      "game_id": 13000000,
+      "name_zh": "黑夜骑兵连枷",
+      "name_en": "Nightrider Flail",
+      "name_jp": "夜騎兵のフレイル",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "attack.physical",
+        "guard.boost",
+        "scaling.dexterity",
+        "scaling.strength"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "夜騎兵のフレイル；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500429",
+          "fields": {
+            "scaling.dexterity": "B",
+            "scaling.strength": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "夜騎兵のフレイル；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693242",
+          "fields": {
+            "scaling.dexterity": "B",
+            "scaling.strength": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:gamewith:followup-500429",
+          "locator": "基本性能 / 攻撃性能 / ガードカット率",
+          "fields": {
+            "attack.physical": 82,
+            "guard.boost": 32
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-693242",
+          "locator": "性能；训练场追踪者Lv1",
+          "fields": {
+            "attack.physical": 73,
+            "guard.boost": 21
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "B",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "B",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "attack.physical",
+          "primary": 96,
+          "reference": 82,
+          "source_id": "weapon-panel:gamewith:followup-500429",
+          "state": "conflict"
+        },
+        {
+          "field": "guard.boost",
+          "primary": 21,
+          "reference": 32,
+          "source_id": "weapon-panel:gamewith:followup-500429",
+          "state": "conflict"
+        },
+        {
+          "field": "attack.physical",
+          "primary": 96,
+          "reference": 73,
+          "source_id": "weapon-panel:game8jp:followup-693242",
+          "state": "conditions_unknown",
+          "note": "该页明示训练场追踪者Lv1；补丁/强化及与参数基值的对应未对齐。"
+        },
+        {
+          "field": "guard.boost",
+          "primary": 21,
+          "reference": 21,
+          "source_id": "weapon-panel:game8jp:followup-693242",
+          "state": "match",
+          "note": "该页明示训练场追踪者Lv1；补丁/强化及与参数基值的对应未对齐。"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "B",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "scaling.strength",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "attack.physical",
+          "value": 82,
+          "source_ids": [
+            "weapon-panel:armamenthelper",
+            "weapon-panel:gamewith:followup-500429"
+          ],
+          "reason": "GameWith基本性能与既有参数快照逐字段一致，采用其82。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [
+        {
+          "field": "guard.boost",
+          "reason": "防御强度仍有两组记录：Mobalytics与Game8日文为21，参数快照与GameWith为32。Game8注明训练场追踪者Lv1，其他资料未统一条件；尚不能说明差异来自等级、强化、补丁或录入错误，继续待核。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-2d079138f865",
+      "game_id": 12170000,
+      "name_zh": "尊容烛台",
+      "name_en": "Cranial Vessel Candlestand",
+      "name_jp": "尊顔の燭台",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.strength"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "尊顔の燭台；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500414",
+          "fields": {
+            "scaling.strength": "A"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "尊顔の燭台；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/692995",
+          "fields": {
+            "scaling.strength": "A"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.strength",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.strength",
+          "value": "A",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-fad820228aca",
+      "game_id": 23750000,
+      "name_zh": "无赖的大斧",
+      "name_en": "Raider's Greataxe",
+      "name_jp": "無頼漢の大斧",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.strength"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "無頼漢の大斧；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500211",
+          "fields": {
+            "scaling.strength": "S"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "無頼漢の大斧；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/692944",
+          "fields": {
+            "scaling.strength": "S"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.strength",
+          "primary": "C",
+          "reference": "S",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "C",
+          "reference": "S",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.strength",
+          "value": "S",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-f024b035de38",
+      "game_id": 23080000,
+      "name_zh": "星兽半颚",
+      "name_en": "Fallingstar Beast Jaw",
+      "name_jp": "星獣の顎",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "attack.magic"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-500398",
+          "locator": "基本性能 / 攻撃性能 / ガードカット率",
+          "fields": {
+            "attack.magic": 67
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-692958",
+          "locator": "性能；训练场追踪者Lv1",
+          "fields": {
+            "attack.magic": 57
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "attack.magic",
+          "primary": 76,
+          "reference": 67,
+          "source_id": "weapon-panel:gamewith:followup-500398",
+          "state": "conflict"
+        },
+        {
+          "field": "attack.magic",
+          "primary": 76,
+          "reference": 57,
+          "source_id": "weapon-panel:game8jp:followup-692958",
+          "state": "conditions_unknown",
+          "note": "该页明示训练场追踪者Lv1；补丁/强化及与参数基值的对应未对齐。"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "attack.magic",
+          "value": 67,
+          "source_ids": [
+            "weapon-panel:armamenthelper",
+            "weapon-panel:gamewith:followup-500398"
+          ],
+          "reason": "GameWith基本性能与既有参数快照逐字段一致，采用其67。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-5129335df9a7",
+      "game_id": 40000000,
+      "name_zh": "短弓",
+      "name_en": "Shortbow",
+      "name_jp": "ショートボウ",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "ショートボウ；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500335",
+          "fields": {
+            "scaling.dexterity": "S"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "ショートボウ；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693280",
+          "fields": {
+            "scaling.dexterity": "S"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "C",
+          "reference": "S",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "C",
+          "reference": "S",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "S",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-3c5a1566ba26",
+      "game_id": 24070000,
+      "name_zh": "哨兵火把",
+      "name_en": "Sentry's Torch",
+      "name_jp": "歩哨の松明",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity",
+        "scaling.strength"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "歩哨の松明；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500203",
+          "fields": {
+            "scaling.dexterity": "C",
+            "scaling.strength": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "歩哨の松明；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693275",
+          "fields": {
+            "scaling.dexterity": "C",
+            "scaling.strength": "C"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "B",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "B",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "B",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "B",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "scaling.strength",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-7076f339b775",
+      "game_id": 30120000,
+      "name_zh": "铁圆盾",
+      "name_en": "Iron Roundshield",
+      "name_jp": "鉄の円盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "鉄の円盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500306",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "鉄の円盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693263",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-55f0712aaa1d",
+      "game_id": 30130000,
+      "name_zh": "金黄铁盾",
+      "name_en": "Gilded Iron Shield",
+      "name_jp": "金装の鉄盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "金装の鉄盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500305",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "金装の鉄盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693264",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-40c14c16dec5",
+      "game_id": 30020000,
+      "name_zh": "蛇人盾",
+      "name_en": "Man-Serpent's Shield",
+      "name_jp": "蛇人の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "蛇人の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500304",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "蛇人の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693265",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-8d25a09811f6",
+      "game_id": 30140000,
+      "name_zh": "冰纹铁盾",
+      "name_en": "Ice Crest Shield",
+      "name_jp": "氷紋の鉄盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "氷紋の鉄盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500303",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "氷紋の鉄盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693266",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-b42aa3557ade",
+      "game_id": 30110000,
+      "name_zh": "裂缝盾",
+      "name_en": "Rift Shield",
+      "name_jp": "裂け目の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "裂け目の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500302",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "裂け目の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693267",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-b5cb7362625b",
+      "game_id": 30010000,
+      "name_zh": "调香师盾",
+      "name_en": "Perfumer's Shield",
+      "name_jp": "調香師の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "調香師の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500301",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "調香師の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693268",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-dfcd1a4a1468",
+      "game_id": 31170000,
+      "name_zh": "罪人盾",
+      "name_en": "Shield of the Guilty",
+      "name_jp": "咎人の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "咎人の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500300",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "咎人の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693269",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-287fa6986861",
+      "game_id": 30190000,
+      "name_zh": "旋角盾",
+      "name_en": "Spiralhorn Shield",
+      "name_jp": "角渦の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "角渦の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500299",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "角渦の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693270",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-39819a951ed8",
+      "game_id": 30150000,
+      "name_zh": "熏烧盾",
+      "name_en": "Smoldering Shield",
+      "name_jp": "燻りの盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "燻りの盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500298",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "燻りの盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693271",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-7130c1e8c27b",
+      "game_id": 30200000,
+      "name_zh": "盘蛇盾",
+      "name_en": "Coil Shield",
+      "name_jp": "蜷局の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "蜷局の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500297",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "蜷局の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693272",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-d1268437a077",
+      "game_id": 31050000,
+      "name_zh": "太阳城盾",
+      "name_en": "Sun Realm Shield",
+      "name_jp": "太陽の都の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "太陽の都の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500283",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "太陽の都の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693063",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-31450d54b7f7",
+      "game_id": 31230000,
+      "name_zh": "大皮盾",
+      "name_en": "Large Leather Shield",
+      "name_jp": "ラージレザーシールド",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "ラージレザーシールド；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500282",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "ラージレザーシールド；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693064",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-74e86b396b6c",
+      "game_id": 31340000,
+      "name_zh": "黑皮盾",
+      "name_en": "Black Leather Shield",
+      "name_jp": "ブラックレザーシールド",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "ブラックレザーシールド；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500281",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "ブラックレザーシールド；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693065",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-e41e4009c36a",
+      "game_id": 31000000,
+      "name_zh": "鸢形盾",
+      "name_en": "Kite Shield",
+      "name_jp": "カイトシールド",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "カイトシールド；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500280",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "カイトシールド；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693066",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-e73b6f5596e4",
+      "game_id": 31100000,
+      "name_zh": "蓝金鸢形盾",
+      "name_en": "Blue-Gold Kite Shield",
+      "name_jp": "青金のカイトシールド",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "青金のカイトシールド；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500279",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "青金のカイトシールド；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693067",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-02b9c320feba",
+      "game_id": 31080000,
+      "name_zh": "蝎纹鸢形盾",
+      "name_en": "Scorpion Kite Shield",
+      "name_jp": "蠍のカイトシールド",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "蠍のカイトシールド；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500278",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "蠍のカイトシールド；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693068",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-75766249aabb",
+      "game_id": 31090000,
+      "name_zh": "双鸟鸢形盾",
+      "name_en": "Twinbird Kite Shield",
+      "name_jp": "双鳥のカイトシールド",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "双鳥のカイトシールド；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500277",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "双鳥のカイトシールド；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693069",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-076a6e28673a",
+      "game_id": 31030000,
+      "name_zh": "失乡骑士盾",
+      "name_en": "Banished Knight's Shield",
+      "name_jp": "失地騎士の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "失地騎士の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500275",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "失地騎士の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693071",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-3021f126aa7c",
+      "game_id": 31040000,
+      "name_zh": "白金盾",
+      "name_en": "Albinauric Shield",
+      "name_jp": "しろがねの盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "しろがねの盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500274",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "しろがねの盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693072",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-fa57ad979565",
+      "game_id": 30060000,
+      "name_zh": "兽人壶盾",
+      "name_en": "Beastman's Jar-Shield",
+      "name_jp": "獣人の壺盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.strength"
+      ],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "獣人の壺盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500273",
+          "fields": {
+            "scaling.strength": "A",
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "獣人の壺盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693073",
+          "fields": {
+            "scaling.strength": "A",
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "A",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "A",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.strength",
+          "value": "A",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-bb975fa6e49e",
+      "game_id": 31190000,
+      "name_zh": "卡利亚骑士盾",
+      "name_en": "Carian Knight's Shield",
+      "name_jp": "カーリアの騎士盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "カーリアの騎士盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500272",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "カーリアの騎士盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693074",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-e1933955612b",
+      "game_id": 31060000,
+      "name_zh": "白银盾",
+      "name_en": "Silver Mirrorshield",
+      "name_jp": "白銀の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "白銀の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500271",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "白銀の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693075",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-8733d00ed434",
+      "game_id": 31140000,
+      "name_zh": "大乌龟壳",
+      "name_en": "Great Turtle Shell",
+      "name_jp": "大亀の甲羅",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "大亀の甲羅；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500270",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "大亀の甲羅；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693076",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-277854f96198",
+      "game_id": 32000000,
+      "name_zh": "龙塔盾",
+      "name_en": "Dragon Towershield",
+      "name_jp": "竜のタワーシールド",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity",
+        "scaling.strength"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "竜のタワーシールド；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500264",
+          "fields": {
+            "scaling.dexterity": "D",
+            "scaling.strength": "A"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "竜のタワーシールド；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693089",
+          "fields": {
+            "scaling.dexterity": "D",
+            "scaling.strength": "A"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "E",
+          "reference": "D",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "E",
+          "reference": "D",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "D",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "scaling.strength",
+          "value": "A",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-e410765edbf4",
+      "game_id": 32050000,
+      "name_zh": "铁棘大盾",
+      "name_en": "Briar Greatshield",
+      "name_jp": "鉄茨の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "鉄茨の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500263",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "鉄茨の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693090",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-e8aa069fce84",
+      "game_id": 32170000,
+      "name_zh": "钉墙盾",
+      "name_en": "Spiked Palisade Shield",
+      "name_jp": "鋲壁の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "鋲壁の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500262",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "鋲壁の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693091",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-2901ec48608f",
+      "game_id": 32140000,
+      "name_zh": "神圣绘画盾",
+      "name_en": "Icon Shield",
+      "name_jp": "神聖画の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "神聖画の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500261",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "神聖画の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693092",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-d1aa39e4a6d9",
+      "game_id": 32090000,
+      "name_zh": "兽纹黄金盾",
+      "name_en": "Golden Beast Crest Shield",
+      "name_jp": "獣紋の黄金盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "獣紋の黄金盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500260",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "獣紋の黄金盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693093",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-3c255ee06c7c",
+      "game_id": 32020000,
+      "name_zh": "名门大盾",
+      "name_en": "Distinguished Greatshield",
+      "name_jp": "名家の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "名家の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500259",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "名家の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693094",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-0cad7e062e84",
+      "game_id": 32270000,
+      "name_zh": "金黄大盾",
+      "name_en": "Gilded Greatshield",
+      "name_jp": "金装の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "金装の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500258",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "金装の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693095",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-984951c3c5f0",
+      "game_id": 32250000,
+      "name_zh": "杜鹃大盾",
+      "name_en": "Cuckoo Greatshield",
+      "name_jp": "カッコウの大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "カッコウの大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500257",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "カッコウの大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693096",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-4e46b2929e15",
+      "game_id": 32230000,
+      "name_zh": "红狮子大盾",
+      "name_en": "Redmane Greatshield",
+      "name_jp": "赤獅子の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "赤獅子の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500256",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "赤獅子の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693097",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-a8e2e29bf67b",
+      "game_id": 32260000,
+      "name_zh": "黄金大盾",
+      "name_en": "Golden Greatshield",
+      "name_jp": "黄金の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "黄金の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500255",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "黄金の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693098",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-4a8cc7257784",
+      "game_id": 32280000,
+      "name_zh": "圣树纹大盾",
+      "name_en": "Haligtree Crest Greatshield",
+      "name_jp": "聖樹紋の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "聖樹紋の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500254",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "聖樹紋の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693099",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-9a0655dd2164",
+      "game_id": 32240000,
+      "name_zh": "日蚀纹大盾",
+      "name_en": "Eclipse Crest Greatshield",
+      "name_jp": "蝕紋の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "蝕紋の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500253",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "蝕紋の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693100",
+          "fields": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "uncommon",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "uncommon",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-b65310e09bd8",
+      "game_id": 32030000,
+      "name_zh": "熔炉角盾",
+      "name_en": "Crucible Hornshield",
+      "name_jp": "坩堝の角盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "坩堝の角盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500250",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "坩堝の角盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693103",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-b3f56259ea8f",
+      "game_id": 32040000,
+      "name_zh": "龙爪盾",
+      "name_en": "Dragonclaw Shield",
+      "name_jp": "竜爪の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "竜爪の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500252",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "竜爪の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693101",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-8e30a08f00a0",
+      "game_id": 32130000,
+      "name_zh": "指纹石盾",
+      "name_en": "Fingerprint Stone Shield",
+      "name_jp": "指紋石の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "指紋石の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500251",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "指紋石の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693102",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-2a8cb0552b83",
+      "game_id": 32080000,
+      "name_zh": "黄金树大盾",
+      "name_en": "Erdtree Greatshield",
+      "name_jp": "黄金樹の大盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "黄金樹の大盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500248",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "黄金樹の大盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693105",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-14f8631d0fe0",
+      "game_id": 32120000,
+      "name_zh": "水母盾",
+      "name_en": "Jellyfish Shield",
+      "name_jp": "クラゲの盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "クラゲの盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500247",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "クラゲの盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693106",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-5f534411f5fe",
+      "game_id": 32160000,
+      "name_zh": "颜面盾",
+      "name_en": "Visage Shield",
+      "name_jp": "ガンメンの盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "ガンメンの盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500246",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "ガンメンの盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693107",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-0f2377814104",
+      "game_id": 32150000,
+      "name_zh": "独眼盾",
+      "name_en": "One-Eyed Shield",
+      "name_jp": "単眼の盾",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [],
+      "quality_was_pending": true,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "単眼の盾；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500245",
+          "fields": {
+            "rarity": "rare"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "単眼の盾；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693108",
+          "fields": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "rarity",
+          "primary": "common",
+          "reference": "rare",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "rarity",
+          "value": "rare",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": [
+        "品质已按两站明确分类补齐；这里记录资料页基础品质，局内掉落或强化后的品质可能不同，品质与各面板数值的完整绑定仍待核。"
+      ],
+      "quality_needs_review": false
+    },
+    {
+      "weapon_id": "weapon:index-a41689a09b9e",
+      "game_id": 34070000,
+      "name_zh": "黄金树圣印记",
+      "name_en": "Erdtree Seal",
+      "name_jp": "黄金樹の聖印",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "attack.holy"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-500220",
+          "locator": "基本性能 / 攻撃性能 / ガードカット率",
+          "fields": {
+            "attack.holy": 15
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-693164",
+          "locator": "性能；训练场追踪者Lv1",
+          "fields": {
+            "attack.holy": 15
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "attack.holy",
+          "primary": 0,
+          "reference": 15,
+          "source_id": "weapon-panel:gamewith:followup-500220",
+          "state": "conflict"
+        },
+        {
+          "field": "attack.holy",
+          "primary": 0,
+          "reference": 15,
+          "source_id": "weapon-panel:game8jp:followup-693164",
+          "state": "conditions_unknown",
+          "note": "该页明示训练场追踪者Lv1；补丁/强化及与参数基值的对应未对齐。"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "attack.holy",
+          "value": 15,
+          "source_ids": [
+            "weapon-panel:armamenthelper",
+            "weapon-panel:gamewith:followup-500220"
+          ],
+          "reason": "GameWith基本性能与既有参数快照逐字段一致，采用其15。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-41268da76055",
+      "game_id": 22030000,
+      "name_zh": "猛禽钩爪",
+      "name_en": "Raptor Talons",
+      "name_jp": "猛禽の鉤爪",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "猛禽の鉤爪；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500336",
+          "fields": {
+            "scaling.dexterity": "A"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "猛禽の鉤爪；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/692983",
+          "fields": {
+            "scaling.dexterity": "A"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "C",
+          "reference": "A",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "A",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    },
+    {
+      "weapon_id": "weapon:index-5bf863e4044d",
+      "game_id": 16020000,
+      "name_zh": "结晶矛",
+      "name_en": "Crystal Spear",
+      "name_jp": "結晶槍",
+      "reviewed_at": "2026-10-18",
+      "original_pending_fields": [
+        "scaling.dexterity",
+        "scaling.strength"
+      ],
+      "quality_was_pending": false,
+      "comparators": [
+        {
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "locator": "結晶槍；名称行与品质筛选；详情入口 https://gamewith.jp/eldenring/500386",
+          "fields": {
+            "scaling.dexterity": "B",
+            "scaling.strength": "C"
+          }
+        },
+        {
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "locator": "結晶槍；行内レア度与能力補正；详情入口 https://game8.jp/eldenring-nightreign/693152",
+          "fields": {
+            "scaling.dexterity": "B",
+            "scaling.strength": "C"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "B",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:gamewith:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.dexterity",
+          "primary": "D",
+          "reference": "B",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        },
+        {
+          "field": "scaling.strength",
+          "primary": "D",
+          "reference": "C",
+          "source_id": "weapon-panel:game8jp:followup-all",
+          "state": "conflict"
+        }
+      ],
+      "resolutions": [
+        {
+          "field": "scaling.dexterity",
+          "value": "B",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        },
+        {
+          "field": "scaling.strength",
+          "value": "C",
+          "source_ids": [
+            "weapon-panel:gamewith:followup-all",
+            "weapon-panel:game8jp:followup-all"
+          ],
+          "reason": "GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+          "reviewed_at": "2026-10-18"
+        }
+      ],
+      "unresolved": [],
+      "notes": []
+    }
+  ]
+}

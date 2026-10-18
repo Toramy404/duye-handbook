@@ -5350,5 +5350,95 @@
     "version": null,
     "sha256": "69710f286556d37d701566725d812534a2d29ebae1e0defbd44a0ebe3034dee0",
     "note": "2026-10-17逐页读取的来源面板。补丁、强化、持握和角色条件未完整标明；纠错及来源差异单独记录。"
+  },
+  {
+    "id": "weapon-panel:gamewith:followup-all",
+    "title": "GameWith · 武器分类与补正",
+    "url": "https://gamewith.jp/eldenring/485171",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "92d6b1301039f4d4e17620b764166f94fea5016cca9b1480608de107e2c545ba",
+    "note": "仅转录本轮目标的明确品质与字母补正；品质直接读取名称行的颜色分类，并核对蓝/紫分类页，不按等级推算。网页更新日不是游戏版本。"
+  },
+  {
+    "id": "weapon-panel:game8jp:followup-all",
+    "title": "Game8 日文 · 武器分类与补正",
+    "url": "https://game8.jp/eldenring-nightreign/690180",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "f199f4ce6538e302d073ad684d398c49b4016748f4e913ea6cfc7d25948bfb2c",
+    "note": "仅转录本轮目标的明确品质与字母补正；读取每行的レア度分类，不采用此表的攻击数字。详情页自报训练场追踪者Lv1，未与参数基值混算。与Game8英文站视为同一发布者。"
+  },
+  {
+    "id": "weapon-panel:gamewith:followup-500530",
+    "title": "GameWith · Sacred Relic Sword",
+    "url": "https://gamewith.jp/eldenring/500530",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "b5d8f231f6959139c8f785c9e27a28c5bbaab2430082eef6999b28c00253dd21",
+    "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+  },
+  {
+    "id": "weapon-panel:gamewith:followup-500429",
+    "title": "GameWith · Nightrider Flail",
+    "url": "https://gamewith.jp/eldenring/500429",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "8dd54884e12f1b0285bc3eb1947c2af6fa5f6dcdabfc3e3654e3b959fdcfaddc",
+    "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+  },
+  {
+    "id": "weapon-panel:gamewith:followup-500398",
+    "title": "GameWith · Fallingstar Beast Jaw",
+    "url": "https://gamewith.jp/eldenring/500398",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "4d668a1409f80c0b9c18087e903ff2c045141c299a77fcc5b9bd1b335003baa3",
+    "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+  },
+  {
+    "id": "weapon-panel:gamewith:followup-500220",
+    "title": "GameWith · Erdtree Seal",
+    "url": "https://gamewith.jp/eldenring/500220",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "7ee3df6058f7e83835b2e6272af054bc20e8b47e0805694276869350c643f66b",
+    "note": "本轮仅提取指定争议字段。基本性能；补丁与角色条件未完整注明。"
+  },
+  {
+    "id": "weapon-panel:game8jp:followup-693293",
+    "title": "Game8 日文 · Sacred Relic Sword",
+    "url": "https://game8.jp/eldenring-nightreign/693293",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "97103dacce90864b134328d1cc101548678d90b0a401f7e2432ac262b5ff809b",
+    "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
+  },
+  {
+    "id": "weapon-panel:game8jp:followup-693242",
+    "title": "Game8 日文 · Nightrider Flail",
+    "url": "https://game8.jp/eldenring-nightreign/693242",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "bcbccf3b9468de6afcf2afe1d55954fa46a862f742969838b9ef097eafe29521",
+    "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
+  },
+  {
+    "id": "weapon-panel:game8jp:followup-692958",
+    "title": "Game8 日文 · Fallingstar Beast Jaw",
+    "url": "https://game8.jp/eldenring-nightreign/692958",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "3b823b1a3105f4021bc3c5ea4ffc27c9c5ed0176c2935510ef2ed4fb9a9a61f7",
+    "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
+  },
+  {
+    "id": "weapon-panel:game8jp:followup-693164",
+    "title": "Game8 日文 · Erdtree Seal",
+    "url": "https://game8.jp/eldenring-nightreign/693164",
+    "accessed": "2026-10-18",
+    "version": null,
+    "sha256": "ff61092efeef5169f50018f4b88f0bc15a040c07246d81f55e027fc2eebca6a1",
+    "note": "本轮仅提取指定争议字段。页面明示训练场追踪者Lv1；不把攻击/防御示例直接当作同条件参数基值。"
   }
 ]
