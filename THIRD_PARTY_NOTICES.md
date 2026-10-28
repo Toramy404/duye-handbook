@@ -2,6 +2,16 @@
 
 本项目新增程序代码由维护者确认按 GPL-3.0 发布，许可证全文见 LICENSE。此声明不改变第三方内容的权利，也不授予游戏图像或表情的额外权利。
 
+## 语音预览依赖（2026-10-28）
+
+- 轻量中文使用 [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)（Apache-2.0）及官方Release的 `sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01`。其[ONNX模型卡](https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01)指向[原始训练模型](https://huggingface.co/csukuangfj/icefall-streaming-zipformer-small-ctc-zh-2025-04-01)，后者标注Apache-2.0。
+- 对照使用 [Vosk API](https://github.com/alphacep/vosk-api/blob/master/COPYING)（Apache-2.0）及 `vosk-model-small-cn-0.22`；[官方模型表](https://alphacephei.com/vosk/models)列出该模型的Apache-2.0许可。
+- 简称为本项目人工维护；拼音由 [pypinyin](https://github.com/mozillazg/python-pinyin) 0.55.0派生（MIT），完整声明见 `dist/PINYIN-LICENSE.txt`，随离线名称索引保存。
+
+Python环境与模型仅从各官方源下载到忽略的 `.voice-runtime/`，本轮不随Git、APK或Release分发。模型URL和压缩包SHA-256固定在 `scripts/setup_voice.py`；依赖版本在 `scripts/voice-requirements.txt`。Windows系统Huihui语音仅用于生成本机回归夹具，不分发语音引擎或录音。后续Android封装需同时附所选模型及其运行时依赖的完整声明。
+
+## 游戏资料与素材
+
 | 内容 | 来源与适用说明 |
 | --- | --- |
 | QuickRef 衍生资料及对应图标 | [xxiixi/NightreignQuickRef](https://github.com/xxiixi/NightreignQuickRef)，采用的资料快照 commit 为 3e23450094c18125ae5665927ed240b18189a040，保留 GPL-3.0 全文；对游戏原有美术不作独立授权保证 |
