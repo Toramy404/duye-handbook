@@ -1,8 +1,10 @@
 """Protocol/silence/limit tests; real-model comparisons are separate evaluation."""
-import io,json,sys,threading,unittest,urllib.request,urllib.error,wave
+import io,json,sys,threading,unittest,urllib.request,urllib.error,wave,struct,tempfile,zipfile,hashlib
+from unittest.mock import patch
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import voice_server as v
+import setup_voice as setup
 
 def wav(frames=16000,rate=16000):
  b=io.BytesIO()
@@ -42,5 +44,24 @@ class Protocol(unittest.TestCase):
   v.BUSY.acquire()
   try:self.assertEqual(self.post(wav())[0],409)
   finally:v.BUSY.release()
+ def test_oversized_format_chunk(self):
+  body=bytearray(wav());struct.pack_into('<I',body,16,4294967295)
+  self.assertEqual(self.post(body)[0],400)
+ def test_compare_receives_identical_pcm(self):
+  body=bytearray(wav());body[44:]=struct.pack('<h',1000)*16000;seen=[]
+  def decoder(key,pcm):seen.append((key,pcm));return {'engine':key,'text':'测试'}
+  with patch.object(v,'recognize',side_effect=decoder):status,data=self.post(body,engine='compare')
+  self.assertEqual(status,200);self.assertEqual([x[0] for x in seen],['sherpa','vosk'])
+  self.assertEqual(seen[0][1],seen[1][1]);self.assertTrue(data['same_audio'])
+
+class ModelInstallation(unittest.TestCase):
+ def test_incomplete_folder_is_not_ready_and_setup_repairs_it(self):
+  with tempfile.TemporaryDirectory() as temporary:
+   root=Path(temporary);folder=root/'model';folder.mkdir();(folder/'weights').write_bytes(b'broken')
+   archive=root/'model.zip'
+   with zipfile.ZipFile(archive,'w') as z:z.writestr('model/weights',b'complete-model')
+   with patch.object(setup,'RUNTIME',root),patch.object(setup,'MODELS',{'test':{'folder':'model','url':'https://example.invalid/model.zip'}}),patch.object(setup,'HASHES',{'test':hashlib.sha256(archive.read_bytes()).hexdigest()}),patch.object(setup,'REQUIRED',{'test':{'weights':14}}):
+    self.assertFalse(setup.model_ready('test'));setup.setup();self.assertTrue(setup.model_ready('test'))
+    self.assertEqual((folder/'weights').read_bytes(),b'complete-model')
 
 if __name__=='__main__':unittest.main()

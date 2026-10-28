@@ -9,6 +9,19 @@ MODELS={
  'vosk': {'folder':'vosk-model-small-cn-0.22','url':'https://alphacephei.com/vosk/models/vosk-model-small-cn-0.22.zip'},
 }
 HASHES={'sherpa':'b3b309f7ce4a737195fcc6963ea19b0653a7d3401580af5ae0d3e284cbb71f0b','vosk':'3af8b0e7e0f835ae9d414ce5df580237a3cfb08d586c9fbbb0f7ff29ad5b14ba'}
+# Required runtime files and sizes from the two SHA-256-pinned official archives.
+REQUIRED={
+ 'sherpa':{'model.int8.onnx':26342340,'tokens.txt':13366},
+ 'vosk':{'am/final.mdl':15901896,'conf/mfcc.conf':153,'conf/model.conf':289,
+  'graph/disambig_tid.int':234,'graph/Gr.fst':26082259,'graph/HCLr.fst':16158762,
+  'graph/phones/word_boundary.int':7161,'ivector/final.dubm':168048,'ivector/final.ie':9927287,
+  'ivector/final.mat':44975,'ivector/global_cmvn.stats':1090,'ivector/online_cmvn.conf':0,'ivector/splice.conf':35}
+}
+
+def model_ready(key):
+ folder=RUNTIME/MODELS[key]['folder']
+ try:return all((folder/name).is_file() and (folder/name).stat().st_size==size for name,size in REQUIRED[key].items())
+ except OSError:return False
 
 def setup():
  RUNTIME.mkdir(exist_ok=True)
@@ -30,7 +43,7 @@ def setup():
    partial.replace(archive)
   assert hashlib.sha256(archive.read_bytes()).hexdigest()==HASHES[key], 'Model archive hash mismatch: '+key
   dest=RUNTIME/info['folder']
-  if not dest.exists():
+  if not model_ready(key):
    if archive.suffix=='.zip':
     with zipfile.ZipFile(archive) as z:
      for n in z.namelist():
@@ -38,7 +51,7 @@ def setup():
      z.extractall(RUNTIME)
    else:
     with tarfile.open(archive) as t:t.extractall(RUNTIME,filter='data')
-  assert dest.is_dir()
+  assert model_ready(key),'Model extraction is incomplete: '+key
   reports[key]={**info,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'archive_bytes':archive.stat().st_size,'files':{str(p.relative_to(dest)).replace('\\','/'):p.stat().st_size for p in dest.rglob('*') if p.is_file()}}
   print(key+': '+str(reports[key]['archive_bytes'])+' bytes downloaded; model available',flush=True)
  (RUNTIME/'model-manifest.json').write_text(json.dumps(reports,ensure_ascii=False,indent=2),'utf-8')

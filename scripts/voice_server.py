@@ -6,8 +6,8 @@ requests its own microphone permission and sends one bounded PCM WAV per query.
 from pathlib import Path
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlsplit,parse_qs
-import argparse,io,json,secrets,threading,time,wave,os
-from setup_voice import ROOT,RUNTIME,MODELS
+import argparse,io,json,secrets,threading,time,wave,os,struct
+from setup_voice import ROOT,RUNTIME,MODELS,model_ready
 
 MAX_BYTES=16000*2*20+4096
 TOKEN=secrets.token_urlsafe(32)
@@ -23,13 +23,13 @@ def read_audio(payload):
    count=w.getnframes();pcm=w.readframes(count)
    if len(pcm)!=count*2:raise ValueError('录音文件不完整。')
    return pcm,count/16000
- except (wave.Error,EOFError):raise ValueError('无法读取录音，请选择PCM WAV文件。')
+ except (wave.Error,EOFError,RuntimeError,struct.error):raise ValueError('无法读取录音，请选择PCM WAV文件。')
 
 def recognize(key,pcm):
  import numpy as np
  start=time.perf_counter();cold=key not in ENGINES
  folder=RUNTIME/MODELS[key]['folder']
- if not folder.is_dir():raise ValueError('模型尚未安装，请先运行语音预览启动脚本。')
+ if not model_ready(key):raise ValueError('模型未安装完整，请先运行语音预览启动脚本的 -Setup。')
  if cold:
   if key=='sherpa':
    import sherpa_onnx
@@ -71,7 +71,7 @@ class Handler(SimpleHTTPRequestHandler):
   path=urlsplit(self.path).path
   if path=='/health':return self.reply(200,{'app':'nightreign-voice-preview','root':str(ROOT/'dist'),'port':self.server.server_port})
   if path=='/api/voice/status':
-   return self.reply(200,{'mode':'desktop-local','token':TOKEN,'engines':{k:{'ready':(RUNTIME/v['folder']).is_dir(),'loaded':k in ENGINES} for k,v in MODELS.items()},'saves_audio':False})
+   return self.reply(200,{'mode':'desktop-local','token':TOKEN,'engines':{k:{'ready':model_ready(k),'loaded':k in ENGINES} for k in MODELS},'saves_audio':False})
   if path.startswith('/api/'):return self.reply(404,{'error':'接口不存在。'})
   return super().do_GET()
  def list_directory(self,path):self.send_error(404);return None

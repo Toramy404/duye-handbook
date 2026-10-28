@@ -12,14 +12,17 @@ var persist=function(k,v){try{localStorage.setItem(storagePrefix+k,JSON.stringif
 var state={view:'home',context:'out',fontSize:load('nr-font-size','normal'),global:'',query:'',scope:'all',stack:'all',limit:36,mode:'regular',map:'all',n1:'',n2:'',extra:'',extraDay:'any',char:'wylder',level:15,eventLord:'all',marks:load('nr-crystal-marks',{}),layout:'all',zoom:1,players:'3',favorites:load('nr-favorites',[]),phone:!window.NightreignNative&&window.innerWidth>480,tag:'all',density:load('nr-effect-density','compact'),recent:load('nr-recent-v1',[]),searchReturn:'home',weaponGroup:'all',weaponCategory:'all',weaponRarity:'all'};
 if(!Array.isArray(state.recent))state.recent=[];
 if(!Array.isArray(state.favorites))state.favorites=[];
+state.recent=state.recent.filter(function(k){return typeof k==='string'});
+state.favorites=state.favorites.filter(function(k){return typeof k==='string'});
+if(!state.marks||typeof state.marks!=='object'||Array.isArray(state.marks))state.marks={};
 if(!['compact','cards'].includes(state.density))state.density='compact';
 var collections={weapons:'武器图鉴',effects:'词条',items:'道具',legendary_weapon_effects:'传说武器',recluse_spells:'混合魔法',dodge_frames:'动作帧数',libra_trades:'商人交易',wild_bosses:'野外Boss',characters:'角色',nightlords:'夜王',events:'事件'};
 var titles={voice:'语音查询',timer:'缩圈倒计时',weapons:'武器图鉴',home:'首页',effects:'词条',bosses:'夜王',crystals:'水晶',characters:'角色',events:'事件',favorites:'我的收藏',more:'更多资料',about:'数据与来源',items:'道具速查',legendary_weapon_effects:'传说武器',recluse_spells:'隐士混合魔法',dodge_frames:'动作帧数',libra_trades:'持秤商人交易',wild_bosses:'野外Boss',search:'全库搜索',settings:'设置'};
 var maps={all:'全部地形',standard:'无地变地图',great_hollow:'大空洞',mountaintop:'山顶',crater:'火山口',rotted_woods:'腐败森林',noklateo:'隐城'};
 var scopes={all:'全部',relic:'局外遗物',deep_relic:'深夜遗物',in_run:'局内词条',deep_in_run:'深夜局内',talisman:'护符',special_buff:'特殊效果'};
 var attrs={vigor:'生命力',mind:'集中力',endurance:'耐力',strength:'力气',dexterity:'灵巧',intelligence:'智力',faith:'信仰',arcane:'感应'};
-var damageNames={standard:'物理',strike:'打击',slash:'斩击',pierce:'突刺',magic:'魔力',fire:'火',lightning:'雷',holy:'圣'};
-var statusNames={poison:'中毒',rot:'腐败',bleed:'出血',frost:'冻伤',sleep:'催眠',madness:'发狂',death_blight:'咒死'};
+var damageNames={normal:'物理',standard:'物理',strike:'打击',slash:'斩击',pierce:'突刺',magic:'魔力',fire:'火',lightning:'雷',holy:'圣'};
+var statusNames={scarletRot:'腐败',poison:'中毒',rot:'腐败',bleed:'出血',frost:'冻伤',sleep:'催眠',madness:'发狂',death_blight:'咒死'};
 var shortNames={gladius:'三头犬',adel:'艾德雷',gnoster:'智虫',maris:'玛丽斯',libra:'利普拉',fulghor:'弗格尔',caligo:'卡莉果',heolstor:'布德奇冥',harmonia:'安定者',straghess:'废弃物王'};
 var symbols={gladius:'狼',adel:'牙',gnoster:'虫',maris:'海',libra:'秤',fulghor:'骑',caligo:'雾',heolstor:'夜',harmonia:'衡',straghess:'王'};
 var sourceMap=Object.fromEntries(D.sources.map(function(s){return[s.id,s]}));
@@ -42,7 +45,7 @@ var head=function(title,desc,action){return '<div class="page-head"><div><h1>'+e
 var sourceHTML=function(refs){return '<details><summary>查看来源与核对范围</summary><div class="source-list">'+(refs||[]).map(function(r){var s=sourceMap[r.source_id];return s?'<div class="source-item"><a href="'+esc(r.url||s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+' ↗</a><p>'+esc(r.locator||'来源索引')+(s.version?' · '+esc(s.version):'')+'</p></div>':''}).join('')+'</div><p class="small muted">来源链接需联网；本页资料已保存在本机。社区跨表一致不等于独立游戏实测。</p></details>'};
 var weaponUI=window.NR_WEAPONS?window.NR_WEAPONS.create(D,{esc:esc,btn:btn,head:head,select:select,openButton:openButton,favButton:favButton,empty:empty,sourceHTML:sourceHTML}):null;
 var timerUI=window.NR_TIMER?window.NR_TIMER.create(D,{esc:esc,btn:btn,head:head,sourceHTML:sourceHTML,load:load,persist:persist,render:render,toast:toast}):null;
-var voiceUI=window.NR_VOICE?window.NR_VOICE.create(D,{esc:esc,head:head,render:render,active:function(){return state.view==='voice'},open:function(c){if(c.collection==='effect_groups')familyDetail(c.id);else detail(c.collection,c.id)},search:function(q){navigate('search');state.global=q;document.getElementById('global-search').value=q;render()}}):null;
+var voiceUI=window.NR_VOICE?window.NR_VOICE.create(D,{esc:esc,head:head,render:render,active:function(){return state.view==='voice'},open:function(c){if(c.collection==='effect_groups'){var group=groupById.get(c.id),row=group&&c.tier!=null?group.rows.find(function(r){return catalog.displayTier(D,r)===c.tier}):null;familyDetail(c.id,row&&row.id)}else detail(c.collection,c.id)},search:function(q){state.searchReturn='voice';navigate('search');state.global=q;document.getElementById('global-search').value=q;render()}}):null;
 function shell(){
  var nav=['home','voice','timer','weapons','effects','bosses','crystals','characters','events','favorites','more','settings'];
  root.innerHTML='<div class="shell"><div class="phone-banner"><span>手机 App 预览 · 390px</span>'+btn('展开预览','phone',null,'ghost')+'</div><aside class="sidebar"><div class="brand"><span class="knight-avatar brand-mark"><img src="assets/rain-knight.png" alt="打伞淋雨的小骑士"></span><div><strong>渡夜手册</strong><small>NIGHTREIGN COMPANION</small></div></div><nav class="nav" aria-label="主要导航">'+nav.map(function(v,i){return btn(icon(v)+'<span class="nav-label">'+titles[v]+'</span><span class="nav-index">'+String(i+1).padStart(2,'0')+'</span>','nav',v)}).join('')+'</nav><div class="sidebar-foot"><span class="online-dot"></span>本地资料 · 随时查阅<br><span class="small">含 DLC / 深夜模式<br>数据核对 2026.10.14</span></div></aside><div class="main">'+(previewMode?'<div class="preview-ribbon">预览版 · 收藏、设置与正式版独立保存</div>':'')+'<header class="topbar">'+btn(icon('back'),'back',null,'icon-button back-button')+'<div class="top-search"><span class="search-icon">⌕</span><input id="global-search" type="search" autocomplete="off" aria-label="搜索全部资料" placeholder="搜索武器、词条、角色或夜王…"><button class="voice-shortcut" data-action="nav" data-value="voice" aria-label="语音查询">'+icon('voice')+'</button></div><button class="timer-shortcut ghost" data-action="nav" data-value="timer" data-timer-badge>缩圈计时</button><div class="top-tools"><span id="offline-state" class="small muted"><span class="online-dot"></span>资料已载入</span>'+btn('手机预览','phone',null,'ghost')+'</div>'+btn(icon('settings'),'nav','settings','icon-button settings-button')+'</header><main id="content" class="content"></main></div><nav class="bottom-nav" aria-label="移动导航">'+['home','effects','bosses','crystals','more'].map(function(v){return btn(icon(v)+'<span>'+({home:'首页',effects:'词条',bosses:'夜王',crystals:'水晶',more:'更多'}[v])+'</span>','nav',v)}).join('')+'</nav></div>';
@@ -215,7 +218,7 @@ function about(){
  '<div class="data-stats">'+[[D.effects.length,'词条记录'],[520,'两夜配对已对照'],[110,'满级属性已比较'],[21,'水晶候选点']].map(function(x){return '<div class="panel"><strong>'+x[0]+'</strong><small>'+x[1]+'</small></div>'}).join('')+'</div>'+
  '<section class="panel"><h2>这次具体核对了什么</h2><p class="muted" style="margin-top:14px">全部520种配置的两夜主要Boss；10名角色满级共110个属性值；13个夜王实体的普通承伤倍率、异常阈值和韧性；深夜武器57类效果，以及按ID连接的522条遗物说明和部分同档叠加字段。</p><p class="notice" style="margin-top:16px">“跨表已核”只针对所列字段。来源可能共享同一套底层数据，并非独立游戏实验；未核验的数值保留“来源收录”，有差异的并列展示。</p><details><summary>主要修正与仍有差异的条目</summary>'+D.corrections.map(function(r){return '<div class="source-item"><strong>'+esc(r.name)+'</strong><p>'+esc(r.evidence)+'</p></div>'}).join('')+'</details><details><summary>未完成的核验与版本范围</summary>'+D.issues.filter(function(r){return r.severity!=='corrected'&&r.severity!=='normalized'}).map(function(r){return '<div class="source-item"><strong>'+esc(r.name)+'</strong><p>'+esc(r.detail)+'</p></div>'}).join('')+'</details></section>'+
  '<div class="section-head"><h2>离线使用</h2></div><section class="panel"><p>页面、资料和地图均从本机载入，不依赖在线字体或数据服务。首次访问完成缓存后，同一浏览器可离线重开；也可直接打开文件夹里的 index.html。</p><p class="small muted">收藏和水晶标记仅保存在当前浏览器。换浏览器、清理网站数据或使用不同地址会得到独立记录。安卓安装包与电脑预览分别保存个人记录。</p><div class="toolbar" style="margin-top:18px">'+btn('导出收藏与地图标记','export-prefs',null,'ghost')+btn('刷新页面','reload',null,'ghost')+'</div></section>'+
- '<div class="section-head"><h2>主要资料来源</h2><span class="small muted">点击后联网打开</span></div><section class="panel source-list">'+D.sources.filter(function(s){return ['quickref','sidekick-seeds','sidekick-coords','fifthmatt','slay-sheet','kevin-sheet','roundtable-relic','crystal-map','official-pc','official-ps'].includes(s.id)}).map(function(s){return '<div class="source-item"><a href="'+esc(r.url||s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+' ↗</a><p>'+esc(s.version||'来源未提供统一版本')+'</p></div>'}).join('')+'<p class="small muted">NightreignQuickRef 衍生数据保留 <a href="DATA-LICENSE.txt" target="_blank">GPL-3.0 许可</a>；地图归原作者所有，地表原图保留 Alex0Goat / SisterNun 署名。本工具供个人离线查询和开发验证。</p><p class="small muted">本体夜王头像取自 <a href="https://github.com/shahf215/Nightreign-Overlay/tree/main/public/assets/nightlordIcons" target="_blank" rel="noopener noreferrer">Nightreign Overlay</a>，游戏素材归原权利人。DLC 使用 NightreignQuickRef 收录的对应夜王遗物图标；小骑士表情由用户提供。布局参考 NightreignQuickRef 的分类及 MapFilter 的筛选方式。</p></section>';
+ '<div class="section-head"><h2>主要资料来源</h2><span class="small muted">点击后联网打开</span></div><section class="panel source-list">'+D.sources.filter(function(s){return ['quickref','sidekick-seeds','sidekick-coords','fifthmatt','slay-sheet','kevin-sheet','roundtable-relic','crystal-map','official-pc','official-ps'].includes(s.id)}).map(function(s){return '<div class="source-item"><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+' ↗</a><p>'+esc(s.version||'来源未提供统一版本')+'</p></div>'}).join('')+'<p class="small muted">NightreignQuickRef 衍生数据保留 <a href="DATA-LICENSE.txt" target="_blank">GPL-3.0 许可</a>；地图归原作者所有，地表原图保留 Alex0Goat / SisterNun 署名。本工具供个人离线查询和开发验证。</p><p class="small muted">本体夜王头像取自 <a href="https://github.com/shahf215/Nightreign-Overlay/tree/main/public/assets/nightlordIcons" target="_blank" rel="noopener noreferrer">Nightreign Overlay</a>，游戏素材归原权利人。DLC 使用 NightreignQuickRef 收录的对应夜王遗物图标；小骑士表情由用户提供。布局参考 NightreignQuickRef 的分类及 MapFilter 的筛选方式。</p></section>';
 }
 function search(){
  var q=state.global,all=[];
@@ -237,9 +240,10 @@ function qualityDetails(r){
 }
 function damageHTML(r){
  var h='<div class="detail-section"><h3>承伤倍率 · 越高越易受伤</h3><div class="mult-grid">';
- h+=Object.entries(r.damage_multiplier||{}).map(function(a){var v=a[1];return '<div class="mult '+(typeof v==='number'?(v>1?'weak':v<1?'resist':''):'')+'">'+'<img class="damage-icon" src="assets/types/'+a[0]+'.png" alt="">'+esc(damageNames[a[0]]||a[0])+'<strong>'+esc(typeof v==='number'?'×'+v:v)+'</strong></div>'}).join('')+'</div><p class="small muted" style="margin-top:8px">例如 ×1.35 表示承受135%的该类伤害；×0.5 表示承受50%。</p></div>';
+ h+=Object.entries(r.damage_multiplier||{}).map(function(a){var v=a[1];return '<div class="mult '+(typeof v==='number'?(v>1?'weak':v<1?'resist':''):'')+'">'+'<img class="damage-icon" src="assets/types/'+(a[0]==='normal'?'standard':a[0])+'.png" alt="">'+esc(damageNames[a[0]]||a[0])+'<strong>'+esc(typeof v==='number'?'×'+v:v)+'</strong></div>'}).join('')+'</div><p class="small muted" style="margin-top:8px">例如 ×1.35 表示承受135%的该类伤害；×0.5 表示承受50%。</p></div>';
  if(r.status_threshold)h+='<div class="detail-section"><h3>异常积累基础阈值</h3><div class="attributes">'+Object.entries(r.status_threshold).map(function(a){return '<div class="attribute"><span class="muted">'+esc(statusNames[a[0]]||a[0])+'</span><strong>'+esc(a[1])+'</strong></div>'}).join('')+'</div></div>';
- if(r.poise_raw!=null)h+='<p class="small" style="margin-top:14px">基础韧性：'+esc(r.poise_raw)+'</p>';
+ var poise=r.poise_raw!=null?r.poise_raw:r.poise;
+ if(poise!=null)h+='<p class="small" style="margin-top:14px">基础韧性：'+esc(poise)+'</p>';
  if(r.health_solo_sheet)h+='<p class="small muted">普通单人血量（Slay表）：'+r.health_solo_sheet+'；不用于深夜或永夜。</p>';
  return h+qualityDetails(r);
 }
@@ -253,7 +257,7 @@ function detail(c,id){
   D.boss_variants.filter(function(v){return v.nightlord_id===r.id}).map(function(v){return '<section class="detail-section"><h3>'+esc(v.name)+' '+badge(v)+'</h3>'+damageHTML(v)+sourceHTML(v.source_refs)+'</section>'}).join('');
  }else if(c==='weapons'&&weaponUI){body=weaponUI.detail(r);
  }else if(c==='characters'){
-  state.char=r.id;modal.close();navigate('characters');return;
+  modal.close();navigate('characters',{character:r.id});return;
  }else{
   body=(c==='effects'?btn('← 返回本组档位表','family',familyForRecord(r).id,'text-button'):'')+'<div class="detail-description">'+esc(desc)+'</div>';
   if(c==='effects'){
@@ -262,7 +266,7 @@ function detail(c,id){
    if(r.comparison_evidence){var e=r.comparison_evidence;body+='<details><summary>英文原表对照</summary>'+Object.entries(e).filter(function(a){return ['description_en','kevin','slay'].indexOf(a[0])>=0&&a[1]}).map(function(a){return '<p class="small">'+esc(Array.isArray(a[1])?a[1].filter(Boolean).join(' · '):a[1])+'</p>'}).join('')+'</details>'}
   }
   if(c==='events'){
-   body+='<div class="detail-section"><h3>奖励与影响</h3><p>'+esc(r.reward_summary)+'</p></div><div class="detail-section"><h3>已收录配置中的夜王关联</h3><p>'+esc(r.eligible_nightlord_ids.map(lordName).join('、')||'未取得限定列表')+'</p></div>';
+   body+='<div class="detail-section"><h3>奖励与影响</h3><p>'+esc(r.reward_summary)+'</p></div><div class="detail-section"><h3>已收录配置中的夜王关联</h3><p>'+esc((r.eligible_nightlord_ids||[]).map(lordName).join('、')||'未取得限定列表')+'</p></div>';
    var timings=D.event_timing_rules.filter(function(t){return t.event_ids&&t.event_ids.includes(r.id)});
    if(timings.length)body+='<div class="detail-section"><h3>触发时间窗口</h3>'+timings.map(function(t){return '<p class="small">'+esc(t.name)+'：'+t.earliest_seconds+'–'+t.latest_seconds+'秒（当日开始计时）</p>'}).join('')+'<p class="small muted">还需满足事件自身条件；追加夜Boss按夜战结束触发。</p></div>';
   }
@@ -319,6 +323,11 @@ function restoreFields(v){
   state[k]=typeof value===typeof fallback?value:fallback;
  });
  state.limit=Math.max(36,Math.min(2000,Number(state.limit)||36));
+ if(v==='characters'){
+  if(!byId('characters',state.char))state.char='wylder';
+  state.level=Math.max(1,Math.min(15,Math.round(Number(state.level)||15)));
+ }
+ if(v==='crystals')state.zoom=Math.max(1,Math.min(2.5,Number(state.zoom)||1));
  if(v==='effects'){
   if(!catalog.contexts[state.context])state.context='out';
   if(!data.context&&catalog.scopeContexts[state.scope])state.context=catalog.scopeContexts[state.scope];
@@ -332,6 +341,7 @@ function navigate(v,options){
  options=options||{};if(!titles[v])v='home';
  if(!options.initial)rememberView();
  state.view=v;restoreFields(v);
+ if(v==='characters'&&options.character&&byId('characters',options.character))state.char=options.character;
  document.getElementById('global-search').value=v==='search'?state.global:'';
  if(modal.open)modal.close();weaponDetailParent=null;
  restoreInProgress=true;render();
@@ -422,7 +432,7 @@ root.addEventListener('input',function(e){
  if(e.isComposing)return;
  if(e.target.id==='global-search'){
   var q=e.target.value;
-  if(q&&state.view!=='search'){rememberView();state.searchReturn=state.view;state.view='search';history.pushState({view:'search'},'','#search')}
+  if(q&&state.view!=='search'){if(voiceUI&&state.view==='voice')voiceUI.leave();rememberView();state.searchReturn=state.view;state.view='search';history.pushState({view:'search'},'','#search')}
   if(!q){state.global='';navigate(state.searchReturn||'home');return}
   state.global=q;state.limit=36;render();setReadingScroll(0);return;
  }
