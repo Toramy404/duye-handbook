@@ -45,9 +45,10 @@ for(const host of ['127.0.0.1:4318','localhost:4318']){
  eq(JSON.parse(x.store['nr-favorites']),x.fixtures['nr-favorites'],'production fixtures untouched '+host);
 }
 async function cacheScope(host,ownPrefix){
- const handlers={},deleted=[],keys=['nightreign-offline-old','duye-weapons-preview-old','other-app-cache',ownPrefix+'v0.5.0'];
+ const handlers={},deleted=[],keys=['nightreign-offline-old','duye-weapons-preview-old','other-app-cache'];
  const ctx={self:{location:{host},addEventListener(type,fn){handlers[type]=fn},clients:{claim(){}}},caches:{keys:async()=>keys,delete:async key=>{deleted.push(key);return true}}};
  vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'dist/sw.js'),'utf8'),ctx);
+ keys.push(vm.runInContext('CACHE',ctx));
  let pending;handlers.activate({waitUntil(p){pending=p}});await pending;
  eq(deleted,[ownPrefix+'old'],'service worker cleans only its own old caches '+host);
 }

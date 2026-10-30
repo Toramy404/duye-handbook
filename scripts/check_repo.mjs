@@ -5,7 +5,7 @@ import {execFileSync} from 'node:child_process';
 import assert from 'node:assert/strict';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 process.chdir(root);
-for(const file of ['dist/app.js','dist/catalog.js','dist/weapons.js','dist/circle-timer.js','dist/data.js','dist/sw.js','serve.mjs']) execFileSync(process.execPath,['--check',file]);
+for(const file of ['dist/voice.js','dist/voice-search.js','dist/voice-capture.js','dist/voice-lexicon.js','dist/app.js','dist/catalog.js','dist/weapons.js','dist/circle-timer.js','dist/data.js','dist/sw.js','serve.mjs']) execFileSync(process.execPath,['--check',file]);
 const manifest=fs.readFileSync('android/AndroidManifest.xml','utf8');
 const version=manifest.match(/android:versionName="([^"]+)"/)[1];
 assert.equal(JSON.parse(fs.readFileSync('package.json')).version,version,'package and Android versions must agree');

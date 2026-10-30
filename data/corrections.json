@@ -680,5 +680,2153 @@
     ],
     "evidence": "Slay与Recycle原始表在明确字段一致；修正承伤倍率符号/韧性/异常阈值，原值仍在raw与corrections。",
     "verification_status": "corrected_from_source_comparison"
+  },
+  {
+    "id": "weapon-panel:weapon:brass-shield",
+    "name": "黄铜盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:brass-shield",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:ants-skull-plate",
+    "name": "蚂蚁头盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:ants-skull-plate",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-30c7f8f44a6d",
+    "name": "慈悲短剑 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "C"
+    },
+    "after": {
+      "scaling.dexterity": "S"
+    },
+    "evidence": "scaling.dexterity：BWIKI固定修订与RPS转录同为S，保留Mobalytics原C。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:bwiki:583",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-30c7f8f44a6d",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-b20575896235",
+    "name": "象牙小镰刀 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "C"
+    },
+    "after": {
+      "scaling.dexterity": "A"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-b20575896235",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-3883937cace6",
+    "name": "托莉娜剑 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "D",
+      "scaling.strength": "D"
+    },
+    "after": {
+      "scaling.dexterity": "C",
+      "scaling.strength": "C"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-3883937cace6",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-185bdfee1966",
+    "name": "追踪者的大剑 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "D"
+    },
+    "after": {
+      "scaling.dexterity": "C"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-185bdfee1966",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-40f916cf4aac",
+    "name": "死亡钩棒 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "D"
+    },
+    "after": {
+      "scaling.dexterity": "C"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-40f916cf4aac",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:sacred-relic-sword",
+    "name": "神躯化剑 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "D",
+      "critical": 110
+    },
+    "after": {
+      "scaling.dexterity": "C",
+      "critical": 110
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；critical：GameWith与Game8日文详情均列致命110，支持Mobalytics的110；BWIKI的100保留为异议，当前采用110。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-693293",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-500530",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:sacred-relic-sword",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-0339199579c3",
+    "name": "执行者的刀 · 面板来源纠错",
+    "before": {
+      "rarity": "legendary"
+    },
+    "after": {
+      "rarity": "common"
+    },
+    "evidence": "rarity：Game8普通品质与BWIKI白色分组一致；未用角色技能召唤刀的品质替代。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:bwiki:weapon-index",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8:525282",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-0339199579c3",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-6a4cc5d55048",
+    "name": "黑夜骑兵连枷 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "D",
+      "scaling.strength": "D",
+      "attack.physical": 96
+    },
+    "after": {
+      "scaling.dexterity": "B",
+      "scaling.strength": "C",
+      "attack.physical": 82
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；attack.physical：GameWith基本性能与既有参数快照逐字段一致，采用其82。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-500429",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-6a4cc5d55048",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-4e9740bdfcc8",
+    "name": "腐败斗技锤 · 面板来源纠错",
+    "before": {
+      "guard.magic": 366
+    },
+    "after": {
+      "guard.magic": 36
+    },
+    "evidence": "guard.magic：独立攻略摘录与参数或表格对照；保留被修正来源值。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8:525023",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-4e9740bdfcc8",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-75d45916055e",
+    "name": "大角槌 · 面板来源纠错",
+    "before": {
+      "attack.physical": 115,
+      "guard.boost": 42,
+      "scaling.strength": "C"
+    },
+    "after": {
+      "attack.physical": 111,
+      "guard.boost": 48,
+      "scaling.strength": "S"
+    },
+    "evidence": "attack.physical：独立攻略摘录与参数或表格对照；保留被修正来源值。；guard.boost：独立攻略摘录与参数或表格对照；保留被修正来源值。；scaling.strength：独立攻略摘录与参数或表格对照；保留被修正来源值。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8:525020",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-75d45916055e",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-2d079138f865",
+    "name": "尊容烛台 · 面板来源纠错",
+    "before": {
+      "scaling.strength": "C"
+    },
+    "after": {
+      "scaling.strength": "A"
+    },
+    "evidence": "scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-2d079138f865",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-fad820228aca",
+    "name": "无赖的大斧 · 面板来源纠错",
+    "before": {
+      "scaling.strength": "C"
+    },
+    "after": {
+      "scaling.strength": "S"
+    },
+    "evidence": "scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-fad820228aca",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-a9da538d4838",
+    "name": "化身仪式杖 · 面板来源纠错",
+    "before": {
+      "attack.holy": 49,
+      "attack.physical": 98,
+      "guard.boost": 52,
+      "scaling.strength": "C"
+    },
+    "after": {
+      "attack.holy": 64,
+      "attack.physical": 96,
+      "guard.boost": 48,
+      "scaling.strength": "A"
+    },
+    "evidence": "attack.holy：独立攻略摘录与参数或表格对照；保留被修正来源值。；attack.physical：独立攻略摘录与参数或表格对照；保留被修正来源值。；guard.boost：独立攻略摘录与参数或表格对照；保留被修正来源值。；scaling.strength：独立攻略摘录与参数或表格对照；保留被修正来源值。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8:524933",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-a9da538d4838",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-f024b035de38",
+    "name": "星兽半颚 · 面板来源纠错",
+    "before": {
+      "attack.magic": 76
+    },
+    "after": {
+      "attack.magic": 67
+    },
+    "evidence": "attack.magic：GameWith基本性能与既有参数快照逐字段一致，采用其67。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-500398",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-f024b035de38",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-5129335df9a7",
+    "name": "短弓 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "C"
+    },
+    "after": {
+      "scaling.dexterity": "S"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-5129335df9a7",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-3c5a1566ba26",
+    "name": "哨兵火把 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "B",
+      "scaling.strength": "B"
+    },
+    "after": {
+      "scaling.dexterity": "C",
+      "scaling.strength": "C"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-3c5a1566ba26",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-7076f339b775",
+    "name": "铁圆盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-7076f339b775",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-55f0712aaa1d",
+    "name": "金黄铁盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-55f0712aaa1d",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-40c14c16dec5",
+    "name": "蛇人盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-40c14c16dec5",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-8d25a09811f6",
+    "name": "冰纹铁盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-8d25a09811f6",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-b42aa3557ade",
+    "name": "裂缝盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-b42aa3557ade",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-b5cb7362625b",
+    "name": "调香师盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-b5cb7362625b",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-dfcd1a4a1468",
+    "name": "罪人盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-dfcd1a4a1468",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-287fa6986861",
+    "name": "旋角盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-287fa6986861",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-39819a951ed8",
+    "name": "熏烧盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-39819a951ed8",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-7130c1e8c27b",
+    "name": "蛇盘盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-7130c1e8c27b",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-d1268437a077",
+    "name": "太阳城盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-d1268437a077",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-31450d54b7f7",
+    "name": "大皮盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-31450d54b7f7",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-74e86b396b6c",
+    "name": "黑皮盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-74e86b396b6c",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-e41e4009c36a",
+    "name": "鸢形盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-e41e4009c36a",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-e73b6f5596e4",
+    "name": "蓝金鸢形盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-e73b6f5596e4",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-02b9c320feba",
+    "name": "蝎纹鸢形盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：独立攻略摘录与参数或表格对照；保留被修正来源值。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8:525227",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-02b9c320feba",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-75766249aabb",
+    "name": "双鸟鸢形盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-75766249aabb",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-076a6e28673a",
+    "name": "失乡骑士盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-076a6e28673a",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-3021f126aa7c",
+    "name": "白金盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-3021f126aa7c",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-fa57ad979565",
+    "name": "兽人壶盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "scaling.strength": "D",
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "scaling.strength": "A",
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-fa57ad979565",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-bb975fa6e49e",
+    "name": "卡利亚骑士盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-bb975fa6e49e",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-e1933955612b",
+    "name": "白银盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-e1933955612b",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-8733d00ed434",
+    "name": "大乌龟壳 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-8733d00ed434",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-277854f96198",
+    "name": "龙塔盾 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "E",
+      "scaling.strength": "C"
+    },
+    "after": {
+      "scaling.dexterity": "D",
+      "scaling.strength": "A"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-277854f96198",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-e410765edbf4",
+    "name": "铁棘大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-e410765edbf4",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-e8aa069fce84",
+    "name": "钉墙盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-e8aa069fce84",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-2901ec48608f",
+    "name": "神圣绘画盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-2901ec48608f",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-d1aa39e4a6d9",
+    "name": "兽纹黄金盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-d1aa39e4a6d9",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-3c255ee06c7c",
+    "name": "名门大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-3c255ee06c7c",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-0cad7e062e84",
+    "name": "金黄大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-0cad7e062e84",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-984951c3c5f0",
+    "name": "杜鹃大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-984951c3c5f0",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-4e46b2929e15",
+    "name": "红狮子大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-4e46b2929e15",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-a8e2e29bf67b",
+    "name": "黄金大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-a8e2e29bf67b",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-4a8cc7257784",
+    "name": "圣树纹大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-4a8cc7257784",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-9a0655dd2164",
+    "name": "日蚀纹大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 3,
+      "rarity": "uncommon"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-9a0655dd2164",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-b65310e09bd8",
+    "name": "熔炉角盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-b65310e09bd8",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-b3f56259ea8f",
+    "name": "龙爪盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-b3f56259ea8f",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-8e30a08f00a0",
+    "name": "指纹石盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-8e30a08f00a0",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-2a8cb0552b83",
+    "name": "黄金树大盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-2a8cb0552b83",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-14f8631d0fe0",
+    "name": "水母盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-14f8631d0fe0",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-5f534411f5fe",
+    "name": "颜面盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-5f534411f5fe",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-0f2377814104",
+    "name": "独眼盾 · 面板来源纠错",
+    "before": {
+      "level_required": 1,
+      "rarity": "common"
+    },
+    "after": {
+      "level_required": 7,
+      "rarity": "rare"
+    },
+    "evidence": "level_required：参数requiredLevel与RPS转录等级一致；不据等级推算品质。；rarity：GameWith名称行颜色及品质分类页，与Game8日文行内品质分类一致；采用资料页基础品质，不依据需求等级反推，不表示局内只能掉落此品质。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-0f2377814104",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:rps-transcription",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-a41689a09b9e",
+    "name": "黄金树圣印记 · 面板来源纠错",
+    "before": {
+      "attack.holy": 0
+    },
+    "after": {
+      "attack.holy": 15
+    },
+    "evidence": "attack.holy：GameWith基本性能与既有参数快照逐字段一致，采用其15。Game8日文训练场追踪者Lv1的示例另列条件未对齐，不混入基值；Mobalytics旧值及全部分歧保留，未宣称当前补丁实测。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-500220",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-a41689a09b9e",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-41268da76055",
+    "name": "猛禽钩爪 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "C"
+    },
+    "after": {
+      "scaling.dexterity": "A"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-41268da76055",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-65f9a1b3de31",
+    "name": "尊腐骑士矛 · 面板来源纠错",
+    "before": {
+      "attack.holy": 36
+    },
+    "after": {
+      "attack.holy": 44
+    },
+    "evidence": "attack.holy：独立攻略摘录与参数或表格对照；保留被修正来源值。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:armamenthelper",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:game8:525127",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-65f9a1b3de31",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
+  },
+  {
+    "id": "weapon-panel:weapon:index-5bf863e4044d",
+    "name": "结晶矛 · 面板来源纠错",
+    "before": {
+      "scaling.dexterity": "D",
+      "scaling.strength": "D"
+    },
+    "after": {
+      "scaling.dexterity": "B",
+      "scaling.strength": "C"
+    },
+    "evidence": "scaling.dexterity：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。；scaling.strength：GameWith与Game8日文表的同名武器均明确列出该字母补正，并与原RPS转录一致；采用字母表值，未把参数系数换算为字母。旧分歧仍保留，补丁版本未证实。",
+    "source_refs": [
+      {
+        "source_id": "weapon-panel:game8jp:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:gamewith:followup-all",
+        "locator": "字段纠错依据"
+      },
+      {
+        "source_id": "weapon-panel:mobalytics:index-5bf863e4044d",
+        "locator": "字段纠错依据"
+      }
+    ],
+    "verification_status": "source_reported"
   }
 ]

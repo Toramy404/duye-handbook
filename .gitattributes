@@ -8,3 +8,6 @@
 
 # Preserve the shipped offline snapshot exactly across operating systems.
 dist/** -text
+
+# Preserve the exact bytes of the hash-pinned weapon audit baseline.
+docs/research/weapon-panel-audit-20261017.json -text
